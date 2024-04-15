@@ -1,0 +1,126 @@
+
+.clockify-save-task{
+    width: 400px;
+}
+.clockify-save-task h4{
+    color:  #1A2240;
+    font-size: 16px;
+    font-weight: 600;
+    border-bottom: 1px solid #E0E0E0;
+    padding-bottom: 16px;
+    margin-bottom: 0;
+}
+.clockify-save-task .cpta-task-text .touch-form-rn{
+    display: flex;
+    flex-direction: column;
+    padding-top: 16px;
+}
+.cpta-add-save-task button{
+    color: #2F64C9;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 6px;
+    background: rgba(47, 100, 201, 0.05);
+    border: none;
+    padding: 8px 14px;
+    margin-top: 16px;
+}
+.clockify-save-task-project-bg{
+    display: flex;
+    gap: 40px;
+    border-radius: 12px;
+    border: 1px solid #E7E7E7;
+    background: #FFF;
+    padding: 20px;
+    margin-top: 24px;
+}
+.clockify-save-task-display h4{
+    color:  #1A2240;
+    font-size: 16px;
+    font-weight: 600;
+    border-bottom: 1px solid #E0E0E0;
+    padding-bottom: 16px;
+    margin-bottom: 0;
+}
+.clockify-save-task-display{
+    min-width: calc(100% - 440px);
+}
+.cstd-atb-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cstd-date-hour{
+    display: flex;
+    gap: 92px;
+    align-items: center;
+}
+.cstd-date-hour-content{
+    display: flex;
+    align-items: center;
+}
+.cstd-atb-text h6{
+    color: #464F60;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.28px;
+    margin-bottom: 0;
+}
+.cstd-date-hour-content h5{
+    color: #464F60;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.28px;
+    margin-bottom: 0;
+    border-right: 1px solid #E0E0E0;
+    border-left: 1px solid #E0E0E0;
+    padding: 0 16px;
+}
+.cstd-date-hour-content p{
+    color: #464F60;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.28px;
+    margin-bottom: 0;
+    padding-left: 16px;
+}
+.cstd-date-hour-img img{
+    width: 24px;
+    height: 24px;
+    position: relative;
+}
+.cstd-date-hour-img::before{
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 17px;
+    background-color: #E0E0E0;
+    margin-left: -16px;
+    margin-top: 5px;
+}
+.cstd-edit-bg button{
+    border: none;
+    background: none;
+}
+.cstd-edit-bg{
+    display: flex;
+    gap: 24px;
+}
+.cstd-date-hour-img{
+    padding: 0 16px;
+}
+.cstd-atb-text{
+    border-radius: 8px;
+    background: #FFF;
+    padding: 6px 12px;
+    margin-bottom: 8px;
+}
+.cstd-atb-text:last-child{
+    margin-bottom: 0;
+}
+.cstd-added-task-bg{
+    border-radius: 12px;
+    background: #F5F5F5;
+    padding: 12px;
+    margin-top: 16px;
+}

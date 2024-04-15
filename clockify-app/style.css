@@ -1,0 +1,618 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+}
+
+.clockify-admin-dashboard {
+    display: flex;
+    height: 100%;
+}
+
+/* .tabs-content {
+    width: 100%;
+    display: none;
+} */
+.clockify-tabs-bg a{
+    color: #111;
+    text-decoration: none;
+}
+.ctb-project li,
+.ctb-users li,
+.ctb-team li,
+.ctb-reports li,
+.ctb-customization li {
+    border-radius: 10px;
+    background: #2F64C9;
+    color: #FFF;
+}
+
+.ctb-users li svg path,
+.ctb-project li svg path,
+.ctb-team li svg path,
+.ctb-reports li svg path,
+.ctb-customization li svg path {
+    stroke: white;
+}
+
+
+.cad-tab-bg {
+    background-color: #F2F2F2;
+    padding: 20px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+/* .clockify-app-dashboard {
+    height: 100vh;
+} */
+
+.cad-admin-view {
+    display: flex;
+    border-radius: 12px;
+    background: #FFF;
+    padding: 20px;
+    align-items: center;
+    gap: 138px;
+    margin-bottom: 60px;
+}
+
+.cad-admin-img {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.cad-admin-img h4 span {
+    display: block;
+    color: #888;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 4px;
+}
+
+.cad-admin-img h4 {
+    color: #111;
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.cad-admin-img-account {
+    cursor: pointer;
+}
+
+.cad-tab-bg ul {
+    padding: 0;
+    list-style: none;
+}
+
+.cad-tab-bg ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* .cad-tab-bg a.active {
+    border-radius: 10px;
+    background: #2F64C9;
+    color: #FFF;
+}
+
+.cad-tab-bg ul li.active svg path {
+    stroke: white;
+} */
+
+/* ========clockify header======== */
+
+.clockify-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #E0E0E0;
+    padding-bottom: 27px;
+}
+
+.cad-tab-bg-content {
+    flex: 0 0 calc(100% - 400px);
+    padding: 32px 32px 90px 32px;
+}
+
+.clockify-header h2 {
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.clockify-header-setting {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+/* ==========clockify project list========= */
+.clockify-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+}
+
+.cpl-dropdown-bg {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.cpl-dropdown ul {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 0;
+}
+
+.cpl-search-bg {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.cpl-number {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.cpl-number h2 {
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.cpl-number p {
+    color: #2F64C9;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 0;
+    border-radius: 100px;
+    background: rgba(47, 100, 201, 0.05);
+    padding: 8px 16px;
+}
+
+.cpl-dropdown ul li {
+    color: #2F64C9;
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 5px 10px 5px 20px;
+}
+.cpl-dropdown ul li:hover{
+    border-radius: 6px;
+    background: rgba(41, 109, 203, 0.08);
+}
+.cpl-dropdown ul li.active{
+    border-radius: 6px;
+    background: rgba(41, 109, 203, 0.08);
+}
+
+.cpl-dropdown ul li svg {
+    margin-left: 10px;
+}
+
+/* .cpl-search {
+    border-radius: 10px;
+    border: 1px solid rgba(47, 100, 201, 0.05);
+    background: rgba(47, 100, 201, 0.07);
+    padding: 10px 16px;
+} */
+
+
+
+.cpl-search {
+    display: flex;
+    align-items: center;
+    width: 42px;
+    transition: width 0.3s ease;
+    position: relative;
+}
+
+.cpl-search input {
+    border-radius: 10px;
+    border: 1px solid rgba(47, 100, 201, 0.05);
+    background-color: rgba(47, 100, 201, 0.07);
+    outline: none;
+    padding: 12px 0px;
+    padding-left: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}
+.cpl-search input::placeholder{
+    color: #BCBCBC;
+}
+
+.cpl-search input:focus {
+    background-color: white;
+    border-color: rgba(47, 100, 201, 0.60);
+}
+
+
+.cpl-search svg {
+    cursor: pointer;
+    margin-left: 13px;
+    position: absolute;
+}
+
+
+
+
+
+.cpl-add-project a {
+    border-radius: 10px;
+    background: #2F64C9;
+    padding: 12px 24px;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+}
+.cpl-add-project a:hover{
+    background-color: #1F4FAB;
+}
+
+
+
+.status-dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.14);
+    min-width: 180px;
+    top: 36px;
+    z-index: 1;
+    padding: 8px 0;
+    max-height: 310px;
+    overflow-y: auto;
+}
+
+
+.status-dropdown.active .dropdown-content {
+    display: block;
+}
+
+.dropdown-content label {
+    color: #464F60;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 16px;
+    cursor: pointer;
+}
+
+.dropdown-content label:hover {
+    background-color: #F4F7FE;
+}
+
+.dropdown-content label img {
+    width: 24px;
+    height: 24px;
+}
+
+/* =============clockify data========== */
+
+.clockify-pm-img img {
+    width: 32px;
+    height: 32px;
+}
+
+/* .clockify-pm-billable {
+    display: block;
+}
+
+.clockify-pm-non-billable {
+    display: none;
+} */
+
+.clockify-pm-resource p {
+    border-radius: 6px;
+    background: rgba(47, 100, 201, 0.07);
+    width: 32px;
+    height: 32px;
+    color: #2F64C9;
+    font-size: 14px;
+    font-weight: 500;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    cursor: pointer;
+}
+
+.clockify-pm-setting button {
+    border-radius: 8px;
+    background: rgba(41, 109, 203, 0.08);
+    border: none;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.clockify-pm-setting button:hover {
+    background-color: #296DCB;
+}
+.clockify-pm-delete button:hover svg path{
+stroke: white;
+}
+.clockify-pm-delete button:hover {
+    background-color: #D1293D;
+}
+.clockify-pm-setting button:hover svg path{
+stroke: white;
+}
+
+.clockify-pm-delete button {
+    border-radius: 8px;
+    background: rgba(209, 41, 61, 0.08);
+    border: none;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+/* .clockify-action {
+    width: 48px;
+} */
+
+.clockify-action .cpsd {
+    display: flex;
+    gap: 8px;
+}
+
+.clockify-data-bg thead th {
+    color: #000;
+    font-size: 14px;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    background: #DCF366;
+    padding: 12px 14px;
+}
+
+.clockify-data-bg thead th:first-child {
+    border-radius: 16px 0px 0px 0px;
+}
+
+.clockify-data-bg thead th:last-child {
+    border-radius: 0px 16px 0px 0px;
+}
+
+.clockify-data-bg tbody th {
+    padding: 12px 14px;
+}
+
+.clockify-data-bg tbody td {
+    padding: 12px 14px;
+}
+
+.clockify-data-bg {
+    padding-top: 20px;
+}
+
+.project-task-content{
+    display: flex;
+    gap: 8px;
+    /* align-items: center; */
+}
+.project-task-content p,
+.project-task-content h6{
+    margin-bottom: 0;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.project-task-content h6{
+border-radius: 5px;
+padding: 6px 12px;
+background-color: rgba(47, 100, 201, 0.05);
+color: #2F64C9;
+    font-size: 13px;
+    font-weight: 600;
+}
+.project-task-content h6 a{
+    text-decoration: none;
+    color: #2F64C9;
+}
+.project-task-content p{
+    border-radius: 5px;
+background-color: #F9F7E8;
+padding: 6px 12px;
+color: #746513;
+font-size: 13px;
+font-weight: 600;
+}
+
+.project-task h5{
+    margin-bottom: 0;
+    color: #111;
+    font-size: 14px;
+    font-weight: 700;
+}
+.project-task{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.clockify-pm-status-red p{
+    color: #D1293D;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 100px;
+    background-color: rgba(209, 41, 61, 0.05);
+    padding: 10px 12px;
+    max-width: max-content;
+    margin: 0;
+}
+.clockify-pm-status p{
+    color: #14804A;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 100px;
+    background-color: rgba(20, 128, 74, 0.05);
+    padding: 10px 12px;
+    max-width: max-content;
+    margin: 0;
+}
+.clockify-estimate p{
+    color: #111;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+}
+
+.cdb-common {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.clockify-pm-resource {
+    position: relative;
+    display: inline-block;
+}
+.clockify-pm-resource p:hover {
+    background-color: #2F64C9;
+    color: white;
+    /* transition: 0.3s; */
+}
+.clockify-pm-resource:hover .dropdown-img-content {
+    display: block;
+}
+
+.dropdown-img-content {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    z-index: 1;
+    border-radius: 12px;
+    background: #FFF;
+    margin-top: 4px;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.08), 0px 15px 35px -5px rgba(17, 24, 38, 0.15), 0px 0px 0px 1px rgba(152, 161, 178, 0.10);
+}
+.dropdown-img-content img{
+    width: 32px;
+    height: 32px;
+}
+.dropdown-img-content .d-img-cn{
+    display: flex;
+    gap: 8px;
+}
+
+/* ========clockify pagination========= */
+
+.colckify-pagination ul li:first-child a {
+    opacity: 0.3;
+    border: 1px solid rgba(41, 109, 203, 0.32);
+}
+.colckify-pagination ul li:last-child a {
+    border: 1px solid #296DCB;
+}
+/* .colckify-pagination ul li:last-child a:hover{
+    border-color:#296DCB;
+    opacity: 1;
+    background-color: unset;
+} 
+.colckify-pagination ul li a:hover svg path{
+    stroke: #296DCB;
+}
+.colckify-pagination ul li:first-child a:hover{
+    border-color:#296DCB;
+    opacity: 1;
+    background-color: unset;
+} */
+.colckify-pagination li a {
+    border-radius: 8px;
+    padding: 10px 16px;
+    text-decoration: none;
+    color: #444;
+    font-weight: 400;
+  }
+ .colckify-pagination li a.active {
+    
+    background-color: #296DCB;
+    color: #fff
+  }
+  .colckify-pagination li a:hover:not(.active) {
+    background-color: #EEF3FB;
+  } 
+  .colckify-pagination ul{
+    display: flex;
+    list-style: none;
+    gap: 4px;
+    margin-bottom: 0;
+  }
+  .clockify-pagination-text h4 span{
+    font-weight: 700;
+  }
+  .clockify-pagination-text h4{
+    font-weight: 400;
+    color: #111;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  .colckify-pagination{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+  .status-image {
+    display: none;
+}
+
+@media (max-width:1361px) {
+    .cad-admin-view {
+        gap: 60px;
+    }
+    .cad-tab-bg-content {
+        flex: 0 0 calc(100% - 400px);
+        padding: 32px 20px 90px 20px;
+    }
+}
+
+
+

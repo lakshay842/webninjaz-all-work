@@ -1,0 +1,45 @@
+
+
+.ninja-rcb-bg{
+    display: flex;
+    gap: 100px;
+}   
+/* .nra-img{
+    position: relative;
+} */
+/* .nra-img-4-ani-bg{
+    position: absolute;
+    top: 0;
+} */
+/* .nra-img-4-ani div{
+    position: absolute;
+} */
+
+/* .nrai-1,
+.nrai-2,
+.nrai-3,
+.nrai-4,
+.nrai-5{
+    position: absolute;
+} */
+
+.nrai-1{
+    position: absolute;
+   /* bottom: 0; */
+}
+.nrai-2{
+    position: absolute;
+   /* bottom: 0; */
+}
+.nrai-3{
+    position: absolute;
+   /* bottom: 0; */
+}
+.nrai-4{
+    position: absolute;
+   /* bottom: 0; */
+}
+.nrai-2{
+    position: absolute;
+   /* bottom: 0; */
+}

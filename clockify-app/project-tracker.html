@@ -1,0 +1,1410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clockify tool</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="project-tracker.css">
+<!-- 
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
+<link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon"> -->
+
+</head>
+
+<body class="page_body">
+ 
+
+    <section>
+        <div class="clockify-application-bg">
+                <div class="clockify-app-dashboard">
+                    <div class="clockify-admin-dashboard">
+
+                        <div class="cad-tab-bg">
+                            <div class="cad-admin-view">
+                                <div class="cad-admin-img">
+                                    <img src="./images/img-1.svg" alt="admin">
+                                    <h4>Arpit Paltani <span>Admin</span></h4>
+                                </div>
+                                <div class="cad-admin-img-account">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M8 9L12 5L16 9M16 15L12 19L8 15" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                </div>
+                            </div>
+
+                            <!-- tabs-ul-id start -->
+                            <div class="clockify-tabs-bg">
+                            <ul id="clockify-tabs">
+                                <a href="./index.html" class="ctb-project"><li> 
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                      <path d="M4 6C4 5.46957 4.21071 4.96086 4.58579 4.58579C4.96086 4.21071 5.46957 4 6 4H18C18.5304 4 19.0391 4.21071 19.4142 4.58579C19.7893 4.96086 20 5.46957 20 6V8C20 8.53043 19.7893 9.03914 19.4142 9.41421C19.0391 9.78929 18.5304 10 18 10H6C5.46957 10 4.96086 9.78929 4.58579 9.41421C4.21071 9.03914 4 8.53043 4 8V6Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                      <path d="M4 16C4 15.4696 4.21071 14.9609 4.58579 14.5858C4.96086 14.2107 5.46957 14 6 14H18C18.5304 14 19.0391 14.2107 19.4142 14.5858C19.7893 14.9609 20 15.4696 20 16V18C20 18.5304 19.7893 19.0391 19.4142 19.4142C19.0391 19.7893 18.5304 20 18 20H6C5.46957 20 4.96086 19.7893 4.58579 19.4142C4.21071 19.0391 4 18.5304 4 18V16Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                  Projects</li></a>
+                               
+                                  <a href="./user.html"><li> 
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                          <path d="M3 21V19C3 17.9391 3.42143 16.9217 4.17157 16.1716C4.92172 15.4214 5.93913 15 7 15H11C12.0609 15 13.0783 15.4214 13.8284 16.1716C14.5786 16.9217 15 17.9391 15 19V21M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89318 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88M21 21V19C20.9949 18.1172 20.6979 17.2608 20.1553 16.5644C19.6126 15.868 18.8548 15.3707 18 15.15M5 7C5 8.06087 5.42143 9.07828 6.17157 9.82843C6.92172 10.5786 7.93913 11 9 11C10.0609 11 11.0783 10.5786 11.8284 9.82843C12.5786 9.07828 13 8.06087 13 7C13 5.93913 12.5786 4.92172 11.8284 4.17157C11.0783 3.42143 10.0609 3 9 3C7.93913 3 6.92172 3.42143 6.17157 4.17157C5.42143 4.92172 5 5.93913 5 7Z" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                      Users</li></a>
+                                      <a href="./team.html"><li> 
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                          <path d="M8 21V20C8 19.4696 8.21071 18.9609 8.58579 18.5858C8.96086 18.2107 9.46957 18 10 18H14C14.5304 18 15.0391 18.2107 15.4142 18.5858C15.7893 18.9609 16 19.4696 16 20V21M17 10H19C19.5304 10 20.0391 10.2107 20.4142 10.5858C20.7893 10.9609 21 11.4696 21 12V13M3 13V12C3 11.4696 3.21071 10.9609 3.58579 10.5858C3.96086 10.2107 4.46957 10 5 10H7M10 13C10 13.5304 10.2107 14.0391 10.5858 14.4142C10.9609 14.7893 11.4696 15 12 15C12.5304 15 13.0391 14.7893 13.4142 14.4142C13.7893 14.0391 14 13.5304 14 13C14 12.4696 13.7893 11.9609 13.4142 11.5858C13.0391 11.2107 12.5304 11 12 11C11.4696 11 10.9609 11.2107 10.5858 11.5858C10.2107 11.9609 10 12.4696 10 13ZM15 5C15 5.53043 15.2107 6.03914 15.5858 6.41421C15.9609 6.78929 16.4696 7 17 7C17.5304 7 18.0391 6.78929 18.4142 6.41421C18.7893 6.03914 19 5.53043 19 5C19 4.46957 18.7893 3.96086 18.4142 3.58579C18.0391 3.21071 17.5304 3 17 3C16.4696 3 15.9609 3.21071 15.5858 3.58579C15.2107 3.96086 15 4.46957 15 5ZM5 5C5 5.53043 5.21071 6.03914 5.58579 6.41421C5.96086 6.78929 6.46957 7 7 7C7.53043 7 8.03914 6.78929 8.41421 6.41421C8.78929 6.03914 9 5.53043 9 5C9 4.46957 8.78929 3.96086 8.41421 3.58579C8.03914 3.21071 7.53043 3 7 3C6.46957 3 5.96086 3.21071 5.58579 3.58579C5.21071 3.96086 5 4.46957 5 5Z" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                      Teams</li></a>
+                                      <a href="./reports.html"><li> 
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                          <path d="M9 5H7C6.46957 5 5.96086 5.21071 5.58579 5.58579C5.21071 5.96086 5 6.46957 5 7V19C5 19.5304 5.21071 20.0391 5.58579 20.4142C5.96086 20.7893 6.46957 21 7 21H17C17.5304 21 18.0391 20.7893 18.4142 20.4142C18.7893 20.0391 19 19.5304 19 19V7C19 6.46957 18.7893 5.96086 18.4142 5.58579C18.0391 5.21071 17.5304 5 17 5H15M9 5C9 4.46957 9.21071 3.96086 9.58579 3.58579C9.96086 3.21071 10.4696 3 11 3H13C13.5304 3 14.0391 3.21071 14.4142 3.58579C14.7893 3.96086 15 4.46957 15 5M9 5C9 5.53043 9.21071 6.03914 9.58579 6.41421C9.96086 6.78929 10.4696 7 11 7H13C13.5304 7 14.0391 6.78929 14.4142 6.41421C14.7893 6.03914 15 5.53043 15 5M9 17V12M12 17V16M15 17V14" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                      Reports</li></a>
+                                      <a href="./customization.html"><li> 
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                          <path d="M14.5 5.5L18.5 9.5M12 8L7 3L3 7L8 12M7 8L5.5 9.5M16 12L21 17L17 21L12 16M16 17L14.5 18.5M3 21H7L20 8C20.5304 7.46956 20.8284 6.75014 20.8284 6C20.8284 5.24985 20.5304 4.53043 20 4C19.4696 3.46956 18.7501 3.17157 18 3.17157C17.2499 3.17157 16.5304 3.46956 16 4L3 17V21Z" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                      Customization</li></a>
+                              </ul>
+                              </div>
+                               <!-- tabs-ul-id end-->
+
+                        </div>
+                      
+                
+                        <div class="cad-tab-bg-content">
+
+                        <!-- tab-2-start -->
+                        <div class="tabs-content-pt">
+
+                             <!-- ==========clockify-header========= -->
+                             <div class="clockify-header">
+                                <h2>Project Tracker</h2>
+                                <div class="clockify-header-setting">
+                                    <a href=""><img src="./images/notification.svg" alt="notification"></a>
+                                    <a href=""><img src="./images/setting.svg" alt="setting"></a>
+                                </div>
+                            </div>
+
+                              <!-- ============clockify project descr========= -->
+                           <div class="clockify-project-description-bg">
+
+                              <div class="clockify-project-description">
+                                <div class="clockify-desc">
+
+                                    <div class="cpd-project">
+                                        <a href="./index.html"><svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                                            <path d="M7 1L1 7L7 13" stroke="#296DCB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                          </svg> Projects</a>
+                                    </div>
+
+                                    <div class="cpd-x-dollar">
+                                        <h4>X-Large</h4>
+                                        <div class="cpd-dollar-img">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="18" viewBox="0 0 11 18" fill="none">
+                                                <path d="M9.08333 5.66667C8.91746 5.19603 8.61454 4.7858 8.21356 4.48878C7.81258 4.19176 7.33188 4.02153 6.83333 4H3.5C2.83696 4 2.20107 4.26339 1.73223 4.73223C1.26339 5.20107 1 5.83696 1 6.5C1 7.16304 1.26339 7.79893 1.73223 8.26777C2.20107 8.73661 2.83696 9 3.5 9H6.83333C7.49637 9 8.13226 9.26339 8.6011 9.73223C9.06994 10.2011 9.33333 10.837 9.33333 11.5C9.33333 12.163 9.06994 12.7989 8.6011 13.2678C8.13226 13.7366 7.49637 14 6.83333 14H3.5C3.00145 13.9785 2.52076 13.8082 2.11977 13.5112C1.71879 13.2142 1.41587 12.804 1.25 12.3333M5.16667 1.5V4M5.16667 14V16.5" stroke="#14804A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                              </svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="cpd-description">
+                                        <button type="button" class="show-description" onclick="toggleDescription()"><svg id="customSVG" xmlns="http://www.w3.org/2000/svg" width="18" height="12" viewBox="0 0 18 12" fill="none">
+                                            <path d="M7.16634 6C7.16634 6.44203 7.34194 6.86595 7.6545 7.17851C7.96706 7.49107 8.39098 7.66667 8.83301 7.66667C9.27504 7.66667 9.69896 7.49107 10.0115 7.17851C10.3241 6.86595 10.4997 6.44203 10.4997 6C10.4997 5.55797 10.3241 5.13405 10.0115 4.82149C9.69896 4.50893 9.27504 4.33333 8.83301 4.33333C8.39098 4.33333 7.96706 4.50893 7.6545 4.82149C7.34194 5.13405 7.16634 5.55797 7.16634 6Z" stroke="#2F64C9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M16.333 6C14.333 9.33333 11.833 11 8.83301 11C5.83301 11 3.33301 9.33333 1.33301 6C3.33301 2.66667 5.83301 1 8.83301 1C11.833 1 14.333 2.66667 16.333 6Z" stroke="#2F64C9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          </svg> Show description</button>
+                                    </div>
+
+                                    <div class="cpd-desc-img">
+                                        <div class="cpd-dropdown-img-content">
+                                            <div class=" cpd-img-tracker">
+                                              <img src="./images/om.svg" alt="Image 1">
+                                              <img src="./images/lakshay.svg" alt="Image 2">
+                                              <img src="./images/vivek.svg" alt="Image 3">
+                                          </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="clockify-addtask">
+
+                                    <div class="cpl-search">
+                                        <input type="text" placeholder="Search...">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.8737 12.0133C9.78474 12.8601 8.41642 13.3643 6.93037 13.3643C3.37897 13.3643 0.5 10.4845 0.5 6.93216C0.5 3.37978 3.37897 0.5 6.93037 0.5C10.4818 0.5 13.3607 3.37978 13.3607 6.93216C13.3607 8.41849 12.8567 9.78708 12.0104 10.8762L15.2642 14.1271C15.5783 14.4409 15.5786 14.95 15.2649 15.2642C14.9512 15.5783 14.4423 15.5787 14.1282 15.2649L10.8737 12.0133ZM11.7531 6.93216C11.7531 9.59645 9.59391 11.7563 6.93037 11.7563C4.26682 11.7563 2.10759 9.59645 2.10759 6.93216C2.10759 4.26787 4.26682 2.10804 6.93037 2.10804C9.59391 2.10804 11.7531 4.26787 11.7531 6.93216Z" fill="#2F64C9"/>
+                                        </svg>
+                                    </div>
+                                    <div class="clockify-pm-setting cpd-set-track">
+                                        <button type="button" class=""> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                            <path d="M16.5625 5.22498C16.8489 5.38787 17.0867 5.62413 17.2515 5.90945C17.4163 6.19477 17.5021 6.51884 17.5 6.84832V12.9183C17.5 13.5925 17.1308 14.2142 16.535 14.5417L10.91 18.1C10.6311 18.2531 10.3181 18.3334 10 18.3334C9.68186 18.3334 9.36887 18.2531 9.09 18.1L3.465 14.5417C3.17347 14.3823 2.9301 14.1476 2.76034 13.862C2.59058 13.5765 2.50067 13.2505 2.5 12.9183V6.84748C2.5 6.17332 2.86917 5.55248 3.465 5.22498L9.09 1.90832C9.37711 1.75001 9.69964 1.66699 10.0275 1.66699C10.3554 1.66699 10.6779 1.75001 10.965 1.90832L16.59 5.22498H16.5625Z" stroke="#2F64C9" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.5 9.99997C7.5 10.663 7.76339 11.2989 8.23223 11.7677C8.70107 12.2366 9.33696 12.5 10 12.5C10.663 12.5 11.2989 12.2366 11.7678 11.7677C12.2366 11.2989 12.5 10.663 12.5 9.99997C12.5 9.33693 12.2366 8.70104 11.7678 8.2322C11.2989 7.76336 10.663 7.49997 10 7.49997C9.33696 7.49997 8.70107 7.76336 8.23223 8.2322C7.76339 8.70104 7.5 9.33693 7.5 9.99997Z" stroke="#2F64C9" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                          </svg></button>
+                                       
+                                      </div>
+                                      <div class="cpl-add-project">
+                                          <a href="./save-task.html">
+                                              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                              <path d="M6 6V0H8V6H14V8H8V14H6V8H0V6H6Z" fill="white"/>
+                                            </svg>
+                                            Add Task
+                                          </a>
+                                      </div>
+                                </div>
+                              </div>
+
+                              <div class="cpd-show-desc-content">
+                                <div class="desc-text">
+                                    <h4>Description</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                                <div class="desc-attachment">
+                                    <h4>Attachments</h4>
+                                    <div class="desc-attach-btn">
+                                        <button type="button" class="fig-btn">X-large.fig <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
+                                            <path d="M1 11.7059V13.3529C1 13.7898 1.17353 14.2087 1.48241 14.5176C1.7913 14.8265 2.21023 15 2.64706 15H12.5294C12.9662 15 13.3852 14.8265 13.6941 14.5176C14.0029 14.2087 14.1765 13.7898 14.1765 13.3529V11.7059M3.47059 6.76471L7.58824 10.8824M7.58824 10.8824L11.7059 6.76471M7.58824 10.8824V1" stroke="#2F64C9" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                                          </svg></button>
+                                        <button type="button" class="slsx-btn">X-large-project-sheet.xlsx <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
+                                            <path d="M1 11.7059V13.3529C1 13.7898 1.17353 14.2087 1.48241 14.5176C1.7913 14.8265 2.21023 15 2.64706 15H12.5294C12.9662 15 13.3852 14.8265 13.6941 14.5176C14.0029 14.2087 14.1765 13.7898 14.1765 13.3529V11.7059M3.47059 6.76471L7.58824 10.8824M7.58824 10.8824L11.7059 6.76471M7.58824 10.8824V1" stroke="#2F64C9" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                                          </svg></button>
+                                    </div>
+                                </div>
+                              </div>
+
+                            </div>
+
+                              <!-- ============clockify project list for pending========= -->
+                              <div class="clockify-list">
+                                <div class="cpl-number pending-approval">
+                                    <h2>Pending for action</h2>
+                                    <p>4</p>
+                                </div>
+
+                                <div class="cpl-dropdown-bg">
+                                <div class="cpl-dropdown">
+                                    <ul>
+                                        <li class="status-dropdown"  id="dropdownContent1">
+                                          <img class="status-image" src="./images/dot.svg" alt="">
+                                          Task Status
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8" fill="none">
+                                              <path d="M1 1L7 7L13 0.999999" stroke="#296DCB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            <div class="dropdown-content dc-tracker">
+                                              <label>
+                                                <input type="checkbox" name="statusCheckbox" value="option1" onchange="updateStatusImage('dropdownContent1')"> On track
+                                              </label>
+                                              <label>
+                                                <input type="checkbox" name="statusCheckbox" value="option2" onchange="updateStatusImage('dropdownContent1')"> Overdue
+                                              </label>
+                                              <label>
+                                                <input type="checkbox" name="statusCheckbox" value="option3" onchange="updateStatusImage('dropdownContent1')"> Completed
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="status-dropdown"  id="dropdownContent2">
+                                            <img class="status-image" src="./images/dot.svg" alt="">
+                                            Resource
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8" fill="none">
+                                                <path d="M1 1L7 7L13 0.999999" stroke="#296DCB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                              </svg>
+                                              <div class="dropdown-content dc-tracker">
+                                                <label>
+                                                  <input type="checkbox" name="statusCheckbox" value="option1" onchange="updateStatusImage('dropdownContent2')"> Show them as it is
+                                                </label>
+                                                <label>
+                                                  <input type="checkbox" name="statusCheckbox" value="option2" onchange="updateStatusImage('dropdownContent2')"> Show them first
+                                                </label>
+                                                <label>
+                                                  <input type="checkbox" name="statusCheckbox" value="option3" onchange="updateStatusImage('dropdownContent2')"> Don’t show them
+                                                </label>
+                                              </div>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                          
+
+                        </div>
+                            </div>
+
+                              <!-- ================clockify data pending approval============= -->
+
+                              <div class="clockify-data-bg">
+                                <table class="table">
+                                  <thead>
+                                    <tr>
+                                      <th scope="col"><input class="unique-checkbox-data" type="checkbox" name="statusCheckbox" value="option1"></th>
+                                      <th scope="col">S. No.</th>
+                                      <th scope="col">task Name</th>
+                                      <th scope="col">Task Status</th>
+                                      <th scope="col">resource</th>
+                                      <th scope="col">estimation</th>
+                                      <th scope="col">time taken</th>
+                                      <th scope="col">due date</th>
+                                      <th scope="col">action</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+
+                                    <tr>
+                                      <th scope="row">
+                                        <div class="cdb-common">
+                                        <input class="checkbox-data" type="checkbox" name="statusCheckbox" value="option2">
+                                    </div>
+                                     
+                                      </th>
+                                      <td>
+                                        <div class="cdb-common">
+                                        <div class="sr-no">
+                                            <h5>1</h5>
+                                        </div>
+                                        </div>
+                                    </td>
+                                      <td>
+                                        <div class="cdb-common">
+                                        <div class="project-task tracker-task">
+                                          <h5>Category page DESIGN</h5>
+                                         
+                                        </div>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="cdb-common">
+                                            <div class="project-task-status">
+                                                <h4>Requested more time</h4>
+                                                <p>Time <span>| Created by PM</span></p>
+                                              </div>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="cdb-common">
+                                        <div class="clockify-pm-img">
+                                        <img src="./images/vivek.svg" alt="">
+                                      </div>
+                                      </div>
+                                      </td>
+                                      
+                                      <td>
+                                        <div class="cdb-common">
+                                        <div class="tracker-estimation">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M8 16C3.58172 16 0 12.4182 0 8C0 3.58172 3.58172 0 8 0C12.4182 0 16 3.58172 16 8C16 12.4182 12.4182 16 8 16ZM8 14.4C11.5346 14.4 14.4 11.5346 14.4 8C14.4 4.46538 11.5346 1.6 8 1.6C4.46538 1.6 1.6 4.46538 1.6 8C1.6 11.5346 4.46538 14.4 8 14.4ZM8.8 8H12V9.6H7.2V4H8.8V8Z" fill="black"/>
+                                              </svg>
+                                              <p>5 Hrs <span>+ 2 Hrs</span></p>
+                                        </div>
+                                      </div>
+                                    </td>
+                                         
+                                        <td>
+                                            <div class="cdb-common">
+                                            <div class="tracker-time-taken">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <path d="M8 16C3.58172 16 0 12.4182 0 8C0 3.58172 3.58172 0 8 0C12.4182 0 16 3.58172 16 8C16 12.4182 12.4182 16 8 16ZM8 14.4C11.5346 14.4 14.4 11.5346 14.4 8C14.4 4.46538 11.5346 1.6 8 1.6C4.46538 1.6 1.6 4.46538 1.6 8C1.6 11.5346 4.46538 14.4 8 14.4ZM8.8 8H12V9.6H7.2V4H8.8V8Z" fill="black"/>
+                                                  </svg>
+                                                  <p>4 Hrs</p>
+                                            </div>
+                                          </div>
+                                        </td>
+                                        <td>
+                                          <div class="cdb-common">
+                                          <div class="clockify-duedate">
+                                         <p>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
+                                                <path d="M11.6667 1V4.55556M4.55556 1V4.55556M1 8.11111H15.2222M1 4.55556C1 4.08406 1.1873 3.63187 1.5207 3.29848C1.8541 2.96508 2.30628 2.77778 2.77778 2.77778H13.4444C13.9159 2.77778 14.3681 2.96508 14.7015 3.29848C15.0349 3.63187 15.2222 4.08406 15.2222 4.55556V15.2222C15.2222 15.6937 15.0349 16.1459 14.7015 16.4793C14.3681 16.8127 13.9159 17 13.4444 17H2.77778C2.30628 17 1.8541 16.8127 1.5207 16.4793C1.1873 16.1459 1 15.6937 1 15.2222V4.55556ZM4.55556 11.6667H6.33333V13.4444H4.55556V11.6667Z" stroke="black" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                              </svg>
+                                              05/02/2024</p>
+                                        </div>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="cdb-common">
+                                        <div class="clockify-action">
+                                          <div class="cpsd">
+                                            <div class="clockify-pm-setting clockify-action">
+                                              <button type="button" class="catn-btn"> <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
+                                                <path d="M12.9 9.55885L12.5 8.86603L12.9 9.55885C14.1 8.86603 14.1 7.13398 12.9 6.44115L3.9 1.245C2.7 0.552182 1.2 1.4182 1.2 2.80385L1.2 13.1962C1.2 14.5818 2.7 15.4478 3.9 14.755L12.9 9.55885Z" stroke="#2F64C9" stroke-width="1.6"/>
+                                              </svg></button>
+                                             
+                                            </div>
+                                            <div class="clockify-pm-delete clockify-pdot">
+                                              <button type="button" class="cpdot-btn" onclick="toggleDropdown('dropdown1')"> <svg xmlns="http://www.w3.org/2000/svg" width="4" height="18" viewBox="0 0 4 18" fill="none">
+                                                <path d="M1 9C1 9.26522 1.10536 9.51957 1.29289 9.70711C1.48043 9.89464 1.73478 10 2 10C2.26522 10 2.51957 9.89464 2.70711 9.70711C2.89464 9.51957 3 9.26522 3 9C3 8.73478 2.89464 8.48043 2.70711 8.29289C2.51957 8.10536 2.26522 8 2 8C1.73478 8 1.48043 8.10536 1.29289 8.29289C1.10536 8.48043 1 8.73478 1 9Z" stroke="#2F64C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M1 16C1 16.2652 1.10536 16.5196 1.29289 16.7071C1.48043 16.8946 1.73478 17 2 17C2.26522 17 2.51957 16.8946 2.70711 16.7071C2.89464 16.5196 3 16.2652 3 16C3 15.7348 2.89464 15.4804 2.70711 15.2929C2.51957 15.1054 2.26522 15 2 15C1.73478 15 1.48043 15.1054 1.29289 15.2929C1.10536 15.4804 1 15.7348 1 16Z" stroke="#2F64C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M1 2C1 2.26522 1.10536 2.51957 1.29289 2.70711C1.48043 2.89464 1.73478 3 2 3C2.26522 3 2.51957 2.89464 2.70711 2.70711C2.89464 2.51957 3 2.26522 3 2C3 1.73478 2.89464 1.48043 2.70711 1.29289C2.51957 1.10536 2.26522 1 2 1C1.73478 1 1.48043 1.10536 1.29289 1.29289C1.10536 1.48043 1 1.73478 1 2Z" stroke="#2F64C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                              </svg></button>
+                                             
+                                              <!-- Dropdown content -->
+                                            <div class="dropdown-content-pdot" id="dropdown1">
+                                              <div class="cpdot-approved">
+                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                  <path d="M3.75 9L7.5 12.75L15 5.25" stroke="#14804A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg> Approved</p>
+                                              </div>
+                                              <div class="cpdot-not-approved">
+                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                  <path d="M5.28751 5.28769L12.7121 12.7123M5.28751 12.7123L12.7121 5.28769" stroke="#D1293D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>Not Approved</p>
+                                              </div>
+                                              <div class="cpdot-revised">
+                                                <div class="touch-form-rn">
+                                                  <label for="fullName" class="required"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                    <path d="M15.75 9C15.75 7.66504 15.3542 6.36006 14.6125 5.25006C13.8709 4.14006 12.8168 3.2749 11.5835 2.76396C10.3501 2.25302 8.99303 2.11926 7.68369 2.37959C6.37436 2.63992 5.17163 3.28265 4.22756 4.2265C3.2835 5.17036 2.6405 6.37295 2.37989 7.68222C2.11927 8.9915 2.25272 10.3486 2.76339 11.5821C3.27405 12.8155 4.13898 13.8698 5.24881 14.6117C6.35865 15.3536 7.66354 15.7497 8.9985 15.75M14.2507 15.75C13.8529 15.75 13.4714 15.592 13.1901 15.3107C12.9088 15.0294 12.7507 14.6478 12.7507 14.25C12.7507 13.8522 12.9088 13.4706 13.1901 13.1893C13.4714 12.908 13.8529 12.75 14.2507 12.75M14.2507 15.75C14.6486 15.75 15.0301 15.592 15.3114 15.3107C15.5927 15.0294 15.7507 14.6478 15.7507 14.25C15.7507 13.8522 15.5927 13.4706 15.3114 13.1893C15.0301 12.908 14.6486 12.75 14.2507 12.75M14.2507 15.75V16.875M14.2507 12.75V11.625M16.524 12.9375L15.5497 13.5M12.9525 15L11.9775 15.5625M11.9775 12.9375L12.9525 13.5M15.5497 15L16.5247 15.5625M9 5.25V9L10.5 10.5" stroke="#354052" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                                  </svg>
+                                                  Make you revised estimate</label>
+                                                  <input type="text" id="fullName" name="fullName" placeholder="Write estimate..." required="">
+                                                  </div>
+                                              </div>
+                                            </div>
+                                          </div>
+
+                                            </div>
+                                          </div>
+                                        </div>
+                                        </div>
+                                        </td>
+                                        </tr>
+
+                                        <!-- ======light-brown====== -->
+                                        <tr>
+                                            <th scope="row">
+                                              <div class="cdb-common">
+                                              <input class="checkbox-data" type="checkbox" name="statusCheckbox" value="option2">
+                                          </div>
+                                           
+                                            </th>
+                                            <td>
+                                              <div class="cdb-common">
+                                              <div class="sr-no">
+                                                  <h5>2</h5>
+                                              </div>
+                                              </div>
+                                          </td>
+                                            <td>
+                                              <div class="cdb-common">
+                                              <div class="project-task tracker-task">
+                                                <h5>Category page DEVELOPMENT </h5>
+                                               
+                                              </div>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div class="cdb-common">
+                                                  <div class="project-task-status pts-brown">
+                                                      <h4>Waiting for approval</h4>
+                                                      <p>Task <span>| Created by PM</span></p>
+                                                    </div>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div class="cdb-common">
+                                              <div class="clockify-pm-img">
+                                              <img src="./images/vivek.svg" alt="">
+                                            </div>
+                                            </div>
+                                            </td>
+                                            
+                                            <td>
+                                              <div class="cdb-common">
+                                              <div class="tracker-estimation">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                      <path d="M8 16C3.58172 16 0 12.4182 0 8C0 3.58172 3.58172 0 8 0C12.4182 0 16 3.58172 16 8C16 12.4182 12.4182 16 8 16ZM8 14.4C11.5346 14.4 14.4 11.5346 14.4 8C14.4 4.46538 11.5346 1.6 8 1.6C4.46538 1.6 1.6 4.46538 1.6 8C1.6 11.5346 4.46538 14.4 8 14.4ZM8.8 8H12V9.6H7.2V4H8.8V8Z" fill="black"/>
+                                                    </svg>
+                                                    <p>10 Hrs <span></span></p>
+                                              </div>
+                                            </div>
+                                          </td>
+                                               
+                                              <td>
+                                                  <div class="cdb-common">
+                                                  <div class="tracker-time-taken ttt-disable">
+                                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                          <path d="M8 16C3.58172 16 0 12.4182 0 8C0 3.58172 3.58172 0 8 0C12.4182 0 16 3.58172 16 8C16 12.4182 12.4182 16 8 16ZM8 14.4C11.5346 14.4 14.4 11.5346 14.4 8C14.4 4.46538 11.5346 1.6 8 1.6C4.46538 1.6 1.6 4.46538 1.6 8C1.6 11.5346 4.46538 14.4 8 14.4ZM8.8 8H12V9.6H7.2V4H8.8V8Z" fill="black"/>
+                                                        </svg>
+                                                        <p>0 Hrs</p>
+                                                  </div>
+                                                </div>
+                                              </td>
+                                              <td>
+                                                <div class="cdb-common">
+                                                <div class="clockify-duedate cdd-disable">
+                                               <p>
+                                                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
+                                                      <path d="M11.6667 1V4.55556M4.55556 1V4.55556M1 8.11111H15.2222M1 4.55556C1 4.08406 1.1873 3.63187 1.5207 3.29848C1.8541 2.96508 2.30628 2.77778 2.77778 2.77778H13.4444C13.9159 2.77778 14.3681 2.96508 14.7015 3.29848C15.0349 3.63187 15.2222 4.08406 15.2222 4.55556V15.2222C15.2222 15.6937 15.0349 16.1459 14.7015 16.4793C14.3681 16.8127 13.9159 17 13.4444 17H2.77778C2.30628 17 1.8541 16.8127 1.5207 16.4793C1.1873 16.1459 1 15.6937 1 15.2222V4.55556ZM4.55556 11.6667H6.33333V13.4444H4.55556V11.6667Z" stroke="black" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                    05/02/2024</p>
+                                              </div>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div class="cdb-common">
+                                              <div class="clockify-action">
+                                                <div class="cpsd">
+                                                  <div class="clockify-pm-setting clockify-action">
+                                                    <button type="button" class="catn-btn"> <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
+                                                      <path d="M12.9 9.55885L12.5 8.86603L12.9 9.55885C14.1 8.86603 14.1 7.13398 12.9 6.44115L3.9 1.245C2.7 0.552182 1.2 1.4182 1.2 2.80385L1.2 13.1962C1.2 14.5818 2.7 15.4478 3.9 14.755L12.9 9.55885Z" stroke="#2F64C9" stroke-width="1.6"/>
+                                                    </svg></button>
+                                                   
+                                                  </div>
+                                                  <div class="clockify-pm-delete clockify-pdot">
+                                                    <button type="button" class="cpdot-btn" onclick="toggleDropdown('dropdown2')"> <svg xmlns="http://www.w3.org/2000/svg" width="4" height="18" viewBox="0 0 4 18" fill="none">
+                                                      <path d="M1 9C1 9.26522 1.10536 9.51957 1.29289 9.70711C1.48043 9.89464 1.73478 10 2 10C2.26522 10 2.51957 9.89464 2.70711 9.70711C2.89464 9.51957 3 9.26522 3 9C3 8.73478 2.89464 8.48043 2.70711 8.29289C2.51957 8.10536 2.26522 8 2 8C1.73478 8 1.48043 8.10536 1.29289 8.29289C1.10536 8.48043 1 8.73478 1 9Z" stroke="#2F64C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                      <path d="M1 16C1 16.2652 1.10536 16.5196 1.29289 16.7071C1.48043 16.8946 1.73478 17 2 17C2.26522 17 2.51957 16.8946 2.70711 16.7071C2.89464 16.5196 3 16.2652 3 16C3 15.7348 2.89464 15.4804 2.70711 15.2929C2.51957 15.1054 2.26522 15 2 15C1.73478 15 1.48043 15.1054 1.29289 15.2929C1.10536 15.4804 1 15.7348 1 16Z" stroke="#2F64C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                      <path d="M1 2C1 2.26522 1.10536 2.51957 1.29289 2.70711C1.48043 2.89464 1.73478 3 2 3C2.26522 3 2.51957 2.89464 2.70711 2.70711C2.89464 2.51957 3 2.26522 3 2C3 1.73478 2.89464 1.48043 2.70711 1.29289C2.51957 1.10536 2.26522 1 2 1C1.73478 1 1.48043 1.10536 1.29289 1.29289C1.10536 1.48043 1 1.73478 1 2Z" stroke="#2F64C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg></button>
+                                                   
+                                                    <!-- Dropdown content -->
+                                                  <div class="dropdown-content-pdot" id="dropdown2">
+                                                    <div class="cpdot-approved">
+                                                      <p><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                        <path d="M3.75 9L7.5 12.75L15 5.25" stroke="#14804A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                                      </svg> Approved</p>
+                                                    </div>
+                                                    <div class="cpdot-not-approved">
+                                                      <p><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                        <path d="M5.28751 5.28769L12.7121 12.7123M5.28751 12.7123L12.7121 5.28769" stroke="#D1293D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                                      </svg>Not Approved</p>
+                                                    </div>
+                                                    <div class="cpdot-revised">
+                                                      <div class="touch-form-rn">
+                                                        <label for="fullName" class="required"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                          <path d="M15.75 9C15.75 7.66504 15.3542 6.36006 14.6125 5.25006C13.8709 4.14006 12.8168 3.2749 11.5835 2.76396C10.3501 2.25302 8.99303 2.11926 7.68369 2.37959C6.37436 2.63992 5.17163 3.28265 4.22756 4.2265C3.2835 5.17036 2.6405 6.37295 2.37989 7.68222C2.11927 8.9915 2.25272 10.3486 2.76339 11.5821C3.27405 12.8155 4.13898 13.8698 5.24881 14.6117C6.35865 15.3536 7.66354 15.7497 8.9985 15.75M14.2507 15.75C13.8529 15.75 13.4714 15.592 13.1901 15.3107C12.9088 15.0294 12.7507 14.6478 12.7507 14.25C12.7507 13.8522 12.9088 13.4706 13.1901 13.1893C13.4714 12.908 13.8529 12.75 14.2507 12.75M14.2507 15.75C14.6486 15.75 15.0301 15.592 15.3114 15.3107C15.5927 15.0294 15.7507 14.6478 15.7507 14.25C15.7507 13.8522 15.5927 13.4706 15.3114 13.1893C15.0301 12.908 14.6486 12.75 14.2507 12.75M14.2507 15.75V16.875M14.2507 12.75V11.625M16.524 12.9375L15.5497 13.5M12.9525 15L11.9775 15.5625M11.9775 12.9375L12.9525 13.5M15.5497 15L16.5247 15.5625M9 5.25V9L10.5 10.5" stroke="#354052" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                        Make you revised estimate</label>
+                                                        <input type="text" id="fullName" name="fullName" placeholder="Write estimate..." required="">
+                                                        </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+      
+                                                  </div>
+                                              </div>
+                                              </div>
+                                              </td>
+                                              </tr>
+  
+                                        <!-- ======light-brown====== -->
+                                        <tr>
+                                            <th scope="row">
+                                              <div class="cdb-common">
+                                              <input class="checkbox-data" type="checkbox" name="statusCheckbox" value="option2">
+                                          </div>
+                                           
+                                            </th>
+                                            <td>
+                                              <div class="cdb-common">
+                                              <div class="sr-no">
+                                                  <h5>3</h5>
+                                              </div>
+                                              </div>
+                                          </td>
+                                            <td>
+                                              <div class="cdb-common">
+                                              <div class="project-task tracker-task">
+                                                <h5>Products page DESIGN </h5>
+                                               
+                                              </div>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div class="cdb-common">
+                                                  <div class="project-task-status pts-brown">
+                                                      <h4>Waiting for approval</h4>
+                                                      <p>Task <span>| Created by Gaurav</span></p>
+                                                    </div>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div class="cdb-common">
+                                              <div class="clockify-pm-img">
+                                              <img src="./images/vivek.svg" alt="">
+                                            </div>
+                                            </div>
+                                            </td>
+                                            
+                                            <td>
+                                              <div class="cdb-common">
+                                              <div class="tracker-estimation">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                      <path d="M8 16C3.58172 16 0 12.4182 0 8C0 3.58172 3.58172 0 8 0C12.4182 0 16 3.58172 16 8C16 12.4182 12.4182 16 8 16ZM8 14.4C11.5346 14.4 14.4 11.5346 14.4 8C14.4 4.46538 11.5346 1.6 8 1.6C4.46538 1.6 1.6 4.46538 1.6 8C1.6 11.5346 4.46538 14.4 8 14.4ZM8.8 8H12V9.6H7.2V4H8.8V8Z" fill="black"/>
+                                                    </svg>
+                                                    <p>5 Hrs <span></span></p>
+                                              </div>
+                                            </div>
+                                          </td>
+                                               
+                                              <td>
+                                                  <div class="cdb-common">
+                                                  <div class="tracker-time-taken ttt-disable">
+                                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                          <path d="M8 16C3.58172 16 0 12.4182 0 8C0 3.58172 3.58172 0 8 0C12.4182 0 16 3.58172 16 8C16 12.4182 12.4182 16 8 16ZM8 14.4C11.5346 14.4 14.4 11.5346 14.4 8C14.4 4.46538 11.5346 1.6 8 1.6C4.46538 1.6 1.6 4.46538 1.6 8C1.6 11.5346 4.46538 14.4 8 14.4ZM8.8 8H12V9.6H7.2V4H8.8V8Z" fill="black"/>
+                                                        </svg>
+                                                        <p>0 Hrs</p>
+                                                  </div>
+                                                </div>
+                                              </td>
+                                              <td>
+                                                <div class="cdb-common">
+                                                <div class="clockify-duedate cdd-disable">
+                                               <p>
+                                                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
+                                                      <path d="M11.6667 1V4.55556M4.55556 1V4.55556M1 8.11111H15.2222M1 4.55556C1 4.08406 1.1873 3.63187 1.5207 3.29848C1.8541 2.96508 2.30628 2.77778 2.77778 2.77778H13.4444C13.9159 2.77778 14.3681 2.96508 14.7015 3.29848C15.0349 3.63187 15.2222 4.08406 15.2222 4.55556V15.2222C15.2222 15.6937 15.0349 16.1459 14.7015 16.4793C14.3681 16.8127 13.9159 17 13.4444 17H2.77778C2.30628 17 1.8541 16.8127 1.5207 16.4793C1.1873 16.1459 1 15.6937 1 15.2222V4.55556ZM4.55556 11.6667H6.33333V13.4444H4.55556V11.6667Z" stroke="black" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                    05/02/2024</p>
+                                              </div>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div class="cdb-common">
+                                              <div class="clockify-action">
+                                                <div class="cpsd">
+                                                  <div class="clockify-pm-setting clockify-action">
+                                                    <button type="button" class="catn-btn"> <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
+                                                      <path d="M12.9 9.55885L12.5 8.86603L12.9 9.55885C14.1 8.86603 14.1 7.13398 12.9 6.44115L3.9 1.245C2.7 0.552182 1.2 1.4182 1.2 2.80385L1.2 13.1962C1.2 14.5818 2.7 15.4478 3.9 14.755L12.9 9.55885Z" stroke="#2F64C9" stroke-width="1.6"/>
+                                                    </svg></button>
+                                                   
+                                                  </div>
+                                                  <div class="clockify-pm-delete clockify-pdot">
+                                                    <button type="button" class="cpdot-btn" onclick="toggleDropdown('dropdown3')"> <svg xmlns="http://www.w3.org/2000/svg" width="4" height="18" viewBox="0 0 4 18" fill="none">
+                                                      <path d="M1 9C1 9.26522 1.10536 9.51957 1.29289 9.70711C1.48043 9.89464 1.73478 10 2 10C2.26522 10 2.51957 9.89464 2.70711 9.70711C2.89464 9.51957 3 9.26522 3 9C3 8.73478 2.89464 8.48043 2.70711 8.29289C2.51957 8.10536 2.26522 8 2 8C1.73478 8 1.48043 8.10536 1.29289 8.29289C1.10536 8.48043 1 8.73478 1 9Z" stroke="#2F64C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                      <path d="M1 16C1 16.2652 1.10536 16.5196 1.29289 16.7071C1.48043 16.8946 1.73478 17 2 17C2.26522 17 2.51957 16.8946 2.70711 16.7071C2.89464 16.5196 3 16.2652 3 16C3 15.7348 2.89464 15.4804 2.70711 15.2929C2.51957 15.1054 2.26522 15 2 15C1.73478 15 1.48043 15.1054 1.29289 15.2929C1.10536 15.4804 1 15.7348 1 16Z" stroke="#2F64C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                      <path d="M1 2C1 2.26522 1.10536 2.51957 1.29289 2.70711C1.48043 2.89464 1.73478 3 2 3C2.26522 3 2.51957 2.89464 2.70711 2.70711C2.89464 2.51957 3 2.26522 3 2C3 1.73478 2.89464 1.48043 2.70711 1.29289C2.51957 1.10536 2.26522 1 2 1C1.73478 1 1.48043 1.10536 1.29289 1.29289C1.10536 1.48043 1 1.73478 1 2Z" stroke="#2F64C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg></button>
+                                                   
+                                                    <!-- Dropdown content -->
+                                                  <div class="dropdown-content-pdot" id="dropdown3">
+                                                    <div class="cpdot-approved">
+                                                      <p><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                        <path d="M3.75 9L7.5 12.75L15 5.25" stroke="#14804A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                                      </svg> Approved</p>
+                                                    </div>
+                                                    <div class="cpdot-not-approved">
+                                                      <p><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                        <path d="M5.28751 5.28769L12.7121 12.7123M5.28751 12.7123L12.7121 5.28769" stroke="#D1293D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                                      </svg>Not Approved</p>
+                                                    </div>
+                                                    <div class="cpdot-revised">
+                                                      <div class="touch-form-rn">
+                                                        <label for="fullName" class="required"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                          <path d="M15.75 9C15.75 7.66504 15.3542 6.36006 14.6125 5.25006C13.8709 4.14006 12.8168 3.2749 11.5835 2.76396C10.3501 2.25302 8.99303 2.11926 7.68369 2.37959C6.37436 2.63992 5.17163 3.28265 4.22756 4.2265C3.2835 5.17036 2.6405 6.37295 2.37989 7.68222C2.11927 8.9915 2.25272 10.3486 2.76339 11.5821C3.27405 12.8155 4.13898 13.8698 5.24881 14.6117C6.35865 15.3536 7.66354 15.7497 8.9985 15.75M14.2507 15.75C13.8529 15.75 13.4714 15.592 13.1901 15.3107C12.9088 15.0294 12.7507 14.6478 12.7507 14.25C12.7507 13.8522 12.9088 13.4706 13.1901 13.1893C13.4714 12.908 13.8529 12.75 14.2507 12.75M14.2507 15.75C14.6486 15.75 15.0301 15.592 15.3114 15.3107C15.5927 15.0294 15.7507 14.6478 15.7507 14.25C15.7507 13.8522 15.5927 13.4706 15.3114 13.1893C15.0301 12.908 14.6486 12.75 14.2507 12.75M14.2507 15.75V16.875M14.2507 12.75V11.625M16.524 12.9375L15.5497 13.5M12.9525 15L11.9775 15.5625M11.9775 12.9375L12.9525 13.5M15.5497 15L16.5247 15.5625M9 5.25V9L10.5 10.5" stroke="#354052" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                        Make you revised estimate</label>
+                                                        <input type="text" id="fullName" name="fullName" placeholder="Write estimate..." required="">
+                                                        </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+      
+                                                  </div>
+                                              </div>
+                                              </div>
+                                              </td>
+                                              </tr>
+                               
+                                 <!-- ======blue====== -->
+                                 <tr>
+                                    <th scope="row">
+                                      <div class="cdb-common">
+                                      <input class="checkbox-data" type="checkbox" name="statusCheckbox" value="option2">
+                                  </div>
+                                   
+                                    </th>
+                                    <td>
+                                      <div class="cdb-common">
+                                      <div class="sr-no">
+                                          <h5>4</h5>
+                                      </div>
+                                      </div>
+                                  </td>
+                                    <td>
+                                      <div class="cdb-common">
+                                      <div class="project-task tracker-task">
+                                        <h5>Products page DEVELOPMENT </h5>
+                                       
+                                      </div>
+                                      </div>
+                                    </td>
+                                    <td>
+                                      <div class="cdb-common">
+                                          <div class="project-task-status pts-blue">
+                                              <h4>Waiting for approval</h4>
+                                              <p>Marked <span>| Completed by Gaurav</span></p>
+                                            </div>
+                                      </div>
+                                    </td>
+                                    <td>
+                                      <div class="cdb-common">
+                                      <div class="clockify-pm-img">
+                                      <img src="./images/vivek.svg" alt="">
+                                    </div>
+                                    </div>
+                                    </td>
+                                    
+                                    <td>
+                                      <div class="cdb-common">
+                                      <div class="tracker-estimation">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                              <path d="M8 16C3.58172 16 0 12.4182 0 8C0 3.58172 3.58172 0 8 0C12.4182 0 16 3.58172 16 8C16 12.4182 12.4182 16 8 16ZM8 14.4C11.5346 14.4 14.4 11.5346 14.4 8C14.4 4.46538 11.5346 1.6 8 1.6C4.46538 1.6 1.6 4.46538 1.6 8C1.6 11.5346 4.46538 14.4 8 14.4ZM8.8 8H12V9.6H7.2V4H8.8V8Z" fill="black"/>
+                                            </svg>
+                                            <p>5 Hrs <span></span></p>
+                                      </div>
+                                    </div>
+                                  </td>
+                                       
+                                      <td>
+                                          <div class="cdb-common">
+                                          <div class="tracker-time-taken">
+                                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                  <path d="M8 16C3.58172 16 0 12.4182 0 8C0 3.58172 3.58172 0 8 0C12.4182 0 16 3.58172 16 8C16 12.4182 12.4182 16 8 16ZM8 14.4C11.5346 14.4 14.4 11.5346 14.4 8C14.4 4.46538 11.5346 1.6 8 1.6C4.46538 1.6 1.6 4.46538 1.6 8C1.6 11.5346 4.46538 14.4 8 14.4ZM8.8 8H12V9.6H7.2V4H8.8V8Z" fill="black"/>
+                                                </svg>
+                                                <p>8 Hrs</p>
+                                          </div>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="cdb-common">
+                                        <div class="clockify-duedate">
+                                       <p>
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
+                                              <path d="M11.6667 1V4.55556M4.55556 1V4.55556M1 8.11111H15.2222M1 4.55556C1 4.08406 1.1873 3.63187 1.5207 3.29848C1.8541 2.96508 2.30628 2.77778 2.77778 2.77778H13.4444C13.9159 2.77778 14.3681 2.96508 14.7015 3.29848C15.0349 3.63187 15.2222 4.08406 15.2222 4.55556V15.2222C15.2222 15.6937 15.0349 16.1459 14.7015 16.4793C14.3681 16.8127 13.9159 17 13.4444 17H2.77778C2.30628 17 1.8541 16.8127 1.5207 16.4793C1.1873 16.1459 1 15.6937 1 15.2222V4.55556ZM4.55556 11.6667H6.33333V13.4444H4.55556V11.6667Z" stroke="black" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            05/02/2024</p>
+                                      </div>
+                                      </div>
+                                    </td>
+                                    <td>
+                                      <div class="cdb-common">
+                                      <div class="clockify-action">
+                                        <div class="cpsd">
+                                          <div class="clockify-pm-setting clockify-action">
+                                            <button type="button" class="catn-btn"> <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
+                                              <path d="M12.9 9.55885L12.5 8.86603L12.9 9.55885C14.1 8.86603 14.1 7.13398 12.9 6.44115L3.9 1.245C2.7 0.552182 1.2 1.4182 1.2 2.80385L1.2 13.1962C1.2 14.5818 2.7 15.4478 3.9 14.755L12.9 9.55885Z" stroke="#2F64C9" stroke-width="1.6"/>
+                                            </svg></button>
+                                           
+                                          </div>
+                                          <div class="clockify-pm-delete clockify-pdot">
+                                            <button type="button" class="cpdot-btn" onclick="toggleDropdown('dropdown4')"> <svg xmlns="http://www.w3.org/2000/svg" width="4" height="18" viewBox="0 0 4 18" fill="none">
+                                              <path d="M1 9C1 9.26522 1.10536 9.51957 1.29289 9.70711C1.48043 9.89464 1.73478 10 2 10C2.26522 10 2.51957 9.89464 2.70711 9.70711C2.89464 9.51957 3 9.26522 3 9C3 8.73478 2.89464 8.48043 2.70711 8.29289C2.51957 8.10536 2.26522 8 2 8C1.73478 8 1.48043 8.10536 1.29289 8.29289C1.10536 8.48043 1 8.73478 1 9Z" stroke="#2F64C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                              <path d="M1 16C1 16.2652 1.10536 16.5196 1.29289 16.7071C1.48043 16.8946 1.73478 17 2 17C2.26522 17 2.51957 16.8946 2.70711 16.7071C2.89464 16.5196 3 16.2652 3 16C3 15.7348 2.89464 15.4804 2.70711 15.2929C2.51957 15.1054 2.26522 15 2 15C1.73478 15 1.48043 15.1054 1.29289 15.2929C1.10536 15.4804 1 15.7348 1 16Z" stroke="#2F64C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                              <path d="M1 2C1 2.26522 1.10536 2.51957 1.29289 2.70711C1.48043 2.89464 1.73478 3 2 3C2.26522 3 2.51957 2.89464 2.70711 2.70711C2.89464 2.51957 3 2.26522 3 2C3 1.73478 2.89464 1.48043 2.70711 1.29289C2.51957 1.10536 2.26522 1 2 1C1.73478 1 1.48043 1.10536 1.29289 1.29289C1.10536 1.48043 1 1.73478 1 2Z" stroke="#2F64C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg></button>
+                                           
+                                            <!-- Dropdown content -->
+                                          <div class="dropdown-content-pdot" id="dropdown4">
+                                            <div class="cpdot-approved">
+                                              <p><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                <path d="M5.25 9L9 12.75L16.5 5.25M1.5 9L5.25 12.75M9 9L12.75 5.25" stroke="#14804A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                              </svg> Mark as completed</p>
+                                            </div>
+                                            <div class="cpdot-not-approved cpdot-na-completed">
+                                              <p><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                <path d="M8.99963 13.3125L4.37063 15.7462L5.25488 10.5915L1.50488 6.94122L6.67988 6.19122L8.99438 1.50146L11.3089 6.19122L16.4839 6.94122L12.7339 10.5915L13.6181 15.7462L8.99963 13.3125Z" stroke="#DB812F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                              </svg>Give ratings</p>
+                                            </div>
+                                            <div class="cpdot-revised">
+                                              <div class="touch-form-rn">
+                                                <label for="fullName" class="required"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                  <path d="M15.75 9C15.75 7.66504 15.3542 6.36006 14.6125 5.25006C13.8709 4.14006 12.8168 3.2749 11.5835 2.76396C10.3501 2.25302 8.99303 2.11926 7.68369 2.37959C6.37436 2.63992 5.17163 3.28265 4.22756 4.2265C3.2835 5.17036 2.6405 6.37295 2.37989 7.68222C2.11927 8.9915 2.25272 10.3486 2.76339 11.5821C3.27405 12.8155 4.13898 13.8698 5.24881 14.6117C6.35865 15.3536 7.66354 15.7497 8.9985 15.75M14.2507 15.75C13.8529 15.75 13.4714 15.592 13.1901 15.3107C12.9088 15.0294 12.7507 14.6478 12.7507 14.25C12.7507 13.8522 12.9088 13.4706 13.1901 13.1893C13.4714 12.908 13.8529 12.75 14.2507 12.75M14.2507 15.75C14.6486 15.75 15.0301 15.592 15.3114 15.3107C15.5927 15.0294 15.7507 14.6478 15.7507 14.25C15.7507 13.8522 15.5927 13.4706 15.3114 13.1893C15.0301 12.908 14.6486 12.75 14.2507 12.75M14.2507 15.75V16.875M14.2507 12.75V11.625M16.524 12.9375L15.5497 13.5M12.9525 15L11.9775 15.5625M11.9775 12.9375L12.9525 13.5M15.5497 15L16.5247 15.5625M9 5.25V9L10.5 10.5" stroke="#354052" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                Make you revised estimate</label>
+                                                <input type="text" id="fullName" name="fullName" placeholder="Write estimate..." required="">
+                                                </div>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                          </div>
+                                      </div>
+                                      </div>
+                                      </td>
+                                      </tr>    
+                                    
+                                  </tbody>
+                                </table>
+                              </div>
+
+                                <!-- ============clockify project list approved========= -->
+                                <div class="clockify-list">
+                                    <div class="cpl-number pending-Approved-Tasks">
+                                        <h2>Approved Tasks</h2>
+                                        <p>6</p>
+                                    </div>
+    
+                                    <div class="cpl-dropdown-bg">
+                                    <div class="cpl-dropdown">
+                                        <ul>
+                                            <li class="status-dropdown"  id="dropdownContent1">
+                                              <img class="status-image" src="./images/dot.svg" alt="">
+                                              Task Status
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8" fill="none">
+                                                  <path d="M1 1L7 7L13 0.999999" stroke="#296DCB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <div class="dropdown-content dc-tracker">
+                                                  <label>
+                                                    <input type="checkbox" name="statusCheckbox" value="option1" onchange="updateStatusImage('dropdownContent1')"> On track
+                                                  </label>
+                                                  <label>
+                                                    <input type="checkbox" name="statusCheckbox" value="option2" onchange="updateStatusImage('dropdownContent1')"> Overdue
+                                                  </label>
+                                                  <label>
+                                                    <input type="checkbox" name="statusCheckbox" value="option3" onchange="updateStatusImage('dropdownContent1')"> Completed
+                                                  </label>
+                                                </div>
+                                              </li>
+                                              <li class="status-dropdown"  id="dropdownContent2">
+                                                <img class="status-image" src="./images/dot.svg" alt="">
+                                                Resource
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8" fill="none">
+                                                    <path d="M1 1L7 7L13 0.999999" stroke="#296DCB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                  </svg>
+                                                  <div class="dropdown-content dc-tracker">
+                                                    <label>
+                                                      <input type="checkbox" name="statusCheckbox" value="option1" onchange="updateStatusImage('dropdownContent2')"> Show them as it is
+                                                    </label>
+                                                    <label>
+                                                      <input type="checkbox" name="statusCheckbox" value="option2" onchange="updateStatusImage('dropdownContent2')"> Show them first
+                                                    </label>
+                                                    <label>
+                                                      <input type="checkbox" name="statusCheckbox" value="option3" onchange="updateStatusImage('dropdownContent2')"> Don’t show them
+                                                    </label>
+                                                  </div>
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+                              
+    
+                            </div>
+                                </div>
+
+                              <!-- ==========clockify approved task========= -->
+
+                              <div class="clockify-data-bg">
+                                <table class="table">
+                                  <thead>
+                                    <tr>
+                                      <th scope="col"><input class="unique-checkbox-data" type="checkbox" name="statusCheckbox" value="option1"></th>
+                                      <th scope="col">S. No.</th>
+                                      <th scope="col">task Name</th>
+                                      <th scope="col">Task Status</th>
+                                      <th scope="col">resource</th>
+                                      <th scope="col">estimation</th>
+                                      <th scope="col">time taken</th>
+                                      <th scope="col">due date</th>
+                                      <th scope="col">action</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+
+                                    <!-- ==========red-track=========== -->
+                                    <tr>
+                                      <th scope="row">
+                                        <div class="cdb-common">
+                                        <input class="checkbox-data" type="checkbox" name="statusCheckbox" value="option2">
+                                    </div>
+                                     
+                                      </th>
+                                      <td>
+                                        <div class="cdb-common">
+                                        <div class="sr-no">
+                                            <h5>1</h5>
+                                        </div>
+                                        </div>
+                                    </td>
+                                      <td>
+                                        <div class="cdb-common">
+                                        <div class="project-task tracker-task">
+                                          <h5>Homepage DESIGN</h5>
+                                         
+                                        </div>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="cdb-common">
+                                            <div class="clockify-pm-status-red">
+                                              <p>Overdue by <span>(05:16:56)</span></p>
+                                            </div>
+                                            </div>
+                                      </td>
+                                      <td>
+                                        <div class="cdb-common">
+                                        <div class="clockify-pm-img">
+                                        <img src="./images/vivek.svg" alt="">
+                                      </div>
+                                      </div>
+                                      </td>
+                                      
+                                      <td>
+                                        <div class="cdb-common">
+                                        <div class="tracker-estimation">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M8 16C3.58172 16 0 12.4182 0 8C0 3.58172 3.58172 0 8 0C12.4182 0 16 3.58172 16 8C16 12.4182 12.4182 16 8 16ZM8 14.4C11.5346 14.4 14.4 11.5346 14.4 8C14.4 4.46538 11.5346 1.6 8 1.6C4.46538 1.6 1.6 4.46538 1.6 8C1.6 11.5346 4.46538 14.4 8 14.4ZM8.8 8H12V9.6H7.2V4H8.8V8Z" fill="black"/>
+                                              </svg>
+                                              <p>10 Hrs <span></span></p>
+                                        </div>
+                                      </div>
+                                    </td>
+                                         
+                                        <td>
+                                            <div class="cdb-common">
+                                            <div class="tracker-time-taken ttt-red">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <path d="M8 16C3.58172 16 0 12.4182 0 8C0 3.58172 3.58172 0 8 0C12.4182 0 16 3.58172 16 8C16 12.4182 12.4182 16 8 16ZM8 14.4C11.5346 14.4 14.4 11.5346 14.4 8C14.4 4.46538 11.5346 1.6 8 1.6C4.46538 1.6 1.6 4.46538 1.6 8C1.6 11.5346 4.46538 14.4 8 14.4ZM8.8 8H12V9.6H7.2V4H8.8V8Z" fill="black"/>
+                                                  </svg>
+                                                  <p>15 Hrs</p>
+                                            </div>
+                                          </div>
+                                        </td>
+                                        <td>
+                                          <div class="cdb-common">
+                                          <div class="clockify-duedate">
+                                         <p>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
+                                                <path d="M11.6667 1V4.55556M4.55556 1V4.55556M1 8.11111H15.2222M1 4.55556C1 4.08406 1.1873 3.63187 1.5207 3.29848C1.8541 2.96508 2.30628 2.77778 2.77778 2.77778H13.4444C13.9159 2.77778 14.3681 2.96508 14.7015 3.29848C15.0349 3.63187 15.2222 4.08406 15.2222 4.55556V15.2222C15.2222 15.6937 15.0349 16.1459 14.7015 16.4793C14.3681 16.8127 13.9159 17 13.4444 17H2.77778C2.30628 17 1.8541 16.8127 1.5207 16.4793C1.1873 16.1459 1 15.6937 1 15.2222V4.55556ZM4.55556 11.6667H6.33333V13.4444H4.55556V11.6667Z" stroke="black" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                              </svg>
+                                              05/02/2024</p>
+                                        </div>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="cdb-common">
+                                        <div class="clockify-action">
+                                          <div class="cpsd">
+                                            <div class="clockify-pm-setting clockify-action">
+                                              <button type="button" class=""> <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
+                                                <path d="M12.9 9.55885L12.5 8.86603L12.9 9.55885C14.1 8.86603 14.1 7.13398 12.9 6.44115L3.9 1.245C2.7 0.552182 1.2 1.4182 1.2 2.80385L1.2 13.1962C1.2 14.5818 2.7 15.4478 3.9 14.755L12.9 9.55885Z" stroke="#2F64C9" stroke-width="1.6"/>
+                                              </svg></button>
+                                             
+                                            </div>
+                                            <div class="clockify-pm-delete clockify-pdot">
+                                              <button type="button" class=""> <svg xmlns="http://www.w3.org/2000/svg" width="4" height="18" viewBox="0 0 4 18" fill="none">
+                                                <path d="M1 9C1 9.26522 1.10536 9.51957 1.29289 9.70711C1.48043 9.89464 1.73478 10 2 10C2.26522 10 2.51957 9.89464 2.70711 9.70711C2.89464 9.51957 3 9.26522 3 9C3 8.73478 2.89464 8.48043 2.70711 8.29289C2.51957 8.10536 2.26522 8 2 8C1.73478 8 1.48043 8.10536 1.29289 8.29289C1.10536 8.48043 1 8.73478 1 9Z" stroke="#2F64C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M1 16C1 16.2652 1.10536 16.5196 1.29289 16.7071C1.48043 16.8946 1.73478 17 2 17C2.26522 17 2.51957 16.8946 2.70711 16.7071C2.89464 16.5196 3 16.2652 3 16C3 15.7348 2.89464 15.4804 2.70711 15.2929C2.51957 15.1054 2.26522 15 2 15C1.73478 15 1.48043 15.1054 1.29289 15.2929C1.10536 15.4804 1 15.7348 1 16Z" stroke="#2F64C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M1 2C1 2.26522 1.10536 2.51957 1.29289 2.70711C1.48043 2.89464 1.73478 3 2 3C2.26522 3 2.51957 2.89464 2.70711 2.70711C2.89464 2.51957 3 2.26522 3 2C3 1.73478 2.89464 1.48043 2.70711 1.29289C2.51957 1.10536 2.26522 1 2 1C1.73478 1 1.48043 1.10536 1.29289 1.29289C1.10536 1.48043 1 1.73478 1 2Z" stroke="#2F64C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                              </svg></button>
+                                             
+                                            </div>
+                                          </div>
+                                        </div>
+                                        </div>
+                                        </td>
+                                        </tr>
+
+                                        <!-- ======green-on-track====== -->
+                                        <tr>
+                                            <th scope="row">
+                                              <div class="cdb-common">
+                                              <input class="checkbox-data" type="checkbox" name="statusCheckbox" value="option2">
+                                          </div>
+                                           
+                                            </th>
+                                            <td>
+                                              <div class="cdb-common">
+                                              <div class="sr-no">
+                                                  <h5>2</h5>
+                                              </div>
+                                              </div>
+                                          </td>
+                                            <td>
+                                              <div class="cdb-common">
+                                              <div class="project-task tracker-task">
+                                                <h5>Homepage DEVELOPMENT</h5>
+                                               
+                                              </div>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div class="cdb-common">
+                                                  <div class="clockify-pm-status">
+                                                    <p>On track <span></span></p>
+                                                  </div>
+                                                  </div>
+                                            </td>
+                                            <td>
+                                              <div class="cdb-common">
+                                              <div class="clockify-pm-img">
+                                              <img src="./images/vivek.svg" alt="">
+                                            </div>
+                                            </div>
+                                            </td>
+                                            
+                                            <td>
+                                              <div class="cdb-common">
+                                              <div class="tracker-estimation">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                      <path d="M8 16C3.58172 16 0 12.4182 0 8C0 3.58172 3.58172 0 8 0C12.4182 0 16 3.58172 16 8C16 12.4182 12.4182 16 8 16ZM8 14.4C11.5346 14.4 14.4 11.5346 14.4 8C14.4 4.46538 11.5346 1.6 8 1.6C4.46538 1.6 1.6 4.46538 1.6 8C1.6 11.5346 4.46538 14.4 8 14.4ZM8.8 8H12V9.6H7.2V4H8.8V8Z" fill="black"/>
+                                                    </svg>
+                                                    <p>10 Hrs <span></span></p>
+                                              </div>
+                                            </div>
+                                          </td>
+                                               
+                                              <td>
+                                                  <div class="cdb-common">
+                                                  <div class="tracker-time-taken">
+                                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                          <path d="M8 16C3.58172 16 0 12.4182 0 8C0 3.58172 3.58172 0 8 0C12.4182 0 16 3.58172 16 8C16 12.4182 12.4182 16 8 16ZM8 14.4C11.5346 14.4 14.4 11.5346 14.4 8C14.4 4.46538 11.5346 1.6 8 1.6C4.46538 1.6 1.6 4.46538 1.6 8C1.6 11.5346 4.46538 14.4 8 14.4ZM8.8 8H12V9.6H7.2V4H8.8V8Z" fill="black"/>
+                                                        </svg>
+                                                        <p>10 Hrs</p>
+                                                  </div>
+                                                </div>
+                                              </td>
+                                              <td>
+                                                <div class="cdb-common">
+                                                <div class="clockify-duedate">
+                                               <p>
+                                                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
+                                                      <path d="M11.6667 1V4.55556M4.55556 1V4.55556M1 8.11111H15.2222M1 4.55556C1 4.08406 1.1873 3.63187 1.5207 3.29848C1.8541 2.96508 2.30628 2.77778 2.77778 2.77778H13.4444C13.9159 2.77778 14.3681 2.96508 14.7015 3.29848C15.0349 3.63187 15.2222 4.08406 15.2222 4.55556V15.2222C15.2222 15.6937 15.0349 16.1459 14.7015 16.4793C14.3681 16.8127 13.9159 17 13.4444 17H2.77778C2.30628 17 1.8541 16.8127 1.5207 16.4793C1.1873 16.1459 1 15.6937 1 15.2222V4.55556ZM4.55556 11.6667H6.33333V13.4444H4.55556V11.6667Z" stroke="black" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                    05/02/2024</p>
+                                              </div>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div class="cdb-common">
+                                              <div class="clockify-action">
+                                                <div class="cpsd">
+                                                  <div class="clockify-pm-setting clockify-action">
+                                                    <button type="button" class=""> <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
+                                                      <path d="M12.9 9.55885L12.5 8.86603L12.9 9.55885C14.1 8.86603 14.1 7.13398 12.9 6.44115L3.9 1.245C2.7 0.552182 1.2 1.4182 1.2 2.80385L1.2 13.1962C1.2 14.5818 2.7 15.4478 3.9 14.755L12.9 9.55885Z" stroke="#2F64C9" stroke-width="1.6"/>
+                                                    </svg></button>
+                                                   
+                                                  </div>
+                                                  <div class="clockify-pm-delete clockify-pdot">
+                                                    <button type="button" class=""> <svg xmlns="http://www.w3.org/2000/svg" width="4" height="18" viewBox="0 0 4 18" fill="none">
+                                                      <path d="M1 9C1 9.26522 1.10536 9.51957 1.29289 9.70711C1.48043 9.89464 1.73478 10 2 10C2.26522 10 2.51957 9.89464 2.70711 9.70711C2.89464 9.51957 3 9.26522 3 9C3 8.73478 2.89464 8.48043 2.70711 8.29289C2.51957 8.10536 2.26522 8 2 8C1.73478 8 1.48043 8.10536 1.29289 8.29289C1.10536 8.48043 1 8.73478 1 9Z" stroke="#2F64C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                      <path d="M1 16C1 16.2652 1.10536 16.5196 1.29289 16.7071C1.48043 16.8946 1.73478 17 2 17C2.26522 17 2.51957 16.8946 2.70711 16.7071C2.89464 16.5196 3 16.2652 3 16C3 15.7348 2.89464 15.4804 2.70711 15.2929C2.51957 15.1054 2.26522 15 2 15C1.73478 15 1.48043 15.1054 1.29289 15.2929C1.10536 15.4804 1 15.7348 1 16Z" stroke="#2F64C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                      <path d="M1 2C1 2.26522 1.10536 2.51957 1.29289 2.70711C1.48043 2.89464 1.73478 3 2 3C2.26522 3 2.51957 2.89464 2.70711 2.70711C2.89464 2.51957 3 2.26522 3 2C3 1.73478 2.89464 1.48043 2.70711 1.29289C2.51957 1.10536 2.26522 1 2 1C1.73478 1 1.48043 1.10536 1.29289 1.29289C1.10536 1.48043 1 1.73478 1 2Z" stroke="#2F64C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg></button>
+                                                   
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              </div>
+                                              </td>
+                                              </tr>  
+  
+                                               <!-- ======green-on-track====== -->
+                                        <tr>
+                                            <th scope="row">
+                                              <div class="cdb-common">
+                                              <input class="checkbox-data" type="checkbox" name="statusCheckbox" value="option2">
+                                          </div>
+                                           
+                                            </th>
+                                            <td>
+                                              <div class="cdb-common">
+                                              <div class="sr-no">
+                                                  <h5>3</h5>
+                                              </div>
+                                              </div>
+                                          </td>
+                                            <td>
+                                              <div class="cdb-common">
+                                              <div class="project-task tracker-task">
+                                                <h5>About page DESIGN</h5>
+                                               
+                                              </div>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div class="cdb-common">
+                                                  <div class="clockify-pm-status">
+                                                    <p>On track <span></span></p>
+                                                  </div>
+                                                  </div>
+                                            </td>
+                                            <td>
+                                              <div class="cdb-common">
+                                              <div class="clockify-pm-img">
+                                              <img src="./images/vivek.svg" alt="">
+                                            </div>
+                                            </div>
+                                            </td>
+                                            
+                                            <td>
+                                              <div class="cdb-common">
+                                              <div class="tracker-estimation">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                      <path d="M8 16C3.58172 16 0 12.4182 0 8C0 3.58172 3.58172 0 8 0C12.4182 0 16 3.58172 16 8C16 12.4182 12.4182 16 8 16ZM8 14.4C11.5346 14.4 14.4 11.5346 14.4 8C14.4 4.46538 11.5346 1.6 8 1.6C4.46538 1.6 1.6 4.46538 1.6 8C1.6 11.5346 4.46538 14.4 8 14.4ZM8.8 8H12V9.6H7.2V4H8.8V8Z" fill="black"/>
+                                                    </svg>
+                                                    <p>10 Hrs <span></span></p>
+                                              </div>
+                                            </div>
+                                          </td>
+                                               
+                                              <td>
+                                                  <div class="cdb-common">
+                                                  <div class="tracker-time-taken">
+                                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                          <path d="M8 16C3.58172 16 0 12.4182 0 8C0 3.58172 3.58172 0 8 0C12.4182 0 16 3.58172 16 8C16 12.4182 12.4182 16 8 16ZM8 14.4C11.5346 14.4 14.4 11.5346 14.4 8C14.4 4.46538 11.5346 1.6 8 1.6C4.46538 1.6 1.6 4.46538 1.6 8C1.6 11.5346 4.46538 14.4 8 14.4ZM8.8 8H12V9.6H7.2V4H8.8V8Z" fill="black"/>
+                                                        </svg>
+                                                        <p>10 Hrs</p>
+                                                  </div>
+                                                </div>
+                                              </td>
+                                              <td>
+                                                <div class="cdb-common">
+                                                <div class="clockify-duedate">
+                                               <p>
+                                                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
+                                                      <path d="M11.6667 1V4.55556M4.55556 1V4.55556M1 8.11111H15.2222M1 4.55556C1 4.08406 1.1873 3.63187 1.5207 3.29848C1.8541 2.96508 2.30628 2.77778 2.77778 2.77778H13.4444C13.9159 2.77778 14.3681 2.96508 14.7015 3.29848C15.0349 3.63187 15.2222 4.08406 15.2222 4.55556V15.2222C15.2222 15.6937 15.0349 16.1459 14.7015 16.4793C14.3681 16.8127 13.9159 17 13.4444 17H2.77778C2.30628 17 1.8541 16.8127 1.5207 16.4793C1.1873 16.1459 1 15.6937 1 15.2222V4.55556ZM4.55556 11.6667H6.33333V13.4444H4.55556V11.6667Z" stroke="black" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                    05/02/2024</p>
+                                              </div>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div class="cdb-common">
+                                              <div class="clockify-action">
+                                                <div class="cpsd">
+                                                  <div class="clockify-pm-setting clockify-action">
+                                                    <button type="button" class=""> <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
+                                                      <path d="M12.9 9.55885L12.5 8.86603L12.9 9.55885C14.1 8.86603 14.1 7.13398 12.9 6.44115L3.9 1.245C2.7 0.552182 1.2 1.4182 1.2 2.80385L1.2 13.1962C1.2 14.5818 2.7 15.4478 3.9 14.755L12.9 9.55885Z" stroke="#2F64C9" stroke-width="1.6"/>
+                                                    </svg></button>
+                                                   
+                                                  </div>
+                                                  <div class="clockify-pm-delete clockify-pdot">
+                                                    <button type="button" class=""> <svg xmlns="http://www.w3.org/2000/svg" width="4" height="18" viewBox="0 0 4 18" fill="none">
+                                                      <path d="M1 9C1 9.26522 1.10536 9.51957 1.29289 9.70711C1.48043 9.89464 1.73478 10 2 10C2.26522 10 2.51957 9.89464 2.70711 9.70711C2.89464 9.51957 3 9.26522 3 9C3 8.73478 2.89464 8.48043 2.70711 8.29289C2.51957 8.10536 2.26522 8 2 8C1.73478 8 1.48043 8.10536 1.29289 8.29289C1.10536 8.48043 1 8.73478 1 9Z" stroke="#2F64C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                      <path d="M1 16C1 16.2652 1.10536 16.5196 1.29289 16.7071C1.48043 16.8946 1.73478 17 2 17C2.26522 17 2.51957 16.8946 2.70711 16.7071C2.89464 16.5196 3 16.2652 3 16C3 15.7348 2.89464 15.4804 2.70711 15.2929C2.51957 15.1054 2.26522 15 2 15C1.73478 15 1.48043 15.1054 1.29289 15.2929C1.10536 15.4804 1 15.7348 1 16Z" stroke="#2F64C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                      <path d="M1 2C1 2.26522 1.10536 2.51957 1.29289 2.70711C1.48043 2.89464 1.73478 3 2 3C2.26522 3 2.51957 2.89464 2.70711 2.70711C2.89464 2.51957 3 2.26522 3 2C3 1.73478 2.89464 1.48043 2.70711 1.29289C2.51957 1.10536 2.26522 1 2 1C1.73478 1 1.48043 1.10536 1.29289 1.29289C1.10536 1.48043 1 1.73478 1 2Z" stroke="#2F64C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg></button>
+                                                   
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              </div>
+                                              </td>
+                                              </tr> 
+                                   
+                                              <!-- ==========red-track=========== -->
+                                    <tr>
+                                        <th scope="row">
+                                          <div class="cdb-common">
+                                          <input class="checkbox-data" type="checkbox" name="statusCheckbox" value="option2">
+                                      </div>
+                                       
+                                        </th>
+                                        <td>
+                                          <div class="cdb-common">
+                                          <div class="sr-no">
+                                              <h5>4</h5>
+                                          </div>
+                                          </div>
+                                      </td>
+                                        <td>
+                                          <div class="cdb-common">
+                                          <div class="project-task tracker-task">
+                                            <h5>About page DEVELOPMENT</h5>
+                                           
+                                          </div>
+                                          </div>
+                                        </td>
+                                        <td>
+                                          <div class="cdb-common">
+                                              <div class="clockify-pm-status-red">
+                                                <p>Overdue by <span>(05:16:56)</span></p>
+                                              </div>
+                                              </div>
+                                        </td>
+                                        <td>
+                                          <div class="cdb-common">
+                                          <div class="clockify-pm-img">
+                                          <img src="./images/vivek.svg" alt="">
+                                        </div>
+                                        </div>
+                                        </td>
+                                        
+                                        <td>
+                                          <div class="cdb-common">
+                                          <div class="tracker-estimation">
+                                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                  <path d="M8 16C3.58172 16 0 12.4182 0 8C0 3.58172 3.58172 0 8 0C12.4182 0 16 3.58172 16 8C16 12.4182 12.4182 16 8 16ZM8 14.4C11.5346 14.4 14.4 11.5346 14.4 8C14.4 4.46538 11.5346 1.6 8 1.6C4.46538 1.6 1.6 4.46538 1.6 8C1.6 11.5346 4.46538 14.4 8 14.4ZM8.8 8H12V9.6H7.2V4H8.8V8Z" fill="black"/>
+                                                </svg>
+                                                <p>10 Hrs <span></span></p>
+                                          </div>
+                                        </div>
+                                      </td>
+                                           
+                                          <td>
+                                              <div class="cdb-common">
+                                              <div class="tracker-time-taken ttt-red">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                      <path d="M8 16C3.58172 16 0 12.4182 0 8C0 3.58172 3.58172 0 8 0C12.4182 0 16 3.58172 16 8C16 12.4182 12.4182 16 8 16ZM8 14.4C11.5346 14.4 14.4 11.5346 14.4 8C14.4 4.46538 11.5346 1.6 8 1.6C4.46538 1.6 1.6 4.46538 1.6 8C1.6 11.5346 4.46538 14.4 8 14.4ZM8.8 8H12V9.6H7.2V4H8.8V8Z" fill="black"/>
+                                                    </svg>
+                                                    <p>15 Hrs</p>
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="cdb-common">
+                                            <div class="clockify-duedate">
+                                           <p>
+                                              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
+                                                  <path d="M11.6667 1V4.55556M4.55556 1V4.55556M1 8.11111H15.2222M1 4.55556C1 4.08406 1.1873 3.63187 1.5207 3.29848C1.8541 2.96508 2.30628 2.77778 2.77778 2.77778H13.4444C13.9159 2.77778 14.3681 2.96508 14.7015 3.29848C15.0349 3.63187 15.2222 4.08406 15.2222 4.55556V15.2222C15.2222 15.6937 15.0349 16.1459 14.7015 16.4793C14.3681 16.8127 13.9159 17 13.4444 17H2.77778C2.30628 17 1.8541 16.8127 1.5207 16.4793C1.1873 16.1459 1 15.6937 1 15.2222V4.55556ZM4.55556 11.6667H6.33333V13.4444H4.55556V11.6667Z" stroke="black" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                05/02/2024</p>
+                                          </div>
+                                          </div>
+                                        </td>
+                                        <td>
+                                          <div class="cdb-common">
+                                          <div class="clockify-action">
+                                            <div class="cpsd">
+                                              <div class="clockify-pm-setting clockify-action">
+                                                <button type="button" class=""> <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
+                                                  <path d="M12.9 9.55885L12.5 8.86603L12.9 9.55885C14.1 8.86603 14.1 7.13398 12.9 6.44115L3.9 1.245C2.7 0.552182 1.2 1.4182 1.2 2.80385L1.2 13.1962C1.2 14.5818 2.7 15.4478 3.9 14.755L12.9 9.55885Z" stroke="#2F64C9" stroke-width="1.6"/>
+                                                </svg></button>
+                                               
+                                              </div>
+                                              <div class="clockify-pm-delete clockify-pdot">
+                                                <button type="button" class=""> <svg xmlns="http://www.w3.org/2000/svg" width="4" height="18" viewBox="0 0 4 18" fill="none">
+                                                  <path d="M1 9C1 9.26522 1.10536 9.51957 1.29289 9.70711C1.48043 9.89464 1.73478 10 2 10C2.26522 10 2.51957 9.89464 2.70711 9.70711C2.89464 9.51957 3 9.26522 3 9C3 8.73478 2.89464 8.48043 2.70711 8.29289C2.51957 8.10536 2.26522 8 2 8C1.73478 8 1.48043 8.10536 1.29289 8.29289C1.10536 8.48043 1 8.73478 1 9Z" stroke="#2F64C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                  <path d="M1 16C1 16.2652 1.10536 16.5196 1.29289 16.7071C1.48043 16.8946 1.73478 17 2 17C2.26522 17 2.51957 16.8946 2.70711 16.7071C2.89464 16.5196 3 16.2652 3 16C3 15.7348 2.89464 15.4804 2.70711 15.2929C2.51957 15.1054 2.26522 15 2 15C1.73478 15 1.48043 15.1054 1.29289 15.2929C1.10536 15.4804 1 15.7348 1 16Z" stroke="#2F64C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                  <path d="M1 2C1 2.26522 1.10536 2.51957 1.29289 2.70711C1.48043 2.89464 1.73478 3 2 3C2.26522 3 2.51957 2.89464 2.70711 2.70711C2.89464 2.51957 3 2.26522 3 2C3 1.73478 2.89464 1.48043 2.70711 1.29289C2.51957 1.10536 2.26522 1 2 1C1.73478 1 1.48043 1.10536 1.29289 1.29289C1.10536 1.48043 1 1.73478 1 2Z" stroke="#2F64C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg></button>
+                                               
+                                              </div>
+                                            </div>
+                                          </div>
+                                          </div>
+                                          </td>
+                                          </tr>
+                                          
+
+                                            <!-- ==========blue-track=========== -->
+                                    <tr>
+                                        <th scope="row">
+                                          <div class="cdb-common">
+                                          <input class="checkbox-data" type="checkbox" name="statusCheckbox" value="option2">
+                                      </div>
+                                       
+                                        </th>
+                                        <td>
+                                          <div class="cdb-common">
+                                          <div class="sr-no">
+                                              <h5>5</h5>
+                                          </div>
+                                          </div>
+                                      </td>
+                                        <td>
+                                          <div class="cdb-common">
+                                          <div class="project-task tracker-task">
+                                            <h5>Services page DESIGN</h5>
+                                           
+                                          </div>
+                                          </div>
+                                        </td>
+                                        <td>
+                                          <div class="cdb-common">
+                                              <div class="clockify-pm-status-red cps-blue">
+                                                <p>Completed <span></span></p>
+                                              </div>
+                                              </div>
+                                        </td>
+                                        <td>
+                                          <div class="cdb-common">
+                                          <div class="clockify-pm-img">
+                                          <img src="./images/vivek.svg" alt="">
+                                        </div>
+                                        </div>
+                                        </td>
+                                        
+                                        <td>
+                                          <div class="cdb-common">
+                                          <div class="tracker-estimation">
+                                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                  <path d="M8 16C3.58172 16 0 12.4182 0 8C0 3.58172 3.58172 0 8 0C12.4182 0 16 3.58172 16 8C16 12.4182 12.4182 16 8 16ZM8 14.4C11.5346 14.4 14.4 11.5346 14.4 8C14.4 4.46538 11.5346 1.6 8 1.6C4.46538 1.6 1.6 4.46538 1.6 8C1.6 11.5346 4.46538 14.4 8 14.4ZM8.8 8H12V9.6H7.2V4H8.8V8Z" fill="black"/>
+                                                </svg>
+                                                <p>10 Hrs <span></span></p>
+                                          </div>
+                                        </div>
+                                      </td>
+                                           
+                                          <td>
+                                              <div class="cdb-common">
+                                              <div class="tracker-time-taken">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                      <path d="M8 16C3.58172 16 0 12.4182 0 8C0 3.58172 3.58172 0 8 0C12.4182 0 16 3.58172 16 8C16 12.4182 12.4182 16 8 16ZM8 14.4C11.5346 14.4 14.4 11.5346 14.4 8C14.4 4.46538 11.5346 1.6 8 1.6C4.46538 1.6 1.6 4.46538 1.6 8C1.6 11.5346 4.46538 14.4 8 14.4ZM8.8 8H12V9.6H7.2V4H8.8V8Z" fill="black"/>
+                                                    </svg>
+                                                    <p>15 Hrs</p>
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="cdb-common">
+                                            <div class="clockify-duedate">
+                                           <p>
+                                              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
+                                                  <path d="M11.6667 1V4.55556M4.55556 1V4.55556M1 8.11111H15.2222M1 4.55556C1 4.08406 1.1873 3.63187 1.5207 3.29848C1.8541 2.96508 2.30628 2.77778 2.77778 2.77778H13.4444C13.9159 2.77778 14.3681 2.96508 14.7015 3.29848C15.0349 3.63187 15.2222 4.08406 15.2222 4.55556V15.2222C15.2222 15.6937 15.0349 16.1459 14.7015 16.4793C14.3681 16.8127 13.9159 17 13.4444 17H2.77778C2.30628 17 1.8541 16.8127 1.5207 16.4793C1.1873 16.1459 1 15.6937 1 15.2222V4.55556ZM4.55556 11.6667H6.33333V13.4444H4.55556V11.6667Z" stroke="black" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                05/02/2024</p>
+                                          </div>
+                                          </div>
+                                        </td>
+                                        <td>
+                                          <div class="cdb-common">
+                                          <div class="clockify-action">
+                                            <div class="cpsd">
+                                              <div class="clockify-pm-setting clockify-action">
+                                                <button type="button" class=""> <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
+                                                  <path d="M12.9 9.55885L12.5 8.86603L12.9 9.55885C14.1 8.86603 14.1 7.13398 12.9 6.44115L3.9 1.245C2.7 0.552182 1.2 1.4182 1.2 2.80385L1.2 13.1962C1.2 14.5818 2.7 15.4478 3.9 14.755L12.9 9.55885Z" stroke="#2F64C9" stroke-width="1.6"/>
+                                                </svg></button>
+                                               
+                                              </div>
+                                              <div class="clockify-pm-delete clockify-pdot">
+                                                <button type="button" class=""> <svg xmlns="http://www.w3.org/2000/svg" width="4" height="18" viewBox="0 0 4 18" fill="none">
+                                                  <path d="M1 9C1 9.26522 1.10536 9.51957 1.29289 9.70711C1.48043 9.89464 1.73478 10 2 10C2.26522 10 2.51957 9.89464 2.70711 9.70711C2.89464 9.51957 3 9.26522 3 9C3 8.73478 2.89464 8.48043 2.70711 8.29289C2.51957 8.10536 2.26522 8 2 8C1.73478 8 1.48043 8.10536 1.29289 8.29289C1.10536 8.48043 1 8.73478 1 9Z" stroke="#2F64C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                  <path d="M1 16C1 16.2652 1.10536 16.5196 1.29289 16.7071C1.48043 16.8946 1.73478 17 2 17C2.26522 17 2.51957 16.8946 2.70711 16.7071C2.89464 16.5196 3 16.2652 3 16C3 15.7348 2.89464 15.4804 2.70711 15.2929C2.51957 15.1054 2.26522 15 2 15C1.73478 15 1.48043 15.1054 1.29289 15.2929C1.10536 15.4804 1 15.7348 1 16Z" stroke="#2F64C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                  <path d="M1 2C1 2.26522 1.10536 2.51957 1.29289 2.70711C1.48043 2.89464 1.73478 3 2 3C2.26522 3 2.51957 2.89464 2.70711 2.70711C2.89464 2.51957 3 2.26522 3 2C3 1.73478 2.89464 1.48043 2.70711 1.29289C2.51957 1.10536 2.26522 1 2 1C1.73478 1 1.48043 1.10536 1.29289 1.29289C1.10536 1.48043 1 1.73478 1 2Z" stroke="#2F64C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg></button>
+                                               
+                                              </div>
+                                            </div>
+                                          </div>
+                                          </div>
+                                          </td>
+                                          </tr>
+                                          
+
+                                            <!-- ==========blue-track=========== -->
+                                    <tr>
+                                        <th scope="row">
+                                          <div class="cdb-common">
+                                          <input class="checkbox-data" type="checkbox" name="statusCheckbox" value="option2">
+                                      </div>
+                                       
+                                        </th>
+                                        <td>
+                                          <div class="cdb-common">
+                                          <div class="sr-no">
+                                              <h5>6</h5>
+                                          </div>
+                                          </div>
+                                      </td>
+                                        <td>
+                                          <div class="cdb-common">
+                                          <div class="project-task tracker-task">
+                                            <h5>Services page DEVELOPMENT</h5>
+                                           
+                                          </div>
+                                          </div>
+                                        </td>
+                                        <td>
+                                          <div class="cdb-common">
+                                              <div class="clockify-pm-status-red cps-blue">
+                                                <p>Completed <span></span></p>
+                                              </div>
+                                              </div>
+                                        </td>
+                                        <td>
+                                          <div class="cdb-common">
+                                          <div class="clockify-pm-img">
+                                          <img src="./images/vivek.svg" alt="">
+                                        </div>
+                                        </div>
+                                        </td>
+                                        
+                                        <td>
+                                          <div class="cdb-common">
+                                          <div class="tracker-estimation">
+                                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                  <path d="M8 16C3.58172 16 0 12.4182 0 8C0 3.58172 3.58172 0 8 0C12.4182 0 16 3.58172 16 8C16 12.4182 12.4182 16 8 16ZM8 14.4C11.5346 14.4 14.4 11.5346 14.4 8C14.4 4.46538 11.5346 1.6 8 1.6C4.46538 1.6 1.6 4.46538 1.6 8C1.6 11.5346 4.46538 14.4 8 14.4ZM8.8 8H12V9.6H7.2V4H8.8V8Z" fill="black"/>
+                                                </svg>
+                                                <p>10 Hrs <span></span></p>
+                                          </div>
+                                        </div>
+                                      </td>
+                                           
+                                          <td>
+                                              <div class="cdb-common">
+                                              <div class="tracker-time-taken ttt-red">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                      <path d="M8 16C3.58172 16 0 12.4182 0 8C0 3.58172 3.58172 0 8 0C12.4182 0 16 3.58172 16 8C16 12.4182 12.4182 16 8 16ZM8 14.4C11.5346 14.4 14.4 11.5346 14.4 8C14.4 4.46538 11.5346 1.6 8 1.6C4.46538 1.6 1.6 4.46538 1.6 8C1.6 11.5346 4.46538 14.4 8 14.4ZM8.8 8H12V9.6H7.2V4H8.8V8Z" fill="black"/>
+                                                    </svg>
+                                                    <p>15 Hrs</p>
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="cdb-common">
+                                            <div class="clockify-duedate">
+                                           <p>
+                                              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
+                                                  <path d="M11.6667 1V4.55556M4.55556 1V4.55556M1 8.11111H15.2222M1 4.55556C1 4.08406 1.1873 3.63187 1.5207 3.29848C1.8541 2.96508 2.30628 2.77778 2.77778 2.77778H13.4444C13.9159 2.77778 14.3681 2.96508 14.7015 3.29848C15.0349 3.63187 15.2222 4.08406 15.2222 4.55556V15.2222C15.2222 15.6937 15.0349 16.1459 14.7015 16.4793C14.3681 16.8127 13.9159 17 13.4444 17H2.77778C2.30628 17 1.8541 16.8127 1.5207 16.4793C1.1873 16.1459 1 15.6937 1 15.2222V4.55556ZM4.55556 11.6667H6.33333V13.4444H4.55556V11.6667Z" stroke="black" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                05/02/2024</p>
+                                          </div>
+                                          </div>
+                                        </td>
+                                        <td>
+                                          <div class="cdb-common">
+                                          <div class="clockify-action">
+                                            <div class="cpsd">
+                                              <div class="clockify-pm-setting clockify-action">
+                                                <button type="button" class=""> <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
+                                                  <path d="M12.9 9.55885L12.5 8.86603L12.9 9.55885C14.1 8.86603 14.1 7.13398 12.9 6.44115L3.9 1.245C2.7 0.552182 1.2 1.4182 1.2 2.80385L1.2 13.1962C1.2 14.5818 2.7 15.4478 3.9 14.755L12.9 9.55885Z" stroke="#2F64C9" stroke-width="1.6"/>
+                                                </svg></button>
+                                               
+                                              </div>
+                                              <div class="clockify-pm-delete clockify-pdot">
+                                                <button type="button" class=""> <svg xmlns="http://www.w3.org/2000/svg" width="4" height="18" viewBox="0 0 4 18" fill="none">
+                                                  <path d="M1 9C1 9.26522 1.10536 9.51957 1.29289 9.70711C1.48043 9.89464 1.73478 10 2 10C2.26522 10 2.51957 9.89464 2.70711 9.70711C2.89464 9.51957 3 9.26522 3 9C3 8.73478 2.89464 8.48043 2.70711 8.29289C2.51957 8.10536 2.26522 8 2 8C1.73478 8 1.48043 8.10536 1.29289 8.29289C1.10536 8.48043 1 8.73478 1 9Z" stroke="#2F64C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                  <path d="M1 16C1 16.2652 1.10536 16.5196 1.29289 16.7071C1.48043 16.8946 1.73478 17 2 17C2.26522 17 2.51957 16.8946 2.70711 16.7071C2.89464 16.5196 3 16.2652 3 16C3 15.7348 2.89464 15.4804 2.70711 15.2929C2.51957 15.1054 2.26522 15 2 15C1.73478 15 1.48043 15.1054 1.29289 15.2929C1.10536 15.4804 1 15.7348 1 16Z" stroke="#2F64C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                  <path d="M1 2C1 2.26522 1.10536 2.51957 1.29289 2.70711C1.48043 2.89464 1.73478 3 2 3C2.26522 3 2.51957 2.89464 2.70711 2.70711C2.89464 2.51957 3 2.26522 3 2C3 1.73478 2.89464 1.48043 2.70711 1.29289C2.51957 1.10536 2.26522 1 2 1C1.73478 1 1.48043 1.10536 1.29289 1.29289C1.10536 1.48043 1 1.73478 1 2Z" stroke="#2F64C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg></button>
+                                               
+                                              </div>
+                                            </div>
+                                          </div>
+                                          </div>
+                                          </td>
+                                          </tr>
+                                    
+                                  </tbody>
+                                </table>
+                              </div>
+
+                              
+  
+                              <!-- ============clockify pagination=========== -->
+  
+                              <div class="colckify-pagination">
+                                <div class="clockify-pagination-text">
+                                  <h4><span>6</span> total entries</h4>
+                                </div>
+                                <ul id="pagination">
+                                  <li><a class="" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                                    <path d="M7 1L1 7L7 13" stroke="#B3C9E7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg></a></li>
+                                  <li><a href="#" class="active">1</a></li>
+                                  <li><a href="#">2</a></li>
+                                  <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                                    <path d="M1 1L7 7L1 13" stroke="#296DCB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg></a></li>
+                                </ul> 
+                              </div>
+
+                        </div>
+                        <!-- tab-2-end -->
+
+                          
+
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+
+</html> 

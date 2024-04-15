@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.accordion-button::after {
+    background-image: url(../images/plus-solid.svg);
+    transition: transform .5s ease-in-out;
+    background-size: 14px;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url(../images/minus-solid.svg);
+}
+
+.accordion-flush {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.accordion button {
+    font-size: 16px;
+    line-height: 30px;
+    color: #3b4851;
+    font-weight: 600;
+    font-family: "Montserrat";
+}
+
+.accordion-button:not(.collapsed) {
+    color: #3b4851;
+    background-color: white;
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+
+    border-color: white;
+
+    box-shadow: none;
+}
+.brain1 h1 {
+    font-size: 32px;
+    letter-spacing: 4px;
+    line-height: 48px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Montserrat";
+    text-align: center;
+   
+    padding-bottom: 30px;
+}
+
+.bg-brain {
+    background-color: #BE9569;
+    padding-bottom: 50px;
+}
+.bnt a{
+    background: white;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 36px;
+    color: black;
+    font-weight: 400;
+    font-family: Montserrat;
+    border-radius: 6px;
+    padding: 12px 50px;
+}
+.bnt{
+    text-align: center;
+    padding-top: 20px;
+}

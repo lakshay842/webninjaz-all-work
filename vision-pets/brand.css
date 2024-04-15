@@ -1,0 +1,307 @@
+.vision-brand {
+    max-width: 540px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.vision-brand img {
+    width: 100px;
+    height: 100px;
+    margin-top: 24px;
+}
+
+.vision-brand h2 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #13284D;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.vision-brand p {
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+    color: #13284D;
+}
+
+.vision-brand a {
+    font-size: 14px;
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    padding: 14px 40px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.vision-already-mem p {
+    font-size: 14px;
+    padding-top: 30px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.vision-already-mem a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    color: #2C6ECB;
+}
+
+.vision-already-mem {
+    text-align: center;
+}
+
+.vbi-brand-img img {
+    width: 100%;
+}
+
+.vision-brand-img .col-sm-3 {
+    padding-left: 0;
+}
+
+.vision-brand-img .row {
+    padding: 40px 80px;
+}
+
+.vision-brand-partner h2 {
+    font-size: 28px;
+    font-weight: 800;
+    color: #13284D;
+}
+
+.vision-brand-partner {
+    max-width: 540px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.vision-brand-partner ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px 0;
+}
+
+.vision-brand-partner ul li {
+    font-size: 14px;
+    background-color: #E4E5E7;
+    color: #65625C;
+    padding: 2px 16px;
+}
+
+/* ===========career========= */
+.vac-img-carrer img {
+    max-height: 300px;
+    width: 596px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px #00000080;
+}
+.vac-img-carrer{
+    text-align: end;
+}
+.vision-join h2,
+.vision-ft h2,
+.vision-ft-opening h2{
+    font-size: 32px;
+    font-weight: 800;
+    color: #13284D;
+    text-align: center;
+    text-transform: uppercase;
+}
+.vision-join p{
+    font-size: 14px;
+    font-weight: 500;
+    color: #13284D;
+    text-align: center;
+    max-width: 535px;
+    margin: 0 auto;
+}
+.vision-join{
+    padding: 94px 0;
+}
+.vision-ft p,
+.vision-ft-opening p{
+    max-width: 795px;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: 500;
+    color: #13284D;
+    text-align: center;
+    padding-bottom: 17px;
+}
+.vision-care-img img{
+    width: 100%;
+    padding-bottom: 50px;
+    transition: 0.5s;
+}
+.vision-care-img .row{
+    gap: 40px;
+    justify-content: center;
+}
+.vision-care-img img:hover{
+    transform: scale(1.1);
+}
+.vision-care-img{
+    padding: 44px 0;
+}
+.vision-ft-opening h4{
+    font-size: 18px;
+    color: #13284D;
+    text-align: center;
+    font-weight: 800;
+}
+.vision-ft-opening{
+    padding: 44px 0;
+}
+.vac-img-leader-care img{
+    max-height: 326px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 0 10px 10px 0;
+}
+.vision-career-runs{
+    background-color: #FAFBFD;
+    border-radius: 10px;
+    margin: 44px 0;
+}
+.vac-text-care h2{
+    padding: 30px 0px 0px 30px;
+    font-size: 16px;
+}
+.vab-ha-care{
+    max-width: 352px;
+}
+.vaa-care{
+    display: flex;
+    gap: 30px;
+}
+.vision-accordion .vab-ha-care h2{
+    padding-bottom: 0;
+    margin: 0;
+    text-align: start;
+    font-size: 32px;
+}
+.vision-accordion .vab-ha-care p {
+    font-size: 14.4px;
+    color: #13284D;
+    font-weight: 500;
+    text-align: start;
+}
+.caree-heading h2{
+    margin: 0;
+}
+
+
+@media (max-width:991px) {
+    .vac-img-carrer img {
+        width: 100%;
+    }
+    .vab-ha-care {
+        max-width: 280px;
+    }
+    .caree-heading{
+        text-align: center;
+        padding-bottom: 25px;
+    }
+    .vision-ft p, .vision-ft-opening p {
+        font-size: 14.4px;
+    }
+}
+
+
+@media (max-width:760px) {
+    .vision-brand img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .vision-brand h2 {
+        font-size: 29px;
+    }
+
+    .vision-brand-img .col-sm-3 {
+        padding: 0px 5px 0 5px;
+    }
+
+    .vision-brand-img .row {
+        padding: 20px;
+    }
+
+    .vbi-brand-img img {
+        padding-bottom: 10px;
+    }
+
+    .vision-brand-partner h2 {
+        font-size: 24px;
+    }
+
+    .vision-brand-partner ul {
+        max-width: 250px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .vac-care .row{
+        flex-direction: column;
+    }
+    .vision-join h2, .vision-ft h2, .vision-ft-opening h2 {
+        font-size: 27px;
+    }
+    .vision-join p {
+        font-size: 13px;
+    }
+    .vision-ft p, .vision-ft-opening p {
+        font-size: 13px;
+    }
+    .vision-care-img .row {
+        gap: 0px;
+        justify-content: unset;
+    }
+    .vision-care-img img {
+        padding-bottom: 25px;
+    }
+    .vision-ft-opening h4 {
+        font-size: 14px;
+    }
+    .vac-run{
+        padding: 0;
+    }
+    .vac-text-care h2 {
+        padding: 0 30px 20px 30px;
+        font-size: 13px;
+    }
+    .vaa-care {
+        flex-direction: column;
+    }
+    .vab-ha-care {
+        max-width: unset;
+    }
+    .vision-accordion .vab-ha-care h2 {
+        text-align: center;
+    }
+    .vision-accordion .vab-ha-care p {
+        text-align: center;
+    }
+    .vision-accordion .accordion-body ul li {
+        font-size: 13px;
+    }
+    .vac-img-leader-care img {
+        border-radius: 10px 10px 0 0;
+    }
+    .vision-join {
+        padding: 80px 0;
+    }
+    .vac-care{
+        margin: 0;
+    }
+    .caree-heading{
+        padding-bottom: 6px;
+    }
+
+}

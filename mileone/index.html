@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mile_One</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <header>
+    <div class="bg1">
+
+
+      <div class="container">
+        <div class="topheader">
+          <div class="head1">
+            <a href="mailto:info@mileonehealth.com">info@mileonehealth.com</a>
+          </div>
+
+          <div class="head-link">
+            <ul class="socialmediamain">
+             <li><a href="#" ><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#" > <i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#" > <i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="#" ><i class="fa-brands fa-linkedin-in"></i></a></li>
+            
+              </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg2">
+      <div class="container">
+
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./images/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 nevbarcustom">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">PRODUCTS/SHOP</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">THE SCIENCE</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">PRESS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">FAQs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">CONTACT</a>
+                </li>
+              </ul>
+              <div class="search-icon">
+                <a href="#"><i class="fas fa-user"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                <i class="fas fa-search search-icon-img" alt="Search" onclick="toggleSearchForm()"></i>
+              </div>
+              <form class="search-form" id="searchForm">
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="slider">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="life">
+              <h1>PLASMALOGENS FOR LIFE</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius-mod tempor incididunt ut labore et
+                dolore magna aliqua. Quis ipsum sespendisse ultrices gravida. Risus commodo viverra maece-nas accumsan
+                lacus vel facilisis.</p>
+              <h2>LEARN MORE</h2>
+            </div>
+            <img src="./images/slider1.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+          <img src="./images/slider1.png" class="d-block w-100" alt="...">
+        </div>
+          <!-- <div class="carousel-item">
+          <img src="..." class="d-block w-100" alt="...">
+        </div> -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="bg-card">
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="./images/customer-perspectives.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="science1">
+                <p class="card-text">CUSTOMER PERSPECTIVES</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="./images/The-Science.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="science2">
+                <p class="card-text">THE SCIENCE</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="./images/doctor-perspectives.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="science3">
+                <p class="card-text">DOCTOR PERSPECTIVES</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="start">
+      <div class="container">
+        <div class="start1">
+          <h2>RIGHT, FROM THE START</h2>
+        </div>
+        <div class="start2">
+          <div class="row gy-5">
+            <div class="col-lg-3 col-md-3 col-6">
+              <div class="doctor">
+                <img src="./images/Asset 1.svg" alt="">
+                <h2>DOCTOR <span>APPROVED</span></h2>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6">
+              <div class="doctor">
+                <img src="./images/Asset 2.svg" alt="">
+                <h2>NON <span> GMO</span></h2>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6">
+              <div class="doctor">
+                <img src="./images/Asset 3.svg" alt="">
+                <h2>GLUTEN <span>FREE</span></h2>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6">
+              <div class="doctor">
+                <img src="./images/Asset 4.svg" alt="">
+                <h2>LAB <span>TESTED</span></h2>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6">
+              <div class="doctor">
+                <img src="./images/Asset 5.svg" alt="">
+                <h2>CERTIFIED <span>GMP</span></h2>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6">
+              <div class="doctor">
+                <img src="./images/Asset 6.svg" alt="">
+                <h2>AMERICAN <span>MADE</span></h2>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6">
+              <div class="doctor">
+                <img src="./images/Asset 7.svg" alt="">
+                <h2>NATURAL <span>BIOSCIENCE</span></h2>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6">
+              <div class="doctor">
+                <img src="./images/Asset 8.svg" alt="">
+                <h2>SUPERIOR <span>QUALITY</span></h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section>
+    <div class="container">
+
+
+      <div class="med1">
+        <div class="row justify-content-between">
+          <div class="col-lg-6 col-md-12">
+            <div class="neuro1">
+              <img src="./images/Group 5.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-12">
+            <div class="neuro2">
+              <h1>MileOne: Neuro Plasmalogens</h1>
+              <ul>
+
+                <li><i class="fa-regular fa-star"></i></li>
+                <li><i class="fa-regular fa-star"></i></li>
+                <li><i class="fa-regular fa-star"></i></li>
+                <li><i class="fa-regular fa-star"></i></li>
+                <li><i class="fa-regular fa-star"></i></li>
+              </ul>
+              <div class="neuro21">
+                <p>$199.00 </p>
+                <div class="soldout">
+
+                  <a href="#">Sold out </a>
+                </div>
+                <img src="./images/DGRI.png" alt="">
+              </div>
+            </div>
+            <div class="neuro22">
+              <p><span>M1-Neuro Plasmalogens</span> build the membrane of the neurone and all of its vital parts which
+                is critical for communication between two nerve cells. M1-Neuro boosts the volume between cells. Imagine
+                if your neurons could no longer hear eachother - there goes your body's ability to function properly -
+                be it physically or mentally.</p>
+              <div class="d-grid gap-2 d-md-block">
+                <div class="button1">
+                  <button class="btn " type="button">Buy it now</button>
+                  <button class="btn " type="button">Learn More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <section>
+    <div class="bg-glia">
+
+
+      <div class="container">
+
+
+        <div class="med2">
+          <div class="row justify-content-between">
+            <div class="col-lg-6 col-md-12">
+              <div class="glia1">
+                <img src="./images/Group 4.png" alt="">
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-12">
+              <div class="glia2">
+                <h1>MileOne: Glia Plasmalogens</h1>
+                <ul>
+
+                  <li><i class="fa-regular fa-star"></i></li>
+                  <li><i class="fa-regular fa-star"></i></li>
+                  <li><i class="fa-regular fa-star"></i></li>
+                  <li><i class="fa-regular fa-star"></i></li>
+                  <li><i class="fa-regular fa-star"></i></li>
+                </ul>
+                <div class="neuro21">
+                  <p>$99.00 </p>
+                  <div class="soldout">
+                  <a href="#">Sold out </a>
+                 </div>
+                  <img src="./images/DGRI.png" alt="">
+                </div>
+              </div>
+              <div class="glia22">
+                <p><span>M1-Glia Plasmalogens</span> rebuild the myelin sheath cells and thus pro- texts and tunes the
+                  signals in nerve-to-nerve communication throughout your body. When the sheath is degraded, it's like
+                  having exposed wires which are more likely to short out and stop working. Glia plasmalogens decrease
+                  with inflamatimon.</p>
+                <div class="d-grid gap-2 d-md-block">
+                  <div class="button1">
+                    <button class="btn " type="button">Buy it now</button>
+                    <button class="btn " type="button">Learn More</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-measure">
+    
+    <div class="container">
+      <div class="milonemain">
+      <div class="measure">
+        <h1>How does MileOne measure up? <span>We're miles ahead.</span></h1>
+      </div>
+
+
+      <div class="measure1">
+        <div class="row">
+          <div class="col px-2">
+            <div class="lorem1">
+              <img src="./images/Group 2.png" alt="">
+              <ul>
+                <li>Lorem ipsum dolor sit amet, adipiscing elit.</li>
+                <li>Proin gravida odio a eros rhoncus, bibendum.</li>
+                <li>Sed nec purus quis nisl aliquet ullamocorarcu.</li>
+                <li>In faucibus turpis et faucibus commodo.</li>
+                <li>Mauris eget ipsum ety purus condimentum.</li>
+                <li>Proin blandit erat vel sodales vestibulum.</li>
+                <li>Aeneaan molestie nisl vel semper pharetra.</li>
+                <li>Fusce euismod augue nec ex luctus aliquam.</li>
+                <li>Fusce blandit nunc eu dictum iaculis.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col px-2">
+            <div class="lorem2">
+              <img src="./images/Group 3.png" alt="">
+              <ul>
+                <li>Lorem ipsum dolor sit amet, adipiscing elit.</li>
+                <li>Proin gravida odio a eros rhoncus, bibendum.</li>
+                <li>Sed nec purus quis nisl aliquet ullamocorarcu.</li>
+                <li>In faucibus turpis et faucibus commodo.</li>
+                <li>Mauris eget ipsum ety purus condimentum.</li>
+                <li>Proin blandit erat vel sodales vestibulum.</li>
+                <li>Aeneaan molestie nisl vel semper pharetra.</li>
+                <li>Fusce euismod augue nec ex luctus aliquam.</li>
+                <li>Fusce blandit nunc eu dictum iaculis.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+  </section>
+
+
+  <section>
+    <div class="bg-health">
+
+    
+    <div class="container">
+      <div class="health">
+        <h1>Your Journey to healthy Begins <span>With Understanding Plasmalogens</span></h1>
+      </div>
+      <div class="yourjorneymain">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="video">
+              <div class="video-container">
+                <div class="play-button-overlay">
+                  <img src="./images/Play.png" alt="Play" class="play-button-img" onclick="playVideo()">
+                </div>
+                <div class="iframe-thumbnail">
+                  <img src="./images/m1.png" alt="">
+                </div>
+                <!-- width="560" height="315" -->
+                <iframe id="youtube-video" width="800" height="523" src="https://www.youtube.com/embed/dfoXmc3xBlw" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="video-img">
+              <img src="./images/m1-4.png" alt="">
+              <img src="./images/m1-5.png" alt="">
+              <img src="./images/m1-6.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+     
+     
+    </div>
+  </div>
+  </section>
+
+  <section>
+    <div class="bg-brain">
+      <div class="container">
+
+     
+      <div class="brain1">
+        <h1>It’s time to beef up your brain. (Q&A)</h1>
+      </div>
+     
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item" style=" margin-bottom: 8px;">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Why is the myelin sheath so important?
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+          </div>
+        </div>
+        <div class="accordion-item" style=" margin-bottom: 8px;">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              How do Plasmalogens work?
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+          </div>
+        </div>
+        <div class="accordion-item" style=" margin-bottom: 8px;">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Are Plasmalogens all natural?
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+          </div>
+        </div>
+        <div class="accordion-item" style=" margin-bottom: 8px;">
+          <h2 class="accordion-header" id="flush-headingfour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapsefour">
+              Are Plasmaolgen supplements new?
+            </button>
+          </h2>
+          <div id="flush-collapsefour" class="accordion-collapse collapse" aria-labelledby="flush-headingfour" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the fourth item's accordion body.</div>
+          </div>
+        </div>
+        <div class="accordion-item" style=" margin-bottom: 8px;">
+          <h2 class="accordion-header" id="flush-headingfive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefive" aria-expanded="false" aria-controls="flush-collapsefive">
+              How do Plasmalogens reverse neuro-degeneration?
+            </button>
+          </h2>
+          <div id="flush-collapsefive" class="accordion-collapse collapse" aria-labelledby="flush-headingfive" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the five item's accordion body.</div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  </section>
+
+  <section>
+    <div class="bg-social">
+      <div class="container">
+        <div class="joinoursocialp">
+          <div class="row">
+            <div class="col-lg-7">
+              <div class="social1">
+                <h1>Join our social platforms to see
+                  the powerful transformation of 
+                  plasmalogens.</h1>
+                  <p>Curabitur id libero id leo egestas molestie. Nunc et erat interdum, feugiat elit eget, luctus lacus. Integer nec dolor sed sem interdum faucibus. Quisque molestie justo pellentesque nibh scelerisque tempus. Aliquam interdum, lorem vitae rhoncus pretium, massa sapien efficitur justo, vitae luctus odio augue et ligula. Maecenas ultricies facilisis nisl, quis hendrerit est rutrum vitae. Maecenas pulvinar varius lacus vel tempor. Cras id erat justo. Ut vitae nulla mattis mi molestie luctus euismod sed diam. </p>
+                  <button type="button" class="btn social11">Follow Us!</button>
+              </div>
+            </div>
+            <div class="col-lg-5 ">
+              <div class="social2">
+                <img src="./images/phone-image.png" alt="">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+     
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="bg-glob">
+      <div class="container">
+        <div class="footermenu">
+          
+        <div class="row justify-content-between">
+          <div class="col-lg-8">
+            <div class="glob1">
+              <div class="ft1">
+                <ul>
+                  <li>
+                    <a class="active" href="#" onclick="setActivePage(this)">HOME</a>
+                  </li>
+                  <li>
+                    <a href="#" onclick="setActivePage(this)">PRODUCTS/SHOP</a>
+                  </li>
+                  <li>
+                    <a href="#" onclick="setActivePage(this)">THE SCIENCE</a>
+                  </li>
+                  <li>
+                    <a href="#" onclick="setActivePage(this)">PRESS</a>
+                  </li>
+                  <li>
+                    <a href="#" onclick="setActivePage(this)">ABOUT</a>
+                  </li>
+                  <li>
+                    <a href="#" onclick="setActivePage(this)">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="#" onclick="setActivePage(this)">CONTACT</a>
+                  </li>
+                </ul>
+              </div>
+              
+             
+              <div class="imgglo">
+
+                <img src="./images/World Map.png" alt="">
+                <div class="glob11">
+                  <h1>Global Distribution</h1>
+                  <p>(Check to make sure that your area is covered.)</p>
+                </div>
+              </div>
+              
+              
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="glob2">
+              <img src="./images/logo.png" alt="">
+              <p>Customer Service: 810.MILE.ONE</p>
+              <a href="mailto:hello@mileonehealth.com">Email us at: hello@mileonehealth.com
+              </a>
+             
+              <ul class="socialmediamain1">
+                <li><a href="#" ><i class="fa-brands fa-facebook-f"></i></a></li>
+                   <li><a href="#" > <i class="fa-brands fa-instagram"></i></a></li>
+                   <li><a href="#" ><i class="fa-brands fa-linkedin-in"></i></a></li>
+                   <li><a href="#" > <i class="fa-brands fa-youtube"></i></a></li>
+               
+                 </ul>
+              <h6>© 2023, MileOne Health, All Rights Reserved.</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="./input.js"></script>
+</body>
+
+</html>

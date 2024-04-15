@@ -1,0 +1,118 @@
+.as-pl p{
+    max-width: 450px;
+}
+.nipb-img h4{
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-top: 40px;
+}
+.nipb-img h2{
+    color: #FFF;
+    font-family: 'Sora';
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.nipb-img h6{
+    color: #FFF;
+font-family: 'Inter';
+font-size: 20px;
+font-weight: 400;
+}
+.nipb-img p{
+    color: #FFF;
+font-family: 'Inter';
+font-size: 16px;
+font-weight: 400;
+}
+
+.nipb-img img{
+    width: 100%;
+}
+
+
+
+/* .ninja-innovate-product {
+  display: flex;
+} */
+
+
+/* .ninja-innovate-product-bg {
+    overflow: hidden;
+  }
+  
+ 
+  .nipb-img {
+    position: relative;
+    transition: transform 0.5s ease; 
+  }
+  
+  .nipb-img:hover {
+    transform: scale(1.5); 
+  }
+  
+  .nipb-img:hover ~ .nipb-img {
+    transform: scale(0.5); 
+  } */
+  
+  .ninja-innovate-product {
+    display: flex;
+    justify-content: space-between;
+    height: 974px; /* Adjust the height as needed */
+    gap: 30px;
+}
+
+.nipb-ih-2,
+.nipb-ih-1 {
+    flex-grow: 1;
+}
+
+.nipb-ih-2 img {
+    width: 504px; /* Initial width */
+    transition: width 0.8s ease;
+    border-radius: 12px;
+}
+.nipb-ih-1 img{
+  border-radius: 12px;
+}
+
+.nipb-ih-2:hover img {
+    width: 1000px; /* Width on hover for .nipb-ih-2 */
+}
+
+@media (max-width:1400px){
+  
+}
+
+
+@media (max-width:991px){
+  .nipb-ih-2 img {
+    width: 100%;
+}
+.ninja-innovate-product {
+  flex-direction: column;
+  height: 100%;
+}
+}
+
+@media (max-width:767px){
+  .nipb-img h4 {
+    font-size: 14px;
+  }
+  .nipb-img h2 {
+    font-size: 32px;
+  }
+  .nipb-img h6,
+  .nipb-img p {
+    font-size: 15px;
+}
+
+}

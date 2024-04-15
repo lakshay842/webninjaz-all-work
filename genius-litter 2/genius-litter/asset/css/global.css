@@ -1,0 +1,2008 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{ overflow-x: hidden;}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+}
+p{
+    font-family: 'Manrope', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+:root{
+    --brand1: #05264A;
+    --brand2: #B8F1F2;
+    --brand3: #40D0D2;
+    --netueral:#60666C;
+    --montserrat-font: 'Montserrat', sans-serif;
+    --manrope-font: 'Manrope', sans-serif;
+}
+/* ================= Announcement bar css start ==================== */
+.marquee-container {
+    height: 40px;
+    overflow: hidden;
+    line-height: 40px;
+    background-color: var(--brand2);
+}
+.marquee-container .marquee {
+    top: 0;
+    left: 100%;
+    width: 100%;
+    overflow: hidden;
+    /* position: absolute; */
+    white-space: nowrap;
+    /* animation: marquee 30s linear infinite; */
+}
+.marquee-container .marquee span{
+    padding: 0 30px;
+    position: relative;
+    font-family: var(--manrope-font);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: left;
+    animation: marquee 30s linear infinite;
+}
+.marquee-container .marquee span::after{
+    position: absolute;
+    content: '';
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background: url(../images/accordion-img.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+/* .marquee-container .marquee2 {
+    animation-delay: 15s;
+} */
+.marquee-container b {
+    padding-left: 10px;
+}
+  
+@keyframes marquee {
+    0% {
+      left: 0%;
+    }
+    100% {
+      left: -100%;
+    }
+}
+/* ================= Announcement bar css end ==================== */
+/* =================== Header css start ==================*/
+#header {
+    /* position: fixed;
+    left: 0;
+    right: 0;
+    top: 30px; */
+    padding: 10px 0;
+    background-color: var(--brand1);
+}
+.headercont {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menubx {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    background: var(--brand1);
+    pointer-events: none;
+    transition: .5s;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    max-width: 132px;
+    height: auto;
+    margin-left: 10px;
+}
+.menu-right{
+    display: flex;
+    align-items: center;
+}
+.menu-right div{
+    padding: 12px;
+}
+.cart-header{
+    position: relative;
+}
+.cart-header .count{
+    position: absolute;
+    right: 4px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #FFF;
+    background: #FF3B30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    font-size: 12px;
+    color: #fff;
+}
+.menu {
+    cursor: pointer;
+}
+.menu img{
+    width: 48px;
+}
+.menubx.active {
+    opacity: 1;
+    pointer-events: fill;
+    right: 0%;
+    z-index: 1;
+}
+.menubx.active .container{position: relative;}
+.menubx.active .logo{
+    padding-top: 50px;
+}
+.closebx {
+    position: absolute;
+    right: 0px;
+    top: 55px;
+    cursor: pointer;
+    z-index: 1;
+}
+.menubx ul {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: 0;
+    opacity: 1;
+    transform: scale(1);
+    transition: 1.3s;
+}
+.menubx ul li {
+    text-align: left;
+    list-style: none;
+    margin: 10px 0;
+    transition: 0.3s;
+}
+.menubx ul li a {
+    display: inline-block;
+    transition: 0.3s;
+    padding: 10px  0px;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 72px;
+    color: #fff;
+}
+.menubx ul li a.active, .menubx ul li a:hover, .navbar-nav .nav-link.show, .nav-link:focus {
+    color: var(--brand3) !important;
+}
+.main-menu-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: calc(100vh - 120px);
+}
+.dropdown-toggle::after{
+    border: none;
+    background: url(../images/arrow-down.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    width: 30px;
+    height: 30px;
+    vertical-align: 0.1em;
+    margin-left: 0;
+}
+
+.dropdown-menu {
+    display: none;
+    transition: all 0.3s ease; /* Add smooth transition */
+  }
+
+
+.navbar-nav .nav-link.show::after{
+    transform: rotate(180deg);
+}
+.navbar-nav .dropdown-menu {
+    position: static !important;
+    transform: unset !important;
+    background: transparent;
+    border: none;
+}
+.dropdown-menu .dropdown-item{
+    color:#FFF;
+    font-family: var(--manrope-font);
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 32px; /* 114.286% */
+    background: transparent;
+    padding: 0;
+}
+.dropdown-menu .dropdown-item.active{
+    color: var(--brand3);
+    
+}
+
+/* =================== Header css end ==================*/
+
+
+/* =================== Home banner css start ==================*/
+.home-banner{
+    background: var(--brand1);
+    padding: 40px 0;
+}
+.banner-cont h1{
+    color: #FFF;
+    text-align: center;
+    font-family: var(--montserrat-font);
+    font-size: 88px;
+    font-weight: 800;
+    line-height: 96px;
+    max-width: 792px;
+    margin: 0px auto;
+    margin-bottom: 30px;
+    padding: 40px 0;
+}
+.banner-vid{
+    position: relative;
+}
+.banner-vid p{
+    color: #FFF;
+    font-family: var(--manrope-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    max-width: 282px;
+}
+.banner-cta{
+    position: absolute;
+    right: 20px;
+    top: 0px;
+    width: 200px;
+}
+@-webkit-keyframes uparrow {
+    0% { -webkit-transform: translateX(4px);}
+    100% { -webkit-transform: translateY(4px);}
+}
+.banner-cta .cta-arrow{
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.banner-cta .cta-arrow img{
+    -webkit-animation: uparrow 0.6s infinite alternate ease-in-out;
+}
+.banner-vid-btn{
+    color:  #FFF;
+    font-family: var(--manrope-font);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px; 
+    display: flex;
+    align-items: center;
+    padding: 0;
+    background: transparent;
+    border: none;
+}
+.banner-vid-btn:focus{
+    outline: none !important;
+    border: none;
+    box-shadow: none;
+}
+.banner-vid-btn img{
+    margin-right: 10px;
+}
+.banner-vid-btn:hover{
+    color: #fff;
+}
+.hm-vid-pop .modal-dialog{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+    max-width: 981px;
+    padding: 0;
+}
+.hm-vid-pop.show{
+    background: rgba(0, 0, 0, 0.39);
+}
+.hm-vid-pop .modal-content{
+    background: transparent;
+    border: none;
+}
+.hm-vid-pop .modal-body .video-container video{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 24px;
+}
+.hm-vid-pop .modal-header{
+    border: none;
+}
+.hm-vid-pop .modal-header{
+    border: none;
+    padding: 0;
+    height: 0;
+}
+.hm-vid-pop .btn-close{
+    right: 30px;
+    top: 20px;
+    background: url(../images/Comment.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    padding: 0;
+    opacity: initial;
+    transition: .5s;
+}
+.hm-vid-pop .modal-body{
+    padding: 0;
+}
+/* =================== Home banner css end ==================*/
+
+/* =================== Testimonial css start ==================*/
+.testimonial{
+    padding: 100px 0;
+}
+.tes-cont p{
+    color: #111;
+    font-family: var(--manrope-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; 
+    margin: 20px 0;
+    min-height: 80px;
+}
+/* =================== Testimonial css end ==================*/
+/* =================== why zenius litter section css start ==================*/
+.why-zenius-litter{
+    padding: 100px 0;
+    background: linear-gradient(180deg, #D8FDFD 1.54%, rgba(255, 255, 255, 0) 87.48%);
+}
+.wzl-content h3{
+font-family: var(--montserrat-font);
+font-size: 64px;
+font-weight: 800;
+line-height: 72px;
+letter-spacing: 0em;
+text-align: left;
+color: var(--brand1);
+}
+.wzl-content p{
+    font-family: var(--manrope-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:var(--netueral);
+    margin-top: 20px;
+    margin-bottom: 40px;
+    max-width: 60%;
+}
+
+.wzl-content img{
+    width: 100%;
+}
+
+.wzl-content a {
+    font-family: var(--montserrat-font);
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: var(--brand1);
+    padding: 16px 24px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: .5s;
+    border: 1px solid transparent;
+}
+.wzl-content a:hover{
+    border-color: var(--brand1);
+    background-color: transparent;
+    color: var(--brand1);
+}
+.wzl-scon h4{
+    color: var(--brand1);
+    font-family: var(--manrope-font);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px; 
+    margin: 20px 0;
+}
+.wzl-scon p{
+    color: var(--netueral);
+    font-family: var(--manrope-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; 
+    padding-right: 40px;
+}
+/* =================== why zenius litter section css end ==================*/
+/* =================== our best seller section css start ==================*/
+.our-bseller{
+    padding: 100px 0;
+}
+.obs-head{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.obs-head h3{
+    color: var(--brand1);
+    font-family: var(--montserrat-font);
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 72px; 
+}
+
+
+.obs-content.obs-genius{
+    background: #B8F1F2 url(../images/obs-vector.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.obs-content.obs-health{
+    background: #D1D3F0 url(../images/obs-vector.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.obs-content.obs-peepads{
+    background: #C4E2F3 url(../images/obs-vector.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.obs-content.obs-l-lysine{
+    background: #BDD3FA url(../images/obs-vector.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.obs-content{
+    position: relative;
+    padding: 24px;
+    border-radius: 32px;
+    min-height: 368px;
+}
+.obs-content span{
+    color: var(--brand1);
+    font-family: var(--manrope-font);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 4px 16px;
+    border-radius: 100px;
+    border: 1px solid var(--brand1);
+}
+.obs-content h5{
+    color: var(--brand1);
+    font-family: var(--montserrat-font);
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px; 
+    margin: 20px 0;
+}
+.obs-content.obs-health h5{
+    padding-right: 40px;
+}
+.obs-content p{
+    color: var(--brand1);
+    font-family: var(--brand1);
+    font-size: 14px;
+    line-height: 20px; 
+    max-width: 254px;
+    /* margin-bottom: 72px; */
+}
+.obs-content a.pro-btn{
+    position: absolute;
+    left: 24px;
+    bottom: 30px;
+    transition: 0.5s;
+}
+.obs-content a.pro-btn:hover{
+    filter: grayscale(1000);
+}
+.obs-ab-img{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    transition: 0.5s;
+}
+.obs-peepads .obs-ab-img {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+}
+
+.obs-content:hover .obs-ab-img{ transform: rotate(-10deg);}
+.obs-content:hover a.pro-btn{ margin-left: 10px;}
+
+/* =================== our best seller section css end ==================*/
+/* =================== Detecting Irregularities & Diseases section css end ==================*/
+.did-head{
+    margin-bottom: 80px;
+}
+.did-head h3{
+    color: var(--brand1);
+    text-align: center;
+    font-family: var(--montserrat-font);
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 72px; 
+    max-width: 850px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+.did-head p{
+    color: var(--netueral);
+    text-align: center;
+    font-family: var(--manrope-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    max-width: 588px;
+    margin: 0 auto;
+}
+.ph-labels{
+    text-align: center;
+    overflow: hidden;
+    padding-bottom: 100px;
+}
+.ph-labels .ph-label-content{
+    position: relative;
+    margin-top: 100px;
+    /* margin-bottom: -420px; */
+    z-index: 1;
+}
+.ph-labels .ph-label-content::before{
+    content: '';
+    position: absolute;
+    left: -160px;
+    margin: 0px auto;
+    top: 0px;
+    width: 120%;
+    right: 0;
+    border-radius: 100%;
+    background: linear-gradient(360deg, rgba(238, 252, 252, 0.00) 62.34%, #DCF9F9 85.51%);
+    height: 1200px;
+    z-index: -1;
+}
+.ph-label-content h3{
+    color: var(--brand1);
+    font-family: var(--montserrat-font);
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 40px; 
+}
+.ph-label-content p{
+    color: var(--netueral);
+    font-family: var(--manrope-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.ph-label-content .ph-label-btn{
+    border-radius: 12px;
+    background: var(--brand1);
+    padding: 16px 40px;
+    color: #FFF;
+    text-align: center;
+    font-family: var(--montserrat-font);
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 24px;
+    transition: .5s;
+    border: 1px solid transparent;
+}
+.ph-label-content .ph-label-btn:hover{
+    background: transparent;
+    border-color: var(--brand1);
+    color: var(--brand1);
+}
+
+.ph-labels .ph-label-content img{
+    margin-top: -150px;
+}
+.phlpop .modal-dialog{
+    border-radius: 24px;
+    background: #FFF;
+    width: 493px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) !important;
+}
+.phlpop .modal-header{
+    display: block;
+   border: none;
+   padding: 0;
+}
+.phlpop .modal-header span{
+    border-radius: 100px;
+    border: 1px solid var(--brand1);
+    padding: 4px 10px;
+    color: var(--brand1);
+    font-family: var(--manrope-font);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px; 
+}
+.phlpop .modal-header h4{
+    color: var(--brand1);
+    font-family: var(--montserrat-font);
+    font-size: 28px !important;
+    font-weight: 800;
+    line-height: 40px;
+    margin-top: 20px;
+}
+.phlpop .modal-body{
+    padding: 0;
+}
+.phlpop .modal-body h5{
+    color: var(--brand1);
+    font-family: var(--manrope-font);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; 
+}
+.phlpop .modal-body p{
+    color: var(--netueral);
+    font-family: var(--manrope-font);
+    line-height: 24px;
+}
+.phlpop .modal-footer{
+    padding: 0;
+    border: none;
+}
+.phlpop .modal-content{
+    border: none;
+    border-radius: 24px;
+    padding: 40px 24px;
+}
+.modal-footer .modal-fbtn{
+    padding: 16px 40px;
+    border-radius: 12px;
+    background: var(--brand1);
+    color: #FFF;
+    text-align: center;
+    font-family: var(--montserrat-font);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 24px;
+}
+.phlpop .btn-close {
+    right: 20px;
+    top: 20px;
+    background: url(../images/Comment1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    padding: 0;
+    opacity: initial;
+    transition: .5s;
+}
+.btn-close:focus{
+    box-shadow: none;
+}
+.ph-label-head{
+    max-width: 818px;
+    height: 194px;
+    margin: 0 auto;
+    position: relative;
+}
+.ph-label1{
+    position: absolute;
+    bottom: -5px;
+    left: 19px;
+    cursor: pointer;
+}
+.ph-label2{
+    position: absolute;
+    left: 27.5%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.ph-label3{
+    position: absolute;
+    left: 49%;
+    top: 38%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.ph-labelimg-div.ph-label3 img {
+    width: 55px;
+}
+.ph-label4{
+    position: absolute;
+    right: 22.5%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.ph-labelimg-div.ph-label4 img {
+    width: 65px;
+}
+.ph-label5{
+    position: absolute;
+    bottom: -4px;
+    right: 42px;
+    cursor: pointer;
+}
+.ph-labelimg-div img{
+    width: 71px;
+    opacity: 0;
+    transition: .5s;
+}
+.ph-labelimg-div.selected img{
+    opacity: 1;
+}
+.ph-label-content{
+    display: none;
+}
+.ph-label-content.active{
+    display: block;
+}
+/* =================== Detecting Irregularities & Diseases section css end ==================*/
+/* =================== customer section css start ==================*/
+
+.trusted-customers{
+    padding: 100px 0;
+    min-height: 1000px;
+    position: relative;
+    overflow: hidden;
+}
+
+.tc-carousel{position: static; margin-right: -450px;}
+
+.tc-head{
+    margin-bottom: 40px;
+}
+.tc-head h3{
+    max-width: 995px;
+    margin:0 0 80px  auto;
+    color: var(--brand1);
+    text-align: center;
+    font-family: var(--montserrat-font);
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 72px; 
+}
+.tc-head h3 span{
+    color: var(--brand3);
+}
+
+
+.test_div{
+    margin-bottom: 70px;
+    transition: .5s;
+}
+.test_div:hover h4{
+    color: var(--grey);
+    transition: .5s;
+}
+.video-testimonial-block { 
+    position: relative; 
+    width: 100%; 
+    height: 474px; 
+    overflow: hidden; 
+    margin-bottom: 30px; 
+    border-radius: 40px;
+}
+.video-testimonial-block .video-thumbnail { 
+    height: 100%; 
+    width: 100%;
+    position: absolute; 
+    z-index: 1; 
+    background-size: cover; 
+    top: 0; 
+    left: 0; 
+}
+
+.video-testimonial-block .video iframe { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    border: 0px; 
+}
+.video-testimonial-block .video-play { 
+    border: none;
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.video-testimonial-block .video-play i{
+    color: #000;
+    z-index: 4;
+}
+.video-testimonial-block .video-play:before, .video-testimonial-block .video-play:after{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    border-radius: 100%;
+    -webkit-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+}
+.video-testimonial-block .video-play:before {
+    z-index: 2;
+    -webkit-animation: before-animation 1500ms infinite;
+    animation: before-animation 1500ms infinite;
+}
+/* .video-play{
+    top: 42ch;
+    left: 29ch;
+} */
+.video-testimonial-block .video-play:after{
+    z-index: 1;
+    -webkit-animation: after-animation 1500ms infinite;
+    animation: after-animation 1500ms infinite;
+}
+
+.video-testimonial-content{
+    padding: 0 20px;
+    text-align: left;
+}
+.video-thumbnail img{
+    width: 100%;
+}
+.video-testimonial-content h4{
+    font-size: 22px;
+    font-family: var(--font-barlow);
+    color: var(--blue);
+    font-weight: 600;
+    margin-bottom: 10px;
+    transition: .5s;
+}
+.video-testimonial-content p{
+    font-size: 19px;
+    line-height: 1.4;
+    position: absolute;
+    margin-top: -113px;
+    z-index: 1;
+    color: white;
+    max-width: 19ch;
+}
+.fa p{
+    margin-left: -184px;
+    max-width: 18ch;
+    color: white;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+
+
+
+/* =================== customer section css end ==================*/
+
+
+
+
+
+
+
+
+/* ==========review crousel========= */
+
+
+.owl-carousel .pet-reviews-text img {
+    width: unset;
+}
+.pet-reviews-text p{
+    color: #05264A;
+    font-family: 'Manrope';
+    padding-top: 12px;
+}
+.pet-reviews-content-text p{
+    padding-top: 0px;
+
+}
+.pet-reviews-content{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+.pet-reviews-content-text p{
+    color:  #60666C;
+    font-family: 'Manrope';
+    font-size: 14px;
+    margin-bottom: 0;
+}
+.pet-reviews-content-text h5{
+    color:#05264A;
+    font-family: 'Manrope';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+.pet-reviews-heading h2{
+    color: #05264A;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 64px;
+    font-weight: 800;
+    padding-bottom: 80px;
+}
+.pet-reviews{
+    border-top: 1px solid var(--brand-01, #05264A);
+}
+.pet-reviews-text img{
+    padding-top: 40px;
+}
+.pet-reviews-img img{
+    padding-top: 0;
+}
+.pet-reviews-bg{
+    padding-bottom: 100px;
+}
+
+.customer-carousel .owl-nav button.owl-next{
+    font-size: 42px;
+    font-weight: 100;
+        border: 1px solid #05264A;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        opacity: 0.3;
+        transition: 0.5s;
+}
+.customer-carousel .owl-nav button.owl-next:hover{
+    opacity: 1;
+    }
+
+.customer-carousel .owl-nav button.owl-prev{
+    font-size: 42px;
+    font-weight: 100;
+        border: 1px solid #05264A;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        opacity: 0.3;
+        transition: 0.5s;
+}
+.customer-carousel .owl-nav button.owl-prev:hover{
+opacity: 1;
+}
+
+
+.customer-carousel .owl-nav button.owl-next span{
+    margin-top: -10px;
+    display: flex;
+    justify-content: center;
+}
+.customer-carousel .owl-nav button.owl-prev span{
+    margin-top: -10px;
+    display: flex;
+    justify-content: center;
+}
+.customer-carousel .owl-nav{
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        margin-top: 40px;
+}
+.customer-carousel .owl-nav [class*=owl-]:hover {
+    background: unset;
+    color: unset;
+}
+
+
+/* .owl-carousel .owl-nav button.owl-next span{
+    display: none;
+}
+.owl-theme .owl-nav [class*=owl-]:hover {
+    color: #FFF;
+    text-decoration: none;
+} */
+
+/* ===========pet blogs========= */
+.pet-blogs-text h2{
+    color:  #05264A;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 64px;
+    font-weight: 800;
+}
+.pet-blogs-content h5{
+    color:  #05264A;
+font-family: 'Manrope';
+font-size: 16px;
+font-weight: 700;
+line-height: 24px;
+padding-top: 10px;
+padding-bottom: 5px;
+margin-bottom: 0;
+}
+.pet-blogs-content p{
+    color:  #60666C;
+    font-family: 'Manrope';
+    font-size: 14px;
+}
+.pet-blogs-content{
+    padding-bottom: 60px;
+}
+.pet-blogs{
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+.pet-blogs a{
+    display: flex;
+    padding: 16px 40px;
+    justify-content: center;
+    color:  #FFF;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 800;
+    border-radius: 12px;
+    background:  #05264A;
+    max-width: 180px;
+    margin: 0 auto;
+    text-decoration: none;
+    transition: 0.3s ease;
+    border: 1px solid #05264A;
+}
+.pet-blogs a:hover{
+    background: #fff;
+    color: #05264A;
+    transition: 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========veterinarians======== */
+
+.pet-veterinarians-bg{
+    background: #EEFCFC;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.pet-veterinarians h2{
+    color: #05264A;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 64px;
+    font-weight: 800;
+}
+.pet-veterinarians p{
+    color:  #60666C;
+    text-align: center;
+    font-family: 'Manrope';
+    max-width: 792px;
+    margin: 0 auto;
+}
+.pet-doctor{
+    display: flex;
+    gap: 25px;
+    padding-top: 80px;
+}
+.pet-veterinarians-images img{
+    border-radius: 22px;
+}
+.pet-veterinarians-images h6{
+    color: #05264A;
+    font-family: 'Manrope';
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-align: center;
+    padding-top: 16px;
+}
+.pet-veterinarians-images p{
+    color:  #60666C;
+    font-family: 'Manrope';
+    font-size: 14px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+
+/* .kity-accordian .accordion-item{
+    margin-top: 50px;
+    border-radius: 16px;
+}
+.kity-accordian .accordion-button{
+    border: 1px solid #E3E3E3;
+    border-radius: 16px;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: unset;
+}
+.kity-accordian .accordion-button:focus {
+    border-color: unset;
+    box-shadow: none;
+}
+.accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+.accordion-item:last-of-type .accordion-button.collapsed {
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+} */
+
+
+
+
+/* =======accordian========== */
+
+
+
+.kity-accordian .accordion-button:focus {
+    box-shadow: none;
+}
+.accordion-button:not(.collapsed) {
+    background-color: #F3F4F6;
+}
+.kity-accordian .accordion-item{
+    margin-top: 20px;
+    border: 1px solid #E3E3E3;
+    border-radius: 16px;
+}
+
+.accordion-item .accordion-button {
+    background-color: #F3F4F6;
+    /* border-radius: 16px; */
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    color: #05264A;
+    font-family: 'Manrope';
+    font-size: 20px;
+    font-weight: 700;
+}
+.accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+.accordion-item:last-of-type .accordion-button.collapsed {
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+.accordion-button::after {
+background-image: url(../images/add.png);
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url(../images/minus.png);
+}
+.kity-accordian .accordion-body{
+    color: #60666C;
+    font-family: 'Manrope';
+}
+.accordion-item .accordion-button.collapsed{
+border-radius: 16px;
+}
+.kity-accordian{
+    padding-bottom: 200px;
+}
+.kitty-accordian-text h2{
+    color:  #05264A;
+    font-family: 'Montserrat';
+    font-size: 64px;
+    font-weight: 800;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 100px;
+}
+/* .accordion__header {
+	padding: 1em;
+	background-color: #F3F4F6;
+    margin-top: 24px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+    border: 1px solid #E3E3E3;
+    border-radius: 16px;
+}
+.accordion__header > * {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 16px;
+}
+
+.accordion__toggle {
+	margin-left: 10px;
+	height: 2px;
+	background-color: #05264A;
+	width: 13px;
+	display: block;
+	position: relative;
+	flex-shrink: 1;
+	border-radius: 2px;
+    transition: 0.3s ease-in-out;
+}
+
+.accordion__toggle::before {
+	content: "";
+	width: 2px;
+	height: 13px;
+	display: block;
+	background-color: #05264A;
+	position: absolute;
+	top: -5px;
+	left: 5px;
+	border-radius: 2px;
+}
+
+
+.is-active .accordion__toggle::before {
+	display: none;
+}
+
+
+.accordion__body {
+	display: none;
+	padding: 1em;
+	border: 1px solid #E3E3E3;
+	border-top: 0;
+    border-radius: 0px 0px 16px 16px ;
+}
+.accordion__body.is-active {
+	display: block;
+}
+.accordion__body p{
+    color: #60666C;
+    font-family: 'Manrope';
+}
+.accordion__header.is-active{
+    border: 1px solid #E3E3E3;
+    border-bottom: none;
+    border-radius: 16px 16px 0px 0px;
+}
+.accordion__header h2{
+    color: #05264A;
+    font-family: 'Manrope';
+    font-size: 20px;
+    font-weight: 700;
+} */
+
+
+
+
+
+/* .table-comparison table, th, td {
+    border: solid 1px #05264A;
+    padding: 10px;
+  }
+  .table-comparison table {
+    width: 100%;
+    text-align: center;
+    margin-top: 140px;
+  }
+  .table-comparison{
+    padding-top: 100px;
+  }
+  .table-comparison, th, td{
+    color: #05264A;
+    font-family: 'Manrope';
+    font-weight: 700;
+  }
+  .table-comparison td:first-child {
+    text-align: start;
+    padding: 24px 0px 24px 24px;
+}
+.table-comparison th{
+    width: 240px;
+    padding: 48px;
+}
+.table-comparison th:nth-child(2) {
+    background: #05264A;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.30);
+    position: relative;
+    padding-bottom: 0;
+}
+.table-comparison th:nth-child(2)::before{
+    content: url(../images/new-litter.png);
+    position: absolute;
+    top: -108px;
+    left: 30px;
+ }
+.table-comparison td:nth-child(2){
+    background: #05264A;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.30);
+   
+}
+
+
+.table-comparison thead tr:nth-child(4) td:nth-child(2) {
+    border: solid 1px #05264A;
+}
+.table-comparison h2{
+    color:  #05264A;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 64px;
+    font-weight: 800;
+}
+.table-comparison p{
+    color:#60666C;
+    text-align: center;
+    font-family: 'Manrope';
+    font-weight: 400;
+    max-width: 690px;
+    margin: 0 auto;
+} */
+
+/* =========table============= */
+
+.table-comparisons{
+    display: flex;
+    border: 1px solid #05264A;
+    border-radius: 24px;
+    margin-top: 110px;
+    margin-bottom: 100px;
+}
+.compare-content{
+    max-width: 240px;
+    width: 100%;
+}
+.compare{
+    max-width: 240px;
+    width: 100%;
+    text-align: center;
+    border-left: 1px solid #05264A;
+}
+.compare-content p{
+    padding: 24px 0 24px 24px;
+    
+}
+.compare p{
+    padding: 16px;
+    /* max-height: 73px; */
+}
+.compare h5,
+.compare-content h5{
+    border-bottom: 1px solid #05264A;
+    margin-bottom: 0;
+    color: #05264A;
+    text-align: center;
+    font-family: 'Manrope';
+    font-size: 20px;
+    font-weight: 700;
+    padding:  32px 24px;
+
+}
+.compare p,
+.compare-content p{
+    border-bottom: 1px solid #05264A;
+    margin-bottom: 0;
+    color:  #05264A;
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 700;
+}
+.compare p:last-child,
+.compare-content p:last-child{
+    border: none;
+}
+/* .compare p svg{
+    margin-top: -8px;
+} */
+.compare p:nth-child(2) {
+    padding: 24px;
+}
+.table-comparisons .compare:nth-child(2) h5,
+.table-comparisons .compare:nth-child(2) p{
+    background: #05264A;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.30);
+}
+.table-comparisons .compare:nth-child(2) p:nth-child(5){
+    border-bottom: none;
+}
+
+.table-comparisons .compare:nth-child(2) h5:nth-child(1){
+    padding: 0px 0px 14px 0;
+    position: relative;
+}
+.compare h5 img{
+    margin-top: -86px;
+    max-width: 130px;
+
+}
+.table-comparisons-text h2{
+    color:  #05264A;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 64px;
+    font-weight: 800;
+}
+.table-comparisons-text p{
+    color:#60666C;
+    text-align: center;
+    font-family: 'Manrope';
+    font-weight: 400;
+    max-width: 690px;
+    margin: 0 auto;
+} 
+
+
+@media(max-width:1490px){
+    .video-testimonial-block { 
+        width: 250px; 
+    }
+    .video-testimonial-block .video-thumbnail {
+        width: 250px; 
+    }
+
+    .video-testimonial-block .video-thumbnail img{
+        object-fit: cover;
+        height: 474px;
+
+    }
+}
+
+@media (min-width: 1400px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1200px;
+    }
+}
+
+@media screen and (min-width:1025px) and (max-width:1279px){
+    .compare p, .compare-content p {
+        height: 73px;
+    }
+
+    .ph-labels .ph-label-content::before {
+        left: -130px;
+    }
+
+}
+
+@media screen and (min-width:768px) and (max-width:1024px){
+.pet-veterinarians-images{
+    flex: 0 0 30%;
+}
+.pet-doctor{
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+.compare h5, .compare-content h5 {
+    font-size: 15px;
+}
+/* .compare-content p {
+    padding: 24px 0 24px 9px;
+} */
+.compare p, .compare-content p {
+    height: 73px;
+}
+.compare p, .compare-content p {
+    font-size: 11px;
+}
+.pet-blogs-text h2 {
+    font-size: 50px;
+}
+.pet-blogs {
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+.pet-blogs-content {
+    padding-bottom: 20px;
+}
+.pet-veterinarians h2 {
+    font-size: 50px;
+}
+
+.pet-veterinarians-bg {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.kitty-accordian-text h2 {
+    font-size: 50px;
+    padding-bottom: 20px;
+    padding-top: 40px;
+}
+.kity-accordian {
+    padding-bottom: 60px;
+}
+.table-comparisons-text h2 {
+    font-size: 50px;
+}
+.pet-reviews-heading h2 {
+    font-size: 50px;
+}
+.pet-reviews-heading h2 {
+    padding-bottom: 30px;
+}
+.pet-reviews-bg {
+    padding-bottom: 30px;
+}
+}
+
+
+@media (max-width: 991px){
+    .banner-cta{width: auto;}
+    .banner-cta > img{ max-width: 120px; height: 120px;}
+    .banner-cta  .cta-arrow  img{ width: 50px; height: 50px;}
+    .banner-cta .cta-arrow{ left: 50%;}
+    .wzl-content{padding-top: 100px;}
+    .wzl-scon{padding-bottom: 50px;}
+    .our-bseller{padding-top: 0;}
+    .why-zenius-litter{padding: 0 0;}
+    .our-bseller .col-lg-6:first-child{ margin-bottom: 1.5rem; }
+    .menubx ul li a{font-size: 44px;}
+    .tc-head h3{font-size: 44px; line-height: 1.3;}
+    .closebx{right: 20px;}
+    .main-menu-div{padding: 10px;}
+    .menubx ul li{margin: 0px 0;}
+    .menubx .dropdown-menu li{ margin: 15px 0;}
+}
+
+
+@media screen and (min-width:481px) and (max-width:767px){
+    .banner-cont h1
+    {font-size: 54px; line-height: 1.3; padding: 0;}
+    .home-banner{padding: 40px 15px;}
+    .tes-cont{ margin-bottom: 50px;}
+    .tes-cont p{min-height: auto;}
+    .pet-blogs-text h2 {
+        font-size: 40px;
+    }
+
+    .ph-label-head{transform: scale(.7);}
+    .ph-label1 {
+        bottom: 47px;
+        left: 1px;
+    }
+    .ph-label2 {
+        left: 27.5%;
+        top: 35%;}
+        .ph-label3 {
+
+            left: 48%;
+            top: 28%;}
+
+            .ph-label4{
+            position: absolute;
+            right: 19.5%;
+            top: 35%;}
+            .ph-label5 {
+                bottom: 48px;
+                right: 22px;
+            }
+            .ph-label-content-body{ margin-top: -30px; margin-bottom: -20px;}
+
+            .tc-head h3 {
+                font-size: 34px;
+                line-height: 1.3;
+            }
+            .trusted-customers .container{ padding-left: 40px; }
+            .testimonial{ padding: 50px 15px;}
+            .pet-reviews-heading h2{ font-size: 48px;}
+            .trusted-customers{ padding-bottom: 0; min-height: 900px;}
+            .pet-reviews-bg{ padding: 15px 15px 50px 15px;}
+            .table-comparisons-text{padding: 70px 15px 120px 15px;}
+            .kity-accordian{padding: 0 15px;}
+            .table-comparisons{ margin: 0 15px 80px 15px;}
+            .obs-head h3{font-size: 48px; line-height: 1.3;}
+            .our-bseller{ padding:0 15px;}
+            .ph-labels .ph-label-content::before {
+                left: -20%;
+                width: 140%;}
+
+                .video-testimonial-block { 
+                    width: 300px; 
+                }
+                .video-testimonial-block .video-thumbnail {
+                    width: 300px; 
+                }
+
+    .wzl-content h3{ font-size: 48px; line-height: 1.3;}
+    .did-head h3{ font-size: 48px; line-height: 1.3;}
+    .pet-blogs {
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+    .pet-blogs-content {
+        padding-bottom: 20px;
+    }
+    .pet-veterinarians h2 {
+        font-size: 40px;
+    }
+    .pet-veterinarians-images{
+        flex: 0 0 40%;
+    }
+    .pet-doctor{
+        flex-wrap: wrap;
+        padding-top: 30px;
+        justify-content:center;
+    }
+    .pet-veterinarians-bg {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .pet-veterinarians-images h6 {
+        font-size: 16px;
+    }
+    .pet-veterinarians p {
+        font-size: 15px;
+    }
+    .kitty-accordian-text h2 {
+        font-size: 40px;
+    }
+    .kitty-accordian-text h2 {
+        padding-bottom: 20px;
+        padding-top: 40px;
+    }
+    .accordion-item .accordion-button {
+        font-size: 16px;
+    }
+    .kity-accordian .accordion-body {
+        font-size: 15px;
+    }
+    .table-comparisons-text h2 {
+        font-size: 40px;
+    }
+    .table-comparisons-text p {
+        font-size: 15px;
+    }
+    .compare {
+        max-width: 97px;
+    }
+    .compare-content {
+        max-width: 142px;
+    }
+    .compare h5 img {
+        margin-top: -90px;
+        max-width: 117px;
+    }
+    .compare p, .compare-content p {
+        font-size: 12px;
+        height: 90px;
+    }
+    .compare h5, .compare-content h5 {
+        height: 90px;
+    }
+    .compare-content p {
+        padding: 24px 0 24px 10px;
+    }
+   
+}
+
+
+
+@media(max-width:767px){
+    .tc-carousel{ position: static;margin-right: -30px; }
+    .menubx.active .logo{ padding-top: 20px;}
+    .closebx{top: 25px;}
+    .phlpop .modal-dialog{max-width: 340px;}
+}
+
+
+
+@media screen and (min-width:320px) and (max-width:480px){
+
+    .pet-veterinarians-images{
+        flex: 0 0 40%;
+    }
+    .pet-doctor{
+        flex-wrap: wrap;
+        padding-top: 30px;
+        justify-content:center;
+    }
+    .pet-veterinarians h2 {
+        font-size: 40px;
+    }
+
+    .table-comparisons-text h2 {
+        font-size: 40px;
+    }
+    .compare {
+        max-width: 68px;
+    }
+
+    .compare h5, .compare-content h5 {
+        font-size: 12px;
+    }
+    .compare p, .compare-content p {
+       
+        font-size: 12px;
+    }
+    .compare p svg{
+        width: 22px;
+    }
+
+    .compare p, .compare-content p {
+        height: 80px;
+    }
+    .compare h5, .compare-content h5 {
+        font-size: 12px;
+        height: 80px;
+    }
+
+    .compare-content p {
+        padding: 24px 0 24px 8px;
+    }
+    .compare p:nth-child(2) {
+        padding: 0;
+        padding-top: 24px;
+    }
+    .compare h5 img {
+        margin-top: -38px;
+        max-width: 66px;
+    }
+    .pet-blogs-text h2 {
+        font-size: 40px;
+    }
+    .pet-blogs {
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    .pet-blogs-content {
+        padding-bottom: 0px;
+    }
+    .pet-veterinarians-bg {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .kitty-accordian-text h2 {
+        font-size: 40px;
+        padding-bottom: 0px;
+        padding-top: 40px;
+    }
+    .accordion-item .accordion-button {
+        font-size: 16px;
+    }
+    .kity-accordian .accordion-body {
+        font-size: 15px;
+    }
+    .kity-accordian {
+        padding-bottom: 50px;
+    }
+    .table-comparisons {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .pet-reviews-heading h2 {
+        font-size: 40px;
+    }
+    .pet-reviews-heading h2 {
+        padding-bottom: 30px;
+    }
+    .pet-reviews-bg {
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px){
+    .main-menu-div{padding: 0 20px;}
+    .menubx ul li a {  font-size: 26px; line-height: 42px; }
+    .navbar-nav .dropdown-menu{ padding: 0px 0;}
+    .dropdown-toggle::after{vertical-align: -0.25em;}
+    .dropdown-menu .dropdown-item{font-size: 22px;}
+    .main-menu-div { gap: 25px;}
+    .banner-cont h1{font-size: 45px; line-height: 1.3; padding: 0px 0;}
+    .banner-cta{width: 120px; right: -20px;}
+    .banner-cta .cta-arrow { left: 50%; }
+    .banner-vid p{font-size: 15px; padding-right: 65px;}
+    .wzl-content p{max-width: none;}
+    .banner-cont{padding: 0 15px;}
+    .testimonial{padding: 60px 15px 20px  15px;}
+    .tes-cont{ padding-bottom: 50px;}
+    .tes-cont p{ min-height: auto;}
+    .wzl-content h3, .obs-head h3{font-size: 42px; line-height: 1.3;}
+    .obs-head{ margin-bottom: 30px;}
+    .wzl-content {padding-top: 50px;}
+    .did-head h3{ font-size: 42px; line-height: 1.3;}
+    .ph-label-head{padding: 0 30px; height: 140px;}
+    .ph-labelimg-div img {
+        width: 38px;
+    }
+    .ph-label1 {
+        bottom: 53px;
+        left: 34px;
+    }
+    
+    .tc-head h3 {
+        font-size: 30px;
+        line-height: 1.3;
+    }
+    .ph-label1 {
+        bottom: 53px;
+    }
+    .ph-labels .ph-label-content::before {
+        left: -40%;
+        width: 180%;
+    }
+    .ph-label2 {
+        left: 31.5%;
+        top: 28%;}
+    .ph-label3 {
+        top: 24%;
+    }
+    .ph-labelimg-div.selected img {
+        width: 38px;
+    }
+    .ph-label4 {right: 24.5%;
+        top: 30%;}
+    .ph-label5 {bottom: 50px;
+        right: 43px;
+    }
+    .obs-content {
+        position: relative;
+        padding: 18px;
+        border-radius: 32px;
+        min-height: 342px;
+        padding-bottom: 70px;
+    }
+    .obs-content p{ max-width: 55%;}
+        .why-zenius-litter {
+            padding: 0 15px;
+        }
+        .obs-content h5{font-size: 30px; line-height: 1.2;}
+        .obs-peepads .obs-ab-img {
+            width: 40%;     bottom: 58px;
+        }
+        .obs-ab-img{  width: 40%;     bottom: 58px;
+        }
+        .pet-veterinarians-bg{margin-top: 60px;}
+        .trusted-customers {
+            padding: 00px 20px;
+            min-height: 800px;
+        }
+        .pet-blogs{padding: 0 15px;}
+        .kity-accordian{ margin: 0 15px;}
+        .table-comparisons{ margin-left:  15px; margin-right:  15px;}
+
+}
+
+@media  (max-width: 420px){
+    .customer-carousel{padding: 0 10px;}
+    .table-comparisons{
+        max-width: 320px;
+        margin:60px auto;
+    }
+    .compare h5, .compare-content h5{    padding: 32px 10px;}
+    .compare {max-width: 60px;  }
+    .compare p, .compare-content p {
+        font-size: 10px;
+    }
+    .banner-cont h1 {
+        font-size: 40px;
+    }
+    .pet-reviews-heading h2 {
+        font-size: 35px;
+        padding-bottom: 15px;
+    }
+}
+
+@media  (max-width: 370px){
+    .phlpop .modal-dialog{max-width: 300px;}
+    .video-testimonial-block .video-thumbnail {
+        width: 230px;
+    }
+    .tc-head h3 {margin-bottom: 30px;
+    }
+   
+
+    .video-testimonial-block {
+        width: 230px;
+    }
+
+    .compare {
+        max-width: 55px;
+    }
+   
+    .compare p, .compare-content p {
+        height: 80px;
+    }
+    .compare h5, .compare-content h5 {
+        font-size: 12px;
+        height: 80px;
+        padding: 0;
+        padding-top: 32px;
+
+    }
+    .compare p, .compare-content p {
+        font-size: 12px;
+    }
+    .pet-veterinarians-images{
+        flex: 0 0 40%;
+    }
+    .pet-doctor{
+        flex-wrap: wrap;
+        padding-top: 30px;
+        justify-content:center;
+    }
+    .table-comparisons-text h2 {
+        font-size: 40px;
+    }
+    .pet-veterinarians h2 {
+        font-size: 40px;
+    }
+    .compare p svg{
+        width: 22px;
+    }
+
+    .table-comparisons{
+        max-width: 290px;
+        margin:60px auto;
+    }
+    .compare h5, .compare-content h5{    padding: 32px 10px;}
+    .compare {max-width: 50px;  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>x-large</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+        integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="./asset/style.css">
+    <link rel="stylesheet" href="./asset/mega-menu.css">
+
+</head>
+
+<body>
+
+    <!-- <header>
+    <section>
+        <div class="free-shipping">
+            <p>Free Shipping On Orders Over $150 
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                    <path d="M10.0035 3.4083L1.41176 12L0 10.5882L8.5917 1.99654H1.01905V0H12V10.981H10.0035V3.4083Z" fill="white"/>
+                  </svg>
+            </p>
+        </div>
+        <div class="header-navbar-bg">
+        <div class="container">
+            <div class="header-navbar">
+                <nav>
+                    <div class="header-img-content">
+                    <div class="header-img">
+                        <a href=""><img src="./images/header-logo.svg" alt=""></a>
+                    </div>
+
+                    <div class="header-text">
+                        <a href="">Latest</a>
+                        <a href="">clothing
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="6" viewBox="0 0 11 6" fill="none">
+                                <path d="M5.49998 3.81814L9.77779 0L11 1.0909L5.49998 6L0 1.0909L1.22222 0L5.49998 3.81814Z" fill="black"/>
+                              </svg>
+                        </a>
+                        <a href="">accessories
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="6" viewBox="0 0 11 6" fill="none">
+                                <path d="M5.49998 3.81814L9.77779 0L11 1.0909L5.49998 6L0 1.0909L1.22222 0L5.49998 3.81814Z" fill="black"/>
+                              </svg>
+                        </a>
+                        <a href="">collaborations
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="6" viewBox="0 0 11 6" fill="none">
+                                <path d="M5.49998 3.81814L9.77779 0L11 1.0909L5.49998 6L0 1.0909L1.22222 0L5.49998 3.81814Z" fill="black"/>
+                              </svg>
+                        </a>
+                        <a href="">winter’23</a>
+                        <a href="">back in stock</a>
+                    </div>
+                </div>
+
+                    <div class="menu-right">
+                        <div class="search-header"><img src="./images/search.svg" alt="search"></div>
+                        <div class="user-header"><img src="./images/user.svg" alt="user"></div>
+                        <div class="cart-header">
+                            <img src="./images/shoping-cart.svg" alt="cart">
+                            <div class="count">0</div>
+                        </div>
+                        
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    </section>
+</header> -->
+<header>
+    <div class="x-mobile-header">
+      <div class="container">
+        <div class="x-mobile-header-menu">
+          <div class="x-mobile-header-img">
+            <a href=""><img src="./images/mobile-logo.svg" alt=""></a>
+          </div>
+  
+          <div class="x-mobile-header-logos">
+            <div class="x-header-search"><img src="./images/search.svg" alt="search"></div>
+            <div class="x-mobile-header-cart">
+               <a href=""><img src="./images/shoping-cart.svg" alt="cart"></a> 
+                <div class="cart-count-bubble count"><span class="" aria-hidden="true">1</span><span class="visually-hidden">1 item</span>
+                </div>
+            </div>
+            <div class="x-header-menu-open" id="open-menu-btn">
+              <img src="./images/menu.svg" alt="Open Menu">
+            </div>
+           
+           
+          </div>
+        </div>
+  
+        <div class="menu-bar-show-overlay active" id="overlay"></div>
+        <div class="x-mobile-header-hide-menu-bg">
+        <div class="x-mobile-header-hide-menu">
+          <div class="x-mobile-header-img">
+            <a href=""><img src="./images/mobile-logo.svg" alt=""></a>
+          </div>
+  
+          <div class="x-mobile-header-logos">
+            <div class="x-header-search"><img src="./images/search.svg" alt="search"></div>
+            <div class="x-mobile-header-cart">
+               <a href=""><img src="./images/shoping-cart.svg" alt="cart"></a> 
+                <div class="cart-count-bubble count"><span class="" aria-hidden="true">1</span><span class="visually-hidden">1 item</span>
+                </div>
+            </div>
+            <div class="x-header-menu-close">
+              <img src="./images/menu-close.svg" alt="Close Menu" id="close-menu-btn">
+            </div>
+           
+           
+          </div>
+        </div>
+  
+        <div class="x-mobile-header-hide-menu-list">
+          <ul>
+            <li> <a class="accordion-link" href="">latest</a> </li>
+  
+            <li>
+                <div class="mobile-search-accordian">
+                  <div class="accordion-link">Clothing</div>
+                    <!-- <a  href="your-about-page.html">Clothing</a> -->
+                    <span class="split-accordion-toggle">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="6" height="12" viewBox="0 0 6 12" fill="none">
+                        <path d="M3.81814 6.00002L-4.27401e-07 1.72221L1.0909 0.5L6 6.00002L1.0909 11.5L-5.34251e-08 10.2778L3.81814 6.00002Z" fill="black"/>
+                      </svg>
+                    </span>
+                </div>
+                <div class="split-accordion-text">
+                    <ul>
+                        <li><a href="#">bcoats & jackets</a></li>
+                        <li><a href="#">knitwear</a></li>
+                        <li><a href="#"> pants & overalls</a></li>
+                        <li><a href="#">sweats</a></li>
+                        <li><a href="#">shirts</a></li>
+                        <li><a href="#">shorts</a></li>
+                        <li><a href="#">tees & tanks</a></li>
+                        <li><a href="#">view all</a></li>
+                    </ul>
+                </div>
+            </li>
+  
+            <li>
+                <div class="mobile-search-accordian">
+                  <div class="accordion-link">accessories</div>
+                    <span class="split-accordion-toggle">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="6" height="12" viewBox="0 0 6 12" fill="none">
+                        <path d="M3.81814 6.00002L-4.27401e-07 1.72221L1.0909 0.5L6 6.00002L1.0909 11.5L-5.34251e-08 10.2778L3.81814 6.00002Z" fill="black"/>
+                      </svg>
+                    </span>
+                </div>
+                <div class="split-accordion-text">
+                    <ul>
+                        <li><a href="#">bags & wallets</a></li>
+                        <li><a href="#">headwear</a></li>
+                        <li><a href="#">socks</a></li>
+                        <li><a href="#">misc</a></li>
+                        <li><a href="#">view all</a></li>
+                    </ul>
+                </div>
+            </li>
+  
+          
+  
+            <li>
+                <div class="mobile-search-accordian">
+                  <div class="accordion-link">collaborations</div>
+                    <span class="split-accordion-toggle">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="6" height="12" viewBox="0 0 6 12" fill="none">
+                        <path d="M3.81814 6.00002L-4.27401e-07 1.72221L1.0909 0.5L6 6.00002L1.0909 11.5L-5.34251e-08 10.2778L3.81814 6.00002Z" fill="black"/>
+                      </svg>
+                    </span>
+                </div>
+                <div class="split-accordion-text">
+                    <ul>
+                      <li><a href="#">dragon76</a></li>
+                        <li><a href="#">xiuter</a></li>
+                        <li><a href="#">david flores</a></li>
+                        <li><a href="#">chris pyrate</a></li>
+                        <li><a href="#">akila</a></li>
+                        <li><a href="#">view all</a></li>
+  
+                    </ul>
+                </div>
+            </li>
+  
+            <li> <a class="accordion-link" href="your-about-page.html">winter’23</a> </li>
+  
+            <li> <a class="accordion-link" href="your-about-page.html">back in stock</a> </li>
+  
+        </ul>
+  
+        <div class="x-mobile-header-logout">
+          <a href="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16" fill="none">
+              <path d="M1.33325 15V13.4444C1.33325 12.6193 1.66103 11.828 2.24448 11.2446C2.82792 10.6611 3.61924 10.3333 4.44436 10.3333H7.55547C8.38059 10.3333 9.17191 10.6611 9.75536 11.2446C10.3388 11.828 10.6666 12.6193 10.6666 13.4444V15M2.88881 4.11111C2.88881 4.93623 3.21658 5.72755 3.80003 6.311C4.38348 6.89445 5.1748 7.22222 5.99992 7.22222C6.82504 7.22222 7.61636 6.89445 8.19981 6.311C8.78325 5.72755 9.11103 4.93623 9.11103 4.11111C9.11103 3.28599 8.78325 2.49467 8.19981 1.91122C7.61636 1.32778 6.82504 1 5.99992 1C5.1748 1 4.38348 1.32778 3.80003 1.91122C3.21658 2.49467 2.88881 3.28599 2.88881 4.11111Z" stroke="#354052" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            login to account
+          </a>
+        </div>
+        </div>
+  
+      </div>
+      </div>
+    </div>
+  </header>
+
+    <section>
+        <div class="banner-bg">
+            <div class="container">
+                <div class="banner-xlarge">
+                    <div class="banner-content">
+                        <h6>Trending since 1991</h6>
+                        <h2>A Pioneer of L.A. Streetwear Culture</h2>
+                        <p>A pioneer of Los Angeles streetwear culture, XLARGE started as a shop in the LA neighborhood
+                            of Los Feliz, on Vermont street in 1991.</p>
+                        <a href="">winter’23 collection
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12"
+                                fill="none">
+                                <path
+                                    d="M9.16983 3.62428L1.29412 11.5L0 10.2059L7.87572 2.33016H0.934132V0.5H11V10.5659H9.16983V3.62428Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="banner-content-img">
+                        <div class="desktop-banner-img">
+                            <img src="./images/banner-content.png" alt="">
+                        </div>
+                        <div class="mobile-banner-img">
+                            <img src="./images/mobile-banner.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="collection-bg">
+            <div class="collect-dress">
+                <div class="owl-carousel owl-theme reveiw-carousel">
+                    <div class="item">
+                        <div class="collect-dress-img">
+                            <a href=""> <img src="./images/collection-1.png" alt=""></a>
+                            <div class="collect-dress-tag">
+                                <a href="">dragon76
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
+                                        fill="none">
+                                        <path
+                                            d="M10.0035 3.4083L1.41176 12L0 10.5882L8.5917 1.99654H1.01905V0H12V10.981H10.0035V3.4083Z"
+                                            fill="#111111" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="collect-dress-img">
+                            <a href=""> <img src="./images/collection-2.png" alt=""></a>
+                            <div class="collect-dress-tag">
+                                <a href="">dragon76
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
+                                        fill="none">
+                                        <path
+                                            d="M10.0035 3.4083L1.41176 12L0 10.5882L8.5917 1.99654H1.01905V0H12V10.981H10.0035V3.4083Z"
+                                            fill="#111111" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="collect-dress-img">
+                            <a href=""> <img src="./images/collection-3.png" alt=""></a>
+                            <div class="collect-dress-tag">
+                                <a href="">dragon76
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
+                                        fill="none">
+                                        <path
+                                            d="M10.0035 3.4083L1.41176 12L0 10.5882L8.5917 1.99654H1.01905V0H12V10.981H10.0035V3.4083Z"
+                                            fill="#111111" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="collect-dress-img">
+                            <a href=""> <img src="./images/collection-1.png" alt=""></a>
+                            <div class="collect-dress-tag">
+                                <a href="">dragon76
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
+                                        fill="none">
+                                        <path
+                                            d="M10.0035 3.4083L1.41176 12L0 10.5882L8.5917 1.99654H1.01905V0H12V10.981H10.0035V3.4083Z"
+                                            fill="#111111" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="collect-dress-img">
+                            <a href=""> <img src="./images/collection-2.png" alt=""></a>
+                            <div class="collect-dress-tag">
+                                <a href="">dragon76
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
+                                        fill="none">
+                                        <path
+                                            d="M10.0035 3.4083L1.41176 12L0 10.5882L8.5917 1.99654H1.01905V0H12V10.981H10.0035V3.4083Z"
+                                            fill="#111111" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="collect-dress-img">
+                            <a href=""> <img src="./images/collection-3.png" alt=""></a>
+                            <div class="collect-dress-tag">
+                                <a href="">dragon76
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
+                                        fill="none">
+                                        <path
+                                            d="M10.0035 3.4083L1.41176 12L0 10.5882L8.5917 1.99654H1.01905V0H12V10.981H10.0035V3.4083Z"
+                                            fill="#111111" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========mobile============ -->
+
+            <div class="container">
+                <div class="collection-bg-block">
+                    <div class="mobile-collect-dress">
+                        <div class="mobile-collect-dress-img">
+                            <a href=""> <img src="./images/mob-collection-1.png" alt=""></a>
+                            <div class="mobile-collect-dress-tag">
+                                <a href="">dragon76
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
+                                        fill="none">
+                                        <path
+                                            d="M10.0035 3.4083L1.41176 12L0 10.5882L8.5917 1.99654H1.01905V0H12V10.981H10.0035V3.4083Z"
+                                            fill="#111111" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="mobile-collect-dress-img">
+                            <a href=""> <img src="./images/mob-collection-2.png" alt=""></a>
+                            <div class="mobile-collect-dress-tag">
+                                <a href="">dragon76
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
+                                        fill="none">
+                                        <path
+                                            d="M10.0035 3.4083L1.41176 12L0 10.5882L8.5917 1.99654H1.01905V0H12V10.981H10.0035V3.4083Z"
+                                            fill="#111111" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="mobile-collect-dress-img">
+                            <a href=""> <img src="./images/mob-collection-3.png" alt=""></a>
+                            <div class="mobile-collect-dress-tag">
+                                <a href="">dragon76
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
+                                        fill="none">
+                                        <path
+                                            d="M10.0035 3.4083L1.41176 12L0 10.5882L8.5917 1.99654H1.01905V0H12V10.981H10.0035V3.4083Z"
+                                            fill="#111111" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="mobile-collect-dress-img">
+                            <a href=""> <img src="./images/mob-collection-4.png" alt=""></a>
+                            <div class="mobile-collect-dress-tag">
+                                <a href="">dragon76
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
+                                        fill="none">
+                                        <path
+                                            d="M10.0035 3.4083L1.41176 12L0 10.5882L8.5917 1.99654H1.01905V0H12V10.981H10.0035V3.4083Z"
+                                            fill="#111111" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="x-arrivals">
+            <h2>Our Latest Arrivals</h2>
+
+            <div class="owl-carousel owl-theme reveiw-carousel">
+                <div class="item">
+                    <div class="x-arrivals-content">
+
+                        <div class="x-arrivals-content-img">
+                            <a href=""><img src="./images/arrival-1.png" alt=""></a>
+                        </div>
+
+                        <div class="x-arrivals-content-text">
+                            <a href="">varsity logo sweat pants <span>₹ 10,700.00</span></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="x-arrivals-content">
+
+                        <div class="x-arrivals-content-img">
+                            <a href=""><img src="./images/arrival-2.png" alt=""></a>
+                        </div>
+
+                        <div class="x-arrivals-content-text">
+                            <a href="">varsity logo sweat pants <span>₹ 10,700.00</span></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="x-arrivals-content">
+
+                        <div class="x-arrivals-content-img">
+                            <a href=""><img src="./images/arrival-1.png" alt=""></a>
+                        </div>
+
+                        <div class="x-arrivals-content-text">
+                            <a href="">varsity logo sweat pants <span>₹ 10,700.00</span></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="x-arrivals-content">
+
+                        <div class="x-arrivals-content-img">
+                            <a href=""><img src="./images/arrival-2.png" alt=""></a>
+                        </div>
+
+                        <div class="x-arrivals-content-text">
+                            <a href="">varsity logo sweat pants <span>₹ 10,700.00</span></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="x-arrivals-content">
+
+                        <div class="x-arrivals-content-img">
+                            <a href=""><img src="./images/arrival-1.png" alt=""></a>
+                        </div>
+
+                        <div class="x-arrivals-content-text">
+                            <a href="">varsity logo sweat pants <span>₹ 10,700.00</span></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="x-arrivals-content">
+
+                        <div class="x-arrivals-content-img">
+                            <a href=""><img src="./images/arrival-2.png" alt=""></a>
+                        </div>
+
+                        <div class="x-arrivals-content-text">
+                            <a href="">varsity logo sweat pants <span>₹ 10,700.00</span></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mob-x-arrivals">
+            <h2>Our Latest Arrivals</h2>
+            <div class="container">
+                <div class="mob-x-arrivals-items">
+
+                    <div class="mob-x-arrivals-content">
+
+                        <div class="mob-x-arrivals-content-img">
+                            <a href=""><img src="./images/mob-arrival-1.png" alt=""></a>
+                        </div>
+
+                        <div class="mob-x-arrivals-content-text">
+                            <a href="">varsity logo sweat pants <span>₹ 10,700.00</span></a>
+                        </div>
+
+                    </div>
+
+                    <div class="mob-x-arrivals-content">
+
+                        <div class="mob-x-arrivals-content-img">
+                            <a href=""><img src="./images/mob-arrival-2.png" alt=""></a>
+                        </div>
+
+                        <div class="mob-x-arrivals-content-text">
+                            <a href="">varsity logo sweat pants <span>₹ 10,700.00</span></a>
+                        </div>
+
+                    </div>
+
+                    <div class="mob-x-arrivals-content">
+
+                        <div class="mob-x-arrivals-content-img">
+                            <a href=""><img src="./images/mob-arrival-3.png" alt=""></a>
+                        </div>
+
+                        <div class="mob-x-arrivals-content-text">
+                            <a href="">varsity logo sweat pants <span>₹ 10,700.00</span></a>
+                        </div>
+
+                    </div>
+
+                    <div class="mob-x-arrivals-content">
+
+                        <div class="mob-x-arrivals-content-img">
+                            <a href=""><img src="./images/mob-arrival-4.png" alt=""></a>
+                        </div>
+
+                        <div class="mob-x-arrivals-content-text">
+                            <a href="">varsity logo sweat pants <span>₹ 10,700.00</span></a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="x-testimonial-color-bg">
+        <div class="x-testimonial-bg">
+            <div class="container">
+                <div class="x-testimonial">
+                    <div class="x-testimonial-heading">
+                        <h2>Here's what they have to say</h2>
+                        <p>Read all testimonial from our customers</p>
+                    </div>
+                    <div class="x-testimonial-crousel-btn">
+                        <button class="prev-btn" onclick="prevVideo()"><img src="./images/previous.svg" alt=""></button>
+                        <button class="next-btn" onclick="nextVideo()"><img src="./images/next.svg" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="owl-carousel owl-theme testimonial-carousel">
+            <div class="item">
+                <div class="x-testimonial-content">
+                    <div class="x-testimonial-content-text">
+                        <img src="./images/x-testimonial-1.png" alt="">
+                        <h6>“lorem ipsum dolor sit amet enim, consectetur adipiscing, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna.”</h6>
+                        <p>Rene Wells <span>Role/position</span></p>
+                    </div>
+
+                    <div class="x-testimonial-content-img">
+                        <img src="./images/x-testimonial-1-1.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="x-testimonial-content">
+                    <div class="x-testimonial-content-text x-testimonial-content-text-people">
+
+                        <p>Rene Wells <span>Role/position</span></p>
+                        <img src="./images/x-testimonial-2.png" alt="">
+                        <h6>“lorem ipsum dolor sit amet enim, consectetur adipiscing, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna.”</h6>
+
+                    </div>
+
+                    <div class="x-testimonial-content-img">
+                        <img src="./images/x-testimonial-2-2.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="mob-x-testimonial-crousel-btn">
+            <button class="prev-btn" onclick="prevVideo()"><img src="./images/previous.svg" alt=""></button>
+            <button class="next-btn" onclick="nextVideo()"><img src="./images/next.svg" alt=""></button>
+        </div>
+
+    </section>
+
+
+
+    <section>
+        <div class="x-about">
+            <div class="container">
+                <div class="x-about-content">
+                    <div class="x-about-img">
+                        <img src="./images/about-1.png" alt="">
+                    </div>
+                    <div class="x-about-text">
+                        <h2>Get to know about</h2>
+                        <img src="./images/header-logo.svg" alt="">
+
+                        <p>A pioneer of Los Angeles <span>streetwear culture</span>, XLARGE started as a shop in the LA
+                            neighborhood of Los Feliz, on Vermont street in 1991.</p>
+
+                        <p> <span> Opened by Eli Bonerz and Adam Silverman</span>, the store catered to their diverse
+                            community and was quickly adopted by personalities such as Mike D of the Beastie Boys, Spike
+                            Jonez, and Chloe Sevigny.</p>
+
+                        <p>The XLARGE clothing brand was a true reflection of its surroundings and Los Angeles
+                            lifestyle. The brand drew inspiration from <span> work wear, vintage, and club scene
+                                aesthetics</span>; to mid-century design, skateboarding and music influences.</p>
+
+                        <p>Iconic for its Gorilla logo, XLARGE is established as one of the originals and <span>
+                                continues to influence generations of streetwear culture worldwide.</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="x-accordion-bg">
+            <div class="container">
+                <div class="x-accordion-heading">
+                    <h2>If you have any questions, read the answers for most asked questions.</h2>
+                </div>
+
+
+                <div class="tabs">
+                    <ul id="tabs-nav">
+                        <li><a href="#tab1">general questions</a></li>
+                        <li><a href="#tab2">SHIPPING</a></li>
+                        <li><a href="#tab3">returns and refunds</a></li>
+
+                    </ul> <!-- END tabs-nav -->
+                    <div id="tabs-content">
+                        <div id="tab1" class="tab-content">
+                            <div class="accordion-container">
+                                <div class="set">
+                                    <a href="javascript:void(0)" class="active">
+                                        <span>1</span> Frequently asked question one goes here
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                    <div class="content" style="display: block;">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna.</p>
+                                    </div>
+                                </div>
+                                <div class="set">
+                                    <a href="javascript:void(0)">
+                                        <span>2</span> Frequently asked question one goes here
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                    <div class="content">
+                                        <p> Aliquam cursus vitae nulla non rhoncus. Nunc condimentum erat nec dictum
+                                            tempus. Suspendisse aliquam erat hendrerit vehicula vestibulum.</p>
+                                    </div>
+                                </div>
+                                <div class="set">
+                                    <a href="javascript:void(0)">
+                                        <span>3</span> Frequently asked question one goes here
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                    <div class="content">
+                                        <p>Pellentesque aliquam ligula libero, vitae imperdiet diam porta vitae. sed do
+                                            eiusmod tempor incididunt ut labore et dolore magna.</p>
+                                    </div>
+                                </div>
+                                <div class="set">
+                                    <a href="javascript:void(0)">
+                                        <span>4</span> Frequently asked question one goes here
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                    <div class="content">
+                                        <p> Donec tincidunt consectetur orci at dignissim. Proin auctor aliquam justo,
+                                            vitae luctus odio pretium scelerisque. </p>
+                                    </div>
+                                </div>
+                                <div class="set">
+                                    <a href="javascript:void(0)">
+                                        <span>5</span> Frequently asked question one goes here
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                    <div class="content">
+                                        <p> Donec tincidunt consectetur orci at dignissim. Proin auctor aliquam justo,
+                                            vitae luctus odio pretium scelerisque. </p>
+                                    </div>
+                                </div>
+                                <div class="set">
+                                    <a href="javascript:void(0)">
+                                        <span>5</span> Frequently asked question one goes here
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                    <div class="content">
+                                        <p> Donec tincidunt consectetur orci at dignissim. Proin auctor aliquam justo,
+                                            vitae luctus odio pretium scelerisque. </p>
+                                    </div>
+                                </div>
+                                <div class="set">
+                                    <a href="javascript:void(0)">
+                                        <span>5</span> Frequently asked question one goes here
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                    <div class="content">
+                                        <p> Donec tincidunt consectetur orci at dignissim. Proin auctor aliquam justo,
+                                            vitae luctus odio pretium scelerisque. </p>
+                                    </div>
+                                </div>
+                                <div class="set">
+                                    <a href="javascript:void(0)">
+                                        <span>5</span> Frequently asked question one goes here
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                    <div class="content">
+                                        <p> Donec tincidunt consectetur orci at dignissim. Proin auctor aliquam justo,
+                                            vitae luctus odio pretium scelerisque. </p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+                        <div id="tab2" class="tab-content">
+
+
+
+                            <div class="accordion-container">
+                                <div class="set">
+                                    <a href="javascript:void(0)" class="active">
+                                        <span>1</span> Frequently asked question one goes here
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                    <div class="content" style="display: block;">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna.</p>
+                                    </div>
+                                </div>
+                                <div class="set">
+                                    <a href="javascript:void(0)">
+                                        <span>2</span> Frequently asked question one goes here
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                    <div class="content">
+                                        <p> Aliquam cursus vitae nulla non rhoncus. Nunc condimentum erat nec dictum
+                                            tempus. Suspendisse aliquam erat hendrerit vehicula vestibulum.</p>
+                                    </div>
+                                </div>
+                                <div class="set">
+                                    <a href="javascript:void(0)">
+                                        <span>3</span> Frequently asked question one goes here
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                    <div class="content">
+                                        <p>Pellentesque aliquam ligula libero, vitae imperdiet diam porta vitae. sed do
+                                            eiusmod tempor incididunt ut labore et dolore magna.</p>
+                                    </div>
+                                </div>
+                                <div class="set">
+                                    <a href="javascript:void(0)">
+                                        <span>4</span> Frequently asked question one goes here
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                    <div class="content">
+                                        <p> Donec tincidunt consectetur orci at dignissim. Proin auctor aliquam justo,
+                                            vitae luctus odio pretium scelerisque. </p>
+                                    </div>
+                                </div>
+                                <div class="set">
+                                    <a href="javascript:void(0)">
+                                        <span>5</span> Frequently asked question one goes here
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                    <div class="content">
+                                        <p> Donec tincidunt consectetur orci at dignissim. Proin auctor aliquam justo,
+                                            vitae luctus odio pretium scelerisque. </p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div id="tab3" class="tab-content">
+
+
+                            <div class="accordion-container">
+                                <div class="set">
+                                    <a href="javascript:void(0)" class="active">
+                                        <span>1</span> Frequently asked question one goes here
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                    <div class="content" style="display: block;">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna.</p>
+                                    </div>
+                                </div>
+                                <div class="set">
+                                    <a href="javascript:void(0)">
+                                        <span>2</span> Frequently asked question one goes here
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                    <div class="content">
+                                        <p> Aliquam cursus vitae nulla non rhoncus. Nunc condimentum erat nec dictum
+                                            tempus. Suspendisse aliquam erat hendrerit vehicula vestibulum.</p>
+                                    </div>
+                                </div>
+                                <div class="set">
+                                    <a href="javascript:void(0)">
+                                        <span>3</span> Frequently asked question one goes here
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                    <div class="content">
+                                        <p>Pellentesque aliquam ligula libero, vitae imperdiet diam porta vitae. sed do
+                                            eiusmod tempor incididunt ut labore et dolore magna.</p>
+                                    </div>
+                                </div>
+                                <div class="set">
+                                    <a href="javascript:void(0)">
+                                        <span>4</span> Frequently asked question one goes here
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                    <div class="content">
+                                        <p> Donec tincidunt consectetur orci at dignissim. Proin auctor aliquam justo,
+                                            vitae luctus odio pretium scelerisque. </p>
+                                    </div>
+                                </div>
+                                <div class="set">
+                                    <a href="javascript:void(0)">
+                                        <span>5</span> Frequently asked question one goes here
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                    <div class="content">
+                                        <p> Donec tincidunt consectetur orci at dignissim. Proin auctor aliquam justo,
+                                            vitae luctus odio pretium scelerisque. </p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div> <!--tab3 -->
+                    </div> <!-- END tabs -->
+                    <div id="qna-load-more">Load More
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="6" viewBox="0 0 11 6" fill="none">
+                            <path d="M5.49998 3.81814L9.77779 0L11 1.0909L5.49998 6L0 1.0909L1.22222 0L5.49998 3.81814Z" fill="black"/>
+                          </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section>
+        <div class="x-insta-large">
+            <div class="x-insta-img">
+               <img src="./images/insta.svg" alt="">
+            </div>
+            <div class="x-insta-text">
+                <h2>xlarge_us</h2>
+            </div>
+            <div class="x-insta-star">
+                <img src="./images/verified.svg" alt="">
+            </div>
+        </div>
+    </section> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="./asset/script.js"></script>
+</body>
+
+</html>

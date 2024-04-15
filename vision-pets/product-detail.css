@@ -1,0 +1,620 @@
+
+
+.vision-product-detail-crousel #thumbCarousel .thumb {
+    float: left;
+    margin-right: 10px;
+    border: 1px solid #e6e6e6;
+    background: #fff;
+    margin-bottom: 10px;
+}
+
+
+.vision-product-detail-crousel .thumb:hover {
+    cursor: pointer;
+}
+
+
+.vision-product-detail-crousel .thumb img {
+    opacity: 1;
+    border: 1px solid #808080;
+    transform: scale(1.1);
+    border-radius: 5px;
+    box-shadow: 0 1px 3px #00000050;
+    border: solid 3px #ffff;
+    transition: 0.1s;
+}
+
+.vision-product-detail-crousel .thumb.active img {
+
+    transform: scale(1.2);
+}
+
+
+.vision-product-detail-crousel .carousel-control.right,
+.vision-product-detail-crousel .carousel-control.left {
+    background-image: unset
+}
+
+.vision-product-detail-crousel .carousel-inner {
+    box-shadow: 0 1px 3px #00000050;
+    border: solid 3px #ffff;
+    border-radius: 10px;
+}
+
+.vpdc-thumbCarousel #thumbCarousel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
+    gap: 2px;
+}
+
+.vision-product-detail-crousel .item img {
+    width: 100%;
+}
+
+.vpdd-home a svg {
+    width: 16px;
+    /* height: 16px; */
+}
+
+.vpdd-home a {
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #12384D;
+    font-weight: 500;
+}
+
+.vpdd-home {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: max-content;
+    background: #FAFBFDB3;
+    padding: 9px 12px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.vpdcc-energy-home p svg {
+    width: 11px;
+    margin-right: 4px;
+}
+
+.vpdcc-energy-home p {
+    font-size: 9.6px;
+    font-weight: 700;
+    color: white;
+    background-color: #12384D;
+    padding: 5px 7px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.vpdcc-energy-home {
+    display: flex;
+    gap: 10px;
+}
+
+.vpdcc-star img {
+    width: 100px;
+}
+
+.vpdcc-star {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.vpdcc-star a {
+    font-size: 12px;
+    font-weight: 800;
+    color: #12384D;
+    text-decoration: none;
+}
+
+.vision-product-detail-crousel-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vpdcc-heading h2 {
+    font-size: 24px;
+    font-weight: 800;
+    color: #12384D;
+}
+
+.vpdcc-dollar-cut h5 {
+    font-size: 18px;
+    color: grey;
+    margin-bottom: 0;
+    text-decoration: line-through;
+}
+
+.vpdcc-dollar-price h4 {
+    color: #12384D;
+    font-size: 34px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 0;
+}
+
+.vpdcc-dollar-price h4 span {
+    font-size: 9px;
+    font-weight: 800;
+    background-color: #006400;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.vpdcc-interest p {
+    font-size: 12px;
+    color: #283246;
+    font-weight: 500;
+    margin: 0;
+}
+
+.vpdcc-interest p span {
+    font-weight: 800;
+}
+
+.vpdcc-interest p svg {
+    width: 60px;
+}
+.vpdcc-interest .vpdcc-interest-learn{
+    background-color: unset;
+    border: none;
+    font-size: 12px;
+    font-weight: 500;
+    border-bottom: 1px solid;
+}
+.vpdcc-interest{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.vpdcc-protect-dog p{
+    font-size: 14px;
+    font-weight: 500;
+    color: #12384D;
+}
+.vpdcc-protect-dog ul{
+    list-style: none;
+    padding: 0;
+    font-size: 14px;
+    color: #12384D;
+    font-weight: 500;
+}
+.vpdcc-protect-dog{
+    padding: 17px 0 8px 0;
+}
+
+.live-sale h2 {
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 700;
+    color: white;
+    animation: blinking_live-sale 3s infinite;
+    margin: 0;
+}
+@keyframes blinking_live-sale {
+    0% {
+      color: red;
+    }
+    22.33%{
+      color: blue;
+    }
+    44.33% {
+      color: green;
+    }
+    66.66% {
+      color: skyblue;
+    }
+    88.66%{
+      color: palegreen;
+    }
+    100% {
+      color: red;
+    }
+  }
+
+  .vpdcc-select-color p{
+    font-size: 13px;
+    color: #12384D;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0;
+    padding-bottom: 5px;
+  }
+  .vpdcc-select-color button{
+    border: none;
+    font-size: 13px;
+    color: #12384D;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: #FAFBFD;
+    padding: 10px;
+    border-radius: 5px;
+  
+  }
+  .vpdcc-select-color button.active-vpdn{
+    background-color: #12384D;
+    color: white;
+  }
+  .vpdcc-select-color{
+    padding-top: 15px;
+  }
+  .vpdcc-money-back h4{
+    color: #12384D;
+    font-weight: 800;
+    font-size: 13px;
+    text-align: center;
+    padding: 8px;
+    background-color: #FAFBFD;
+    margin-top: 20px;
+  }
+  .vpdcc-cart-btn .red {
+    opacity: 0.4;
+}
+.vpdcc-cart-btn button{
+    border: none;
+    background-color: unset;
+    font-size: 25px;
+}
+.vpdcc-minplus{
+    border: 1px solid #12384D;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.vpdcc-cart-btn{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.vpdcc-minplus span{
+    font-weight: 500;
+}
+.vpdcc-addcrt button svg{
+    width: 22px;
+}
+.vpdcc-addcrt button{
+    background-color: #d62e55;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 800;
+    color: white;
+    padding: 17px 85px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+
+}
+/* .vpdcc-addcrt button:hover{
+padding: 20px 100px;
+} */
+
+.vision-info .accordion-button{
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 15px 0;
+    background-color: unset;
+    box-shadow: none;
+    color: #12384D;
+}
+.vision-info .accordion-header{
+    margin: 0;
+}
+.vision-info .accordion-item{
+    border-color: #12384D;
+}
+.vision-info .accordion-body{
+    padding: 20px 0;
+}
+
+.vision-info .accordion-button::after {
+    background-image: url(./images/plus.svg);
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    background-size: 20px;
+}
+.vision-info .accordion-button:not(.collapsed)::after {
+    background-image: url(./images/minus.svg);
+}
+.vision-info{
+    padding-top: 40px;
+}
+.vision-info .vision-info-text ul li{
+    color: #12384D;
+}
+.vision-info-text-img ul{
+    list-style: none;
+    padding: 0;
+}
+.vision-info-text-img ul li {
+color: #12384D;
+font-weight: 500
+}
+.vision-info-text-img ul li span{
+    font-weight: 700;
+}
+.vit-img{
+    text-align: center;
+}
+.vision-info-paragraph p{
+    color: #12384D;
+    font-weight: 500;
+}
+.vision-info-paragraph p span{
+    font-weight: 700;
+}
+
+.vision-plus-dog-bg{
+    background-color: #425C9D;
+    padding: 20px 0 38px;
+    margin-top: 10px;
+}
+.vision-plus-dog h2{
+    margin: 0;
+    font-size: 22px;
+    padding: 5px 0 20px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+}
+.vision-plus-dog p{
+    max-width: 775px;
+    margin: 0 auto;
+    text-align: center;
+    color: #4A4A4A;
+    background-color: white;
+    padding: 15px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.vav-vemo-video iframe{
+    width:485px;
+    height: 395px;
+}
+.vav-video-text h2{
+font-size: 32px;
+font-weight: 700;
+color: #12384D;
+margin-top: 10px;
+}
+
+.vav-video-text h4{
+    font-size: 18px;
+    font-weight: 700;
+    color: #12384D;
+    margin: 20px 0;
+}
+.vav-video-text p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #12384D;
+}
+.vav-video-text a{
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.vav-video-text .vvt-anchor:hover a{
+    color: rgb(19,40,77,.6);
+}
+.vav-video-text .vvt-anchor{
+    background-color: #425C9D;
+   text-align: center;
+   padding: 15px;
+   margin-top: 20px;
+}
+.vav-video-text .vvt-anchor img{
+    width: 10px;
+    padding: 0;
+}
+.vision-auto-video-bg{
+    padding: 44px 0;
+    background-color: #FAFBFD;
+}
+.vav-video-text ul{
+    list-style: none;
+}
+.vav-video-text ul li svg{
+width: 14px;
+}
+.vav-video-text ul li {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 5px;
+    }
+
+    .vision-yahoo h2{
+        font-size: 18px;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    .vision-yahoo{
+        text-align: center;
+        padding-top: 70px;
+    }
+    .vision-yahoo img{
+        max-width: 750px;
+    }
+
+    .vision-yahoo-rating{
+        background-color: #FAFBFD;
+        padding: 25px;
+        text-align: center;
+    }
+
+    .vision-yahoo-rating p{
+        text-align: start;
+        font-size: 16px;
+        padding: 20px 0;
+        font-weight: 400;
+    }
+    .vision-yahoo-rating img{
+        max-width: 150px;
+        margin: 0 auto;
+    }
+    .vision-yahoo-ratings-bg{
+        padding-top: 20px;
+        padding-bottom: 70px;
+    }
+    .vav-vemo-video-img img{
+        width: 100%;
+    }
+    .vav-video-text-slipgrip h2{
+        font-size: 24px;
+    }
+    .vav-video-text-slipgrip h4{
+        margin-bottom: 5px;
+    }
+    .vav-video-text-slipgrip ul li span{
+        font-weight: 800;
+    }
+
+    /* paw review pic section */
+    .vision-pawramp-reviewdog img{
+        width: 200px;
+    }
+    .vision-pawramp-reviewdog p{
+        font-size: 20px;
+        font-weight: 500;
+        color: #4A4A4A;
+        padding: 15px 0 30px;
+    }
+    .vprw-img img{
+        width: 100%;
+    }
+    .vision-pawramp-reviewdog{
+        text-align: center;
+    }
+    .vision-pawramp-reviewdog-bg{
+        padding: 50px 0 25px;
+    }
+
+    /* paw pic section vetetarian */
+    .vision-auto-pic .row{
+        align-items: center;
+    }
+    .vav-video-text-veterian h2{
+        font-size: 21px;
+    }
+    .vav-video-text-veterian img{
+        width: 88px;
+        padding: 5px 0 15px;
+    }
+    .vav-video-text-veterian h4{
+        margin-bottom: 0;
+    }
+
+    .vision-might-like h2{
+        text-align: start;
+    }
+    
+    .vision-pd-asked-freq .accordion-button::after {
+        width: 20px;
+        height: 20px;
+        background-size: 20px;
+    }
+
+    .vision-pd-asked-freq .accordion-button img{
+        width: 20px;
+    height: 18px;
+    margin-right: 15px;
+    }
+
+    @media (max-width: 991px){
+        .vpdcc-cart-btn {
+            justify-content: center;
+        }
+        .vision-yahoo img {
+            max-width: 100%;
+        }
+        .vav-vemo-video iframe {
+            width: 100%;
+            height: 265px;
+        }
+        .vision-auto-video .row{
+            align-items: center;
+        }
+        .vpdcc-heading h2,
+        .vpdcc-dollar-cut h5,
+        .live-sale h2,
+        .vpdcc-select-color {
+            text-align: center;
+        }
+        .vpdcc-dollar-price h4 {
+            justify-content: center;
+        }
+        .vpdcc-interest {
+            justify-content: center;
+        }
+    }
+
+    @media (max-width: 760px){
+        .vision-product-detail-crousel-content {
+            flex-direction: column;
+            padding: 20px 0;
+        }
+        .vpdcc-star {
+            flex-direction: row;
+            padding-top: 10px;
+        }
+        .vpdcc-interest {
+            flex-direction: column;
+        }
+        .vpdcc-addcrt button {
+            padding: 17px 30px;
+        }
+        .vit-img img{
+            width: 100%;
+        }
+        .vision-plus-dog h2 {
+            font-size: 14px;
+        }
+        .vav-video-text h2 {
+            font-size: 24px;
+        }
+        .vav-video-text h4 {
+            font-size: 15px;
+        }
+        .vav-video-text p {
+            font-size: 15px;
+        }
+        .vision-yahoo {
+            padding-top: 30px;
+        }
+        .vision-yahoo-ratings-bg {
+            padding-bottom: 20px;
+        }
+        .vav-video-text h2 {
+            font-size: 16px;
+        }
+        .vav-video-text ul {
+            padding: 0;
+            padding-left: 5px;
+        }
+        .vav-video-text-veterian{
+            padding-top: 20px;
+        }
+
+    }

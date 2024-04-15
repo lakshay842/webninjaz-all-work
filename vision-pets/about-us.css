@@ -1,0 +1,453 @@
+
+.vision-banner-common-text{
+    padding: 25px 0;
+}
+.vision-banner-common-text h2{
+    font-size: 46px;
+    margin: 15px 0;
+    color: #13284D;
+    text-align: center;
+    font-weight: 800;
+    background-color: #f7f9fe;
+    padding: 25px 0;
+    border-radius: 10px;
+}
+
+
+
+/* .vision-about-content{
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+
+.vision-about-content .vac-text h2{
+    font-size: 38px;
+     color: #13284D;
+} */
+
+.vision-about-content .vac-img img{
+    max-width: 100%;
+}
+.vision-about-content .vac-img{
+    padding-right: 30px;
+}
+.vision-about-content .vac-text{
+    padding-left: 30px;
+}
+.vision-about-content .row{
+    align-items: center;
+}
+.vision-about-content .vac-text h2{
+    font-size: 32px;
+     color: #13284D;
+     font-weight: 800;
+}
+.vision-about-content .vac-text h6{
+    font-size: 14px;
+     color: #13284D;
+     font-weight: 800;
+     margin: 0;
+}
+.vision-about-content .vac-text p{
+    font-size: 14px;
+    color: #13284D;
+    font-weight: 500;
+    margin: 0;
+}
+.vision-about-content{
+    margin: 44px 0;
+}
+
+
+
+
+
+
+.vac-img-leader img,
+.vac-img-here img,
+.vac-img-dog img{
+    width: 100%;
+}
+.vac-text-leader h2{
+    font-size: 32px;
+    color: #13284D;
+    font-weight: 800;
+}
+.vac-text-leader p{
+    font-size: 16px;
+    color: #13284D;
+    font-weight: 500;
+}
+.vision-about-content .vac-text-here{
+    padding-right: 30px;
+}
+.vision-about-content .vac-img-here{
+    padding-left: 30px;
+}
+.vision-about-content .vac-text-here h2{
+    font-size: 32px;
+    color: #13284D;
+    font-weight: 800;
+}
+.vision-about-content .vac-text-here p{
+    font-size: 14px;
+    color: #13284D;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dog_card_wrapper .dog_card img{
+    max-width: 100%;
+}
+.what_we_about h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    max-width: 794px;
+    margin: 0 auto;
+    color: #13284D;
+}
+.what_we_about p{
+    max-width: 794px;
+    margin: 0 auto;
+    color: #13284D;
+    text-align: center;
+    font-weight: 500;
+    font-size: 17px;
+}
+.dog_card{
+    text-align: center;
+    background-color: #f7f9fe;
+    border-radius: 10px;
+    padding-bottom: 16px;
+}
+.dog_card h6{
+    font-size: 15px;
+    font-weight: 800;
+    color: #13284D;
+    margin: 0;
+    padding-top: 16px;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+.dog_card p{
+    font-size: 11px;
+    padding: 0 16px;
+}
+.dog_card_wrapper{
+    padding: 44px 0;
+}
+
+.vac-text-dog h2{
+    font-size: 28px;
+    color: #13284D;
+    font-weight: 800;
+}
+.vac-text-dog h6{
+    font-size: 16px;
+    color: #13284D;
+    font-weight: 800;
+    margin-bottom:18px;
+}
+.vac-text-dog p{
+    font-size: 16px;
+    color: #13284D;
+    font-weight: 500;
+}
+.vision-accordion-about img{
+    width: 18px;
+    height: 18px;
+}
+.vision-accordion-about button{
+    gap: 20px;
+}
+.vision-accordion-about .accordion-body{
+    padding: 0 20px 2px 20px;
+}
+.vision-accordion-about .vab-heading-acc h2{
+    padding-bottom: 20px;
+}
+
+.vac-text-leader h4 a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #13284D;
+    font-weight: 800;
+    padding: 19px 38px;
+    text-align: center;
+    border: 1px solid #13284D;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+.vac-text-leader h4 a:hover {
+    padding: 20px 50px; /* Adjust the padding values as needed */
+}
+/* .vac-text-leader h4 a:hover{
+    transform: scale(1.1);
+    border: 1px solid #13284D;
+} */
+.vac-text-leader h4{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.what_we_about_pups h2{
+    text-align: center;
+    font-weight: 800;
+    color: #13284D;
+    font-size: 32px;
+}
+.dog_card-pups{
+    display: flex;
+    gap: 20px;
+    background-color: #f7f9fe;
+    border-radius: 10px;
+}
+.dog_card-pups img{
+    max-width: 194px;
+}
+.dog_card-pups p{
+    font-size: 13px;
+    color: #13284D;
+    font-weight: 500;
+    padding-top: 30px;
+}
+.what_we_about_pups{
+    padding: 44px 0 88px 0;
+}
+.what_we_about_pups .dog_card_wrapper{
+    padding: 18px 0;
+}
+
+
+/* ==============our expert============= */
+
+.dog_card-expert .book-card p{
+    padding: 16px 16px 0 16px;
+}
+.book-card-expert p,
+.book-card-expert h2{
+    padding: 44px 0;
+}
+
+.vision-assembled .row{
+    align-items: center;
+}
+.wwa-expara {
+    padding: 88px 0 44px 0;
+}
+
+/* ===========our impact============ */
+.wwa-impact h2{
+    padding: 88px 0 44px 0;
+}
+.vac-text-carbon h2{
+    font-size: 16px;
+    font-weight: 800;
+    color: #13284D;
+}
+.vac-text-carbon p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #13284D;
+}
+.vic-headings h2{
+    text-align: center;
+    font-weight: 800;
+    font-size: 30px;
+    color: #13284D;
+}
+.vic-headings p{
+    max-width: 785px;
+    margin: 0 auto;
+    text-align: center;
+    color: #13284D;
+    font-size: 16px;
+    font-weight: 500;
+}
+.vic-headings{
+    padding: 44px 0;
+    
+}
+.vision-impact-carbon .vision-about-content{
+    background: #FAFBFD;
+    border-radius: 10px;
+}
+.vic-headings h3{
+    text-align: center;
+    font-size: 28px;
+    max-width: 740px;
+    margin: 0 auto;
+    font-weight: 800;
+    padding-bottom: 30px;
+    color: #13284D;
+}
+.vtd-padding{
+    padding: 30px 0px 10px 30px;
+}
+.vac-text-carbon{
+    padding: 30px 30px 10px 0;
+}
+.vacb-impact-bg {
+    padding-top: 30px;
+}
+.vic-lst{
+    padding-bottom: 44px;
+}
+.pledge-dog{
+    background: #FAFBFD;
+    border-radius: 10px;
+}
+@media (max-width: 991px){
+    .pledge-res h2{
+        font-size: 24px;
+    }
+    .pledge-res p{
+        font-size: 14px;
+    }
+    .vic-headings p {
+        font-size: 14.4px;
+        max-width: 579px;
+    }
+    .vic-headings h2 {
+        font-size: 24px;
+    }
+    .vic-headings h3 {
+        font-size: 24px;
+        max-width: 579px;
+    }
+    .vtd-padding h6 {
+        font-size: 12.8px;
+    }
+    .vtd-padding p {
+        font-size: 14.4px;
+    }
+
+}
+
+@media (max-width: 767px){
+
+    .vision-banner-common-text h2 {
+        font-size: 27px;
+    }
+    .vision-about-content .vac-img {
+        padding-right: 0;
+    }
+    .vision-about-content .vac-text {
+        padding-left: 0;
+    }
+    .vision-about-content .row {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 20px;
+    }
+    .vision-about-content .vac-text h2 {
+        font-size: 28px;
+    }
+    .vision-about-content {
+        padding: 18px 0;
+    }
+    .vac-img-leader img{
+        border-radius: 10px;
+    }
+    .vac-text-leader h2 {
+        font-size: 24px;
+    }
+    .vac-text-leader p {
+        font-size: 14px;
+    }
+    .vision-about-content .vac-text-here {
+        padding-right: 0;
+    }
+    .vision-about-content .vac-img-here {
+        padding-left: 0;
+    }
+    .vision-about-content .vac-text-here h2 {
+        font-size: 28px;
+    }
+    .what_we_about p {
+        font-size: 14px;
+    }
+    .what_we_about h2 {
+        font-size: 28px;
+        padding-bottom: 12px;
+    }
+    .dog_card_wrapper .row{
+        gap: 20px;
+    }
+    .vision-about-content-stand .row{
+        flex-direction: column;
+    }
+    .vac-text-dog h2 {
+        font-size: 24px;
+    }
+    .vac-text-dog h6 {
+        font-size: 14px;
+    }
+    .vision-about-content-expert .row{
+        flex-direction: column;
+    }
+    .vac-text-leader h4 a {
+        font-size: 14px;
+    }
+    .vac-text-leader h4 {
+        padding-bottom: 40px;
+    }
+    .what_we_about_pups h2 {
+        font-size: 28px;
+    }
+    .dog_card-pups img {
+        max-width: 132px;
+    }
+    .what_we_about h2 {
+        font-size: 24px;
+    }
+    .vision-banner-common-text {
+        padding: 0;
+    }
+    .vision-assembled .row{
+        gap: 20px;
+    }
+    .wwa-expara {
+        padding: 44px 0 0px 0;
+    }
+    .vic-headings h2 {
+        font-size: 24px;
+    }
+    .vic-headings p {
+        font-size: 14px;
+    }
+    /* .vic-headings {
+        padding: 0;
+    } */
+    .vac-text-carbon {
+        padding: 20px;
+    }
+    .vac-text-carbon h2 {
+        font-size: 16px;
+    }
+  
+    .vic-headings h3 {
+        font-size: 24px;
+    }
+    .vtd-padding {
+        padding: 20px;
+    }
+    
+
+}

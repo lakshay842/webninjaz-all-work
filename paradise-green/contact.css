@@ -1,0 +1,154 @@
+.product-banner-contact{
+    background-image: url(./images/contact.svg);
+}
+.conatact-map-bg{
+    padding: 80px 0;
+}
+.contact-form-fill h4{
+    color: #FFA300;
+font-family: 'Playfair Display';
+font-size: 35px;
+font-weight: 400;
+}
+.contact-form-fill h2{
+    color: #2C241B;
+font-family: 'Playfair Display';
+font-size: 45px;
+font-weight: 400;
+padding-bottom: 20px;
+}
+.contact-form{
+    display: flex;
+    gap: 80px;
+    padding: 80px 0;
+}
+
+.contact-ff-text .touch-form-rn input{
+    border-radius: 2px;
+    border: 1px solid rgba(10, 77, 60, 0.20);
+    background: #FFF;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: 400;
+    padding: 13px 26px;
+    width: 100%;
+    outline: none;
+}
+.contact-ff-text .touch-form-rn input::placeholder{
+    color: #757575;
+}
+.contact-ff-text{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.contact-ff-text .touch-form-rn{
+    flex: 1 0 calc(50% - 20px);
+}
+.contact-form-fill{
+    max-width: 560px;
+}
+.contact-ff-text .touch-form-rn textarea{
+    border-radius: 2px;
+    border: 1px solid rgba(10, 77, 60, 0.20);
+    background: #FFF;
+    width: 100%;
+    outline: none;
+}
+
+.product-bag-submit .product-submit-btn{
+color: #FFF;
+text-align: center;
+font-family: 'Montserrat';
+font-size: 16px;
+font-weight: 500;
+text-transform: capitalize;
+border-radius: 50px;
+background: #0A4D3C;
+border: none;
+padding: 16px 40px;
+margin-top: 20px;
+}
+
+.cffc-phone p{
+    color: #FFA300;
+    font-family: 'Playfair Display';
+    font-size: 32px;
+    font-weight: 500;
+}
+.cffc-phone p a{
+    color: #FFF;
+font-family: 'Montserrat';
+font-size: 19px;
+font-weight: 500;
+display: block;
+text-decoration: none;
+}
+.contact-form-fill-content{
+    border-radius: 2px;
+    background: #0A4D3C;
+    padding: 80px;
+    min-width: 560px;
+    max-height: 484px;
+    position: relative;
+}
+.contact-form-fill-content::after{
+    position: absolute;
+    content: url(./images/leaf-contact.svg);
+    top: 0;
+    right: 0;
+}
+.contact-map-img img{
+    width: 100%;
+}
+
+/* =====none======= */
+
+.contact-map-img-mobile{
+    display: none;
+}
+
+@media (max-width:991px) {
+    .contact-form {
+        flex-direction: column;
+    }
+    .conatact-map-bg {
+        padding-bottom: 0;
+    }
+}
+
+
+@media (max-width:481px) {
+    .product-banner-contact {
+        background-image: url(./images/mb-3.svg);
+    }
+    .contact-map-img{
+        display: none;
+    }
+    .contact-map-img-mobile{
+        display: block;
+    }
+    .conatact-map-bg {
+        padding: 40px 0;
+        padding-bottom: 0;
+    }
+    .contact-form {
+        gap: 40px;
+    padding-bottom: 40px;
+    }
+    .contact-form-fill-content {
+        min-width: unset;
+    }
+    .contact-form-fill-content::after {
+        z-index: -1;
+    }
+    .contact-form-fill-content {
+        z-index: -1;
+    }
+    .contact-map-img-mobile img{
+        width: 100%;
+    }
+    .contact-form-fill-content {
+        padding: 40px;
+    }
+}

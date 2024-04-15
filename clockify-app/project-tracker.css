@@ -1,0 +1,333 @@
+.clockify-project-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clockify-project-description-bg {
+    padding: 24px 0;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.clockify-desc {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.clockify-addtask {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.cpd-x-dollar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.cpd-project a {
+    color: #2F64C9;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 1px solid rgba(41, 109, 203, 0.08);
+    background: rgba(41, 109, 203, 0.06);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cpd-x-dollar h4 {
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.cpd-description button {
+    color: #2F64C9;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 100px;
+    border: 1px solid #D6E1F8;
+    padding: 12px 14px;
+    background: white;
+    align-items: center;
+    display: flex;
+    gap: 8px;
+}
+
+.cpd-img-tracker img {
+    width: 32px;
+    height: 32px;
+}
+
+.cpd-img-tracker {
+    display: flex;
+    gap: 10px;
+}
+
+.cpd-description {
+    border-right: 1px solid #E7E7E7;
+    border-left: 1px solid #E7E7E7;
+    padding: 0 20px;
+}
+
+.cpd-set-track button {
+    padding: 14px;
+    background: rgba(47, 100, 201, 0.07);
+    width: unset;
+    height: unset;
+}
+
+/* description===== */
+
+.cpd-show-desc-content {
+    border-radius: 12px;
+    border: 1px solid #E5E8EF;
+    background-color: #F7F8FA;
+    padding: 24px;
+    margin-top: 20px;
+}
+
+.desc-text h4 {
+    color: #000;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.desc-text p {
+    color: #000;
+    font-size: 15px;
+    line-height: 160%;
+    letter-spacing: 0.6px;
+    border-bottom: 1px solid #E0E0E0;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+}
+
+.desc-attachment h4 {
+    color: #000;
+    font-size: 15px;
+    font-weight: 700;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+}
+
+.desc-attach-btn button {
+    color: #2F64C9;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    border-radius: 60px;
+    border: 1px solid #2F64C9;
+    padding: 14px 16px;
+    background-color: unset;
+}
+
+.cpd-show-desc-content {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.show-description {
+    background-color: #2F64C9;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pending-approval p {
+    background-color: #F9F7E8;
+    color: #746513;
+}
+
+.tracker-estimation,
+.tracker-time-taken {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tracker-estimation p,
+.tracker-time-taken p,
+.clockify-duedate p {
+    color: #111;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.clockify-duedate p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tracker-estimation p span {
+    color: #14804A;
+}
+
+.clockify-action button {
+    opacity: 0.3;
+    background: rgba(41, 109, 203, 0.08);
+}
+
+.clockify-pdot button {
+    opacity: unset;
+}
+
+.clockify-pdot button:hover {
+    background-color: #296DCB;
+}
+
+.sr-no h5 {
+    color: #111;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.tracker-task h5 {
+    color: #111;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.project-task-status h4 {
+    color: #14804A;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.project-task-status p {
+    color: #222;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.project-task-status p span {
+    color: #838383;
+}
+
+.pts-brown h4 {
+    color: #746513;
+}
+
+.ttt-disable {
+    opacity: 0.3;
+}
+
+.ttt-red p {
+    color: #D1293D;
+}
+
+.ttt-red svg path {
+    fill: #D1293D;
+}
+
+.cdd-disable {
+    opacity: 0.3;
+}
+
+.pts-blue h4 {
+    color: #2F64C9;
+}
+
+.cps-blue p {
+    color: #2F64C9;
+    background-color: rgba(47, 100, 201, 0.05);
+}
+
+
+.pending-Approved-Tasks p {
+    color: #14804A;
+    background-color: rgba(20, 128, 74, 0.05);
+}
+
+.dc-tracker {
+    left: -45px;
+}
+
+.cpsd .clockify-pdot {
+    position: relative;
+}
+
+.cpsd .clockify-pdot .dropdown-content-pdot {
+    display: none;
+    position: absolute;
+    padding: 8px 16px;
+    z-index: 1;
+    right: 45px;
+    top: 0;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.14);
+}
+
+.cpdot-btn {
+    cursor: pointer;
+}
+
+.cpdot-approved p {
+    color: #14804A;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cpdot-not-approved p {
+    color: #D1293D;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cpdot-revised .touch-form-rn label {
+    color: #464F60;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cpdot-revised .touch-form-rn {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 232px;
+}
+
+.cpdot-revised .touch-form-rn input {
+    border-radius: 6px;
+    border: 1px solid #E8E8E8;
+    background: #FFF;
+    padding: 7px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.28px;
+    outline: none;
+}
+.cpdot-revised .touch-form-rn input::placeholder{
+    color: #CECECE;
+}
+
+.cpdot-na-completed p {
+    color: #DB812F;
+}

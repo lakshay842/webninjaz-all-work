@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.paradise-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+}
+
+.paradise-logo-list ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.paradise-logo-list ul li a {
+    text-decoration: none;
+    color: #2C241B;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+}
+.paradise-logo-list ul li a.active{
+    color: #FFA300;
+}
+
+.paradise-banner-bg-img{
+    background-image: url(./images/banner.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+   min-height: 1185px;
+   background-color: #F8F6F4;
+}
+.paradise-banner-text h2{
+    color: #FFF;
+    font-family: 'Playfair Display';
+    font-size: 80px;
+    /* font-style: normal; */
+    font-weight: 500;
+}
+.paradise-banner-text p{
+    color: #FFF;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 500;
+}
+.paradise-banner-btn .pb-btn{
+    color: #FFF;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border-radius: 50px;
+    background: #FFA300;
+    padding: 16px 39px;
+    border: none;
+}
+.paradise-banner-text{
+    max-width: 600px;
+}
+.paradise-banner-bg{
+    height: calc(100vh - 63px);
+    align-items: center;
+    display: flex;
+
+}
+.paradise-mulberry-text{
+    padding: 40px;
+    background-color: #fff;
+    position: relative;
+}
+.paradise-mulberry-text::after{
+    position: absolute;
+    content: url(./images/leaf.svg);
+    top: -7%;
+    right: -7%;
+}
+.paradise-mulberry{
+    padding: 80px 0;
+}
+.paradise-mulberry-text h6{
+    color: #0A4D3C;
+font-family: 'Montserrat';
+font-size: 14px;
+font-weight: 700;
+letter-spacing: 1px;
+text-transform: uppercase;
+}
+.paradise-mulberry-text h2{
+    color: #2C241B;
+font-family: 'Playfair Display';
+font-size: 48px;
+font-weight: 500;
+}
+.paradise-mulberry-text p{
+    color: #52565B;
+font-family: 'Montserrat';
+font-size: 15px;
+font-weight: 400;
+line-height: 26.25px; /* 175% */
+}
+.paradise-mulberry-bg{
+    background-color: #F8F6F4;
+}
+.paradise-mulberry-text h4{
+    color: #0A4D3C;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-weight: 500;
+    padding-top: 32px;
+}
+
+
+/* ===========rich========= */
+
+.paradise-mulberry-tea-text h6{
+    color: #0A4D3C;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.paradise-rich h2,
+.paradise-rich-help h2{
+    color: #2C241B;
+    font-family: 'Playfair Display';
+    font-size: 36px;
+    font-weight: 500;
+}
+.paradise-rich p,
+.paradise-rich-help p{
+    color: #52565B;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 0;
+    padding-bottom: 4px;
+}
+.paradise-rich-help h2{
+    padding-top: 40px;
+}
+.paradise-mulberry-tea-text{
+    background: #FFF;
+    padding: 40px;
+    max-width: 560px;
+    position: relative;
+}
+.paradise-mulberry-tea-text::after{
+    position: absolute;
+    content: url(./images/leaf.svg);
+    top: -7%;
+    right: -7%;
+}
+.paradise-mission-bg{
+    background-image: url(./images/footer.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 550px;
+}
+.paradise-mission h2{
+    color: #FFF;
+    text-align: center;
+    font-family: 'Playfair Display';
+    font-size: 57px;
+    font-weight: 500;
+}
+.paradise-mission p{
+    color: #FFF;
+    text-align: center;
+    font-family: 'Playfair Display';
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 43.75px;
+}
+.paradise-mission{
+    padding-top: 80px;
+}
+.paradise-mulberry-img img{
+    max-width: 100%;
+}
+/* ======footer======= */
+
+.paradise-footer-bg{
+    background-color: #094435;
+}
+.paradise-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.paradise-footer ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+    display: flex;
+    gap: 32px;
+}
+.paradise-footer ul li a{
+    text-decoration: none;
+    color: #FFF;
+font-family: 'Montserrat';
+font-size: 15px;
+font-weight: 400;
+}
+.paradise-footer-text p{
+    color: #FFF;
+font-family: 'Montserrat';
+font-size: 15px;
+font-weight: 400;
+line-height: 26.25px; /* 175% */
+margin-bottom: 0;
+}
+
+/* ======none====== */
+
+.paradise-mulberry-img-mobile{
+    display: none;
+}
+.paradise-mulberry-img-mobile{
+    display: none;
+}
+
+
+
+
+/* =========mobile-header============ */
+
+.x-mobile-header-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+ }
+ .x-mobile-header-logos{
+    display: flex;
+    gap: 24px;
+ }
+
+ .menu-bar-show-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: none;
+  }
+  
+
+  .menu-bar-show-overlay.active-behind {
+    display: block;
+  }
+
+
+ .x-mobile-header-hide-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+        border-bottom: 1px solid #DADADA;
+    padding-bottom: 18px;
+ }
+
+
+  .x-header-menu-open {
+    cursor: pointer; 
+  }
+
+  .x-mobile-header-hide-menu-bg{
+    position: fixed;
+    background-color: #FFF;
+    padding: 20px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    max-width: 335px;
+    transition: 0.3s all;
+    transform: translateX(100%);
+    z-index: 1;
+  }
+  .x-mobile-header-hide-menu-bg.active-menu{
+    transform: translateX(0);
+  }
+
+  .paradise-logo-list-mobile ul{
+    flex-direction: column;
+    padding-top: 40px;
+  }
+.x-mobile-header{
+    display: none;
+}
+
+
+
+
+
+
+
+  
+
+@media (max-width:1400px) {
+
+    .paradise-banner-bg-img {
+        min-height: 850px;
+    }
+    .paradise-mission-bg {
+        height: 450px;
+    }
+}
+@media (max-width:1200px) {
+    .paradise-banner-bg-img {
+        min-height: 720px;
+    }
+    .paradise-banner-bg {
+        height: calc(100vh - 165px);
+    }
+}
+@media (max-width:1000px) {
+    .paradise-banner-bg {
+        height: calc(100vh - 310px);
+    }
+    .paradise-banner-bg-img {
+        min-height: 600px;
+    }
+    .paradise-banner-text h2 {
+        font-size: 60px;
+    }
+    .paradise-mission {
+        padding-top: 20px;
+    }
+    .paradise-mission p {
+        font-size: 20px;
+    }
+    .paradise-mission h2 {
+        font-size: 45px;
+    }
+    .paradise-mission-bg {
+        height: 330px;
+    }
+
+}
+
+@media (max-width:821px) {
+    .paradise-banner-bg {
+        height: calc(100vh - 710px);
+    }
+    .paradise-banner-bg-img {
+        min-height: unset;
+    }
+    .paradise-banner-text h2 {
+        font-size: 48px;
+    }
+    .paradise-banner-text p {
+        font-size: 20px;
+    }
+    .paradise-mulberry-text h2 {
+        font-size: 32px;
+    }
+    .paradise-mulberry-tea-text::after {
+        top: -15%;
+    }
+    .paradise-mission h2 {
+        font-size: 32px;
+    }
+    .paradise-mission p {
+        font-size: 15px;
+        line-height: 37px;
+    }
+    .paradise-mission-bg {
+        height: 288px;
+    }
+    .paradise-footer ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .paradise-footer {
+        flex-direction: column-reverse;
+    }
+    .paradise-footer-text p {
+        padding-top: 40px;
+    }
+}
+
+@media (max-width:481px) {
+    .paradise-banner-bg {
+        height: unset;
+        padding-top: 120px;
+    }
+    .x-mobile-header{
+        display: block;
+    }
+    
+      .paradise-header{
+        display: none;
+      }
+      .paradise-mulberry-text::after {
+        right: 0%;
+    }
+    .paradise-mulberry-tea-text::after {
+        right: 0%;
+        top: -8%;
+
+    }
+    .paradise-banner-bg-img {
+        background-image: url(./images/mb-1.svg);
+    }
+    .paradise-banner-bg-img {
+        min-height: 600px;
+    }
+    .paradise-mulberry {
+        padding: 40px 0;
+    }
+    .paradise-mulberry-img{
+        display: none;
+    }
+    .paradise-mulberry-img-mobile{
+        display: block;
+    }
+    .paradise-mulberry-text h2 {
+        font-size: 48px;
+    }
+    .paradise-mulberry-text {
+        margin-top: 80px;
+    }
+    .paradise-mulberry-img-mobile img{
+        width: 100%;
+    }
+    .paradise-mulberry-img-mobile{
+        padding-top: 80px;
+    }
+    .paradise-mission-bg {
+        background-image: unset;
+        background-color: #0A4D3C;
+        height: 100%;
+        position: relative;
+        z-index: -2;
+    }
+    .paradise-mission-bg::after{
+        position: absolute;
+        content: url(./images/mb-leaf-1.svg);
+        top: 100px;
+        right: 0;
+        z-index: -1;
+    }
+    .paradise-mission-bg::before{
+        position: absolute;
+        content: url(./images/mb-leaf-2.svg);
+        top: 370px;
+    right: 110px;
+        z-index: -1;
+    }
+    .paradise-mission h2 {
+        font-size: 57px;
+    }
+    .paradise-mission p {
+        font-size: 25px;
+        margin-bottom: 0;
+        padding-bottom: 40px;
+    }
+    .pmim-padding{
+        padding: 0;
+    }
+    .paradise-banner-btn .pb-btn {
+        margin-top: 20px;
+    }
+}
+

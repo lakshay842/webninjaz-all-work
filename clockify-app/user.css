@@ -1,0 +1,231 @@
+.cpl-add-user button {
+    border-radius: 10px;
+    background: #2F64C9;
+    padding: 12px 24px;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: none;
+}
+
+.clockify-email p {
+    color: #444;
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.clockify-role p {
+    color: #111;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.project-name {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.project-name h4 {
+    color: #111;
+    font-size: 15px;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+.project-name p {
+    color: #14804A;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 0;
+    letter-spacing: 0.36px;
+    border-radius: 100px;
+    background: #E1FCEF;
+    padding: 8px;
+}
+
+.project-name img {
+    width: 32px;
+    height: 32px;
+}
+
+.pn-red p {
+    color: #D1293D;
+    background: rgba(209, 41, 61, 0.06);
+}
+
+
+.upload__inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.admin-drag .upload__btn p {
+    cursor: pointer;
+    color: #444;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 24px 24px 0 24px;
+}
+
+.admin-drag .upload__btn p span {
+    color: #2F64C9;
+    display: block;
+}
+
+.admin-add-user {
+    max-width: 720px;
+    margin: 0 auto;
+    border-radius: 12px;
+    background: #F7F8FA;
+    padding: 24px;
+}
+
+.admin-add-user h4 {
+    color: #1A2240;
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 1px solid #E8E8E8;
+    padding-bottom: 24px;
+    margin-bottom: 0;
+}
+
+.admin-file-choose {
+    border-radius: 16px;
+    border: 1px dashed #C7C7C7;
+    background: #F1F1F1;
+    padding: 10px;
+    text-align: center;
+    width: 270px;
+    height: 100%;
+}
+
+.admin-drag {
+    display: flex;
+    gap: 24px;
+    padding-top: 24px;
+}
+
+.afc-img {
+    padding-top: 20px;
+}
+
+.touch-form-rn label {
+    color: #464F60;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+}
+.touch-form-rn label span{
+    color: #5E5ADB;
+}
+
+.admin-data-fill .touch-form-rn {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-bottom: 24px;
+}
+
+.admin-data-fill .touch-form-rn input {
+    border-radius: 6px;
+    border: 1px solid #E8E8E8;
+    background: #FFF;
+    padding: 12px;
+    outline: none;
+}
+
+.admin-data-fill {
+    width: 100%;
+}
+
+.admin-data-fill .touch-form-rn input::placeholder {
+    color: #CECECE;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.28px;
+}
+.admin-data-fill .touch-form-rn select{
+    border-radius: 6px;
+    border: 1px solid #E8E8E8;
+    background: #FFF;
+    padding: 12px;
+    outline: none;
+    background-image: url(./images/down.svg);
+    background-repeat: no-repeat;
+    background-position: 96% center;
+    appearance: none;
+}
+.admin-data-role{
+    display: flex;
+    gap: 20px;
+}
+.admin-data-role .touch-form-rn{
+    width: 100%;
+}
+.cpl-add-click-user .user-click-btn{
+    border-radius: 10px;
+    background: #2F64C9;
+    padding: 12px 24px;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: none;
+}
+.cpl-add-click-user{
+    display: flex;
+    gap: 10px;
+}
+.cpl-add-click-user .user-cancel-btn{
+    color: #2F64C9;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: 1px solid #2F64C9;
+    padding: 0 20px;
+    background-color: unset;
+}
+
+
+
+
+
+/* Add your CSS styles here */
+.add-user-bg {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.admin-add-user {
+    display: none;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Add your additional styling for the form content here */

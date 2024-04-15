@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{ overflow-x: hidden;}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+}
+p{
+    font-family: 'Manrope', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+:root{
+    --brand1: #05264A;
+    --brand2: #B8F1F2;
+    --brand3: #40D0D2;
+    --netueral:#60666C;
+    --montserrat-font: 'Montserrat', sans-serif;
+    --manrope-font: 'Manrope', sans-serif;
+}
+
+/* =======contact-us========== */
+.contact-us-text h2{
+    color: var(--brand-01, #05264A);
+text-align: center;
+font-family: var(--montserrat-font);
+font-size: 64px;
+font-weight: 800;
+padding-top: 80px;
+}
+.contact-us-text p{
+    color: var(--netueral);
+    text-align: center;
+    font-family: var(--manrope-font);
+    margin-bottom: 0;
+}
+/* .contact-us-banner{
+    background-image: url(/genius-litter/asset/images/contact-banner.png);
+    height: 640px;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+.contact-us-address-info p{
+    color: var(--netueral);
+    font-family: var(--manrope-font);
+font-weight: 500;
+margin-bottom: 0;
+}
+.contact-us-address-info h5{
+    color:  #111;
+    font-family: var(--montserrat-font);
+font-size: 16px;
+font-weight: 600;
+padding-top: 4px;
+
+}
+.contact-us-address {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.contact-us-info{
+    position: relative;
+    background-color: white;
+    padding: 60px 24px;
+    top: -100px;
+    border-radius: 24px;
+    box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.08);
+}
+.contact-us-banner img{
+    width: 100%;
+    padding-top: 60px;
+}
+/* .contact-us-banner{
+    background-image: url(/genius-litter/asset/images/contact-round.png);
+
+} */
+
+
+.contact-business-text{
+    padding-bottom: 120px;
+}
+
+.contact-business-text h2{
+    color: var(--brand1);
+    text-align: center;
+    font-family:var(--montserrat-font);
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 72px;
+    max-width: 792px;
+    margin: 0 auto;
+}
+.contact-business-text h2 span{
+    color: var(--brand3);
+}
+.contact-business-text p{
+    color: var(--netueral);
+    text-align: justify;
+    font-family: var(--manrope-font);
+    max-width: 792px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+.contact-business-text p span{
+    display: block;
+    padding-top: 20px;
+}
+.contact-help-center-bg{
+    background: var(--brand-01, #05264A);
+    padding: 100px 0;
+    background-image: url(/genius-litter/asset/images/contact-round.png) ;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position: center;
+}
+
+.contact-help-center-text h6{
+    color: #fff;
+    font-family: var(--manrope-font);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    padding-top: 24px;
+}
+.contact-help-center-text p{
+    color:  #FFF;
+    font-family: var(--manrope-font);
+}
+.contact-help-center-text p a{
+    color: var(--brand3);
+    text-decoration: none;
+}
+.contact-help-center-text{
+    text-align: center;
+}
+
+/* @media (max-width: 1279px){
+
+}
+
+@media (max-width: 1024px){
+
+} */
+@media (max-width: 768px){
+    .contact-business-text h2 {
+        font-size: 50px;
+    }
+    .contact-us-text h2 {
+        font-size: 50px;
+    }
+    .contact-us-address-info h5 {
+        font-size: 15px;
+    }
+    .contact-us-banner img {
+        padding-top: 30px;
+    }
+    .contact-us-text h2 {
+        padding-top: 30px;
+    }
+    .contact-business-bg{
+        margin-top: -60px;
+    }
+    .contact-business-text {
+        padding-bottom: 40px;
+    }
+    .contact-help-center-bg {
+        padding: 30px 0;
+    }
+}
+@media (max-width: 480px){
+    .contact-us-text h2 {
+        font-size: 40px;
+    }
+    .contact-business-text h2 {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+    .contact-business-text p {
+        padding-top: 20px;
+    }
+}

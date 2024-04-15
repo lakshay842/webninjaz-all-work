@@ -1,0 +1,1409 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.bg1 {
+    background: #BF9669;
+}
+
+.head-link ul li a i {
+    color: white;
+    font-size: 11px;
+
+}
+
+.head-link ul {
+    display: flex;
+    list-style: none;
+    gap: 3px;
+    margin: 0;
+}
+
+.topheader {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px;
+    align-items: center;
+    padding-bottom: 8px;
+    padding-left: 15px;
+}
+
+.head1 a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding-bottom: 4px;
+    font-size: 12px;
+}
+
+.search-icon {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-right: 15px;
+}
+
+.search-form {
+    display: none;
+}
+
+.search-form.active {
+    display: flex;
+    top: 60px;
+}
+
+.search-icon a {
+    color: black;
+}
+
+.navbar-collapse {
+    position: relative;
+}
+
+.search-form {
+    position: absolute;
+    top: 146%;
+    z-index: 2;
+    right: 0;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #bf9669;
+}
+
+.navbar-nav {
+    gap: 28px;
+    padding-left: 50px;
+    font-size: 14px;
+    letter-spacing: 0px;
+
+    color: #bf9669;
+    font-weight: 500;
+    font-family: "Montserrat";
+}
+
+.carousel-control-prev-icon {
+    background-color: black;
+    border-radius: 5px;
+    position: absolute;
+    left: 16px;
+    background-size: 18px;
+}
+
+.carousel-control-next-icon {
+    background-color: black;
+    border-radius: 5px;
+    position: absolute;
+    right: 16px;
+    background-size: 18px;
+}
+
+.life {
+    position: absolute;
+    z-index: 2;
+    width: 556px;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    right: 4%;
+    background: white;
+    height: 355px;
+    padding: 32px;
+    padding-top: 59px;
+    transform: translateY(-50%);
+}
+
+.life h1 {
+    font-size: 35px;
+    /* line-height: 60px; */
+    color: #d8ba7b;
+    font-weight: 800;
+    font-family: "Montserrat";
+    padding-bottom: 15px;
+}
+
+.life p {
+    line-height: 30px;
+    color: #4b5761;
+    font-family: "Montserrat";
+    padding-bottom: 35px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 2;
+}
+
+.life h2 {
+    font-size: 16px;
+    line-height: 30px;
+    color: #4b5761;
+    font-weight: 700;
+    font-family: "Montserrat";
+}
+
+/* card */
+.bg-card {
+    padding: 24px;
+}
+
+.card-body {
+    padding: 0;
+}
+
+.card img {
+    height: 310px;
+}
+
+.start {
+    background-color: #EBEBEB;
+    padding-bottom: 140px;
+}
+
+.start1 h2 {
+    font-size: 36px;
+    letter-spacing: 4px;
+    line-height: 75px;
+    color: #3b4851;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 128px;
+
+}
+
+.science1 p {
+    position: absolute;
+    top: 39%;
+    left: 19%;
+    font-size: 24px;
+    letter-spacing: 2px;
+    line-height: 75px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Montserrat";
+}
+
+.science2 p {
+    position: absolute;
+    top: 39%;
+    left: 35%;
+    font-size: 24px;
+    letter-spacing: 2px;
+    line-height: 75px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Montserrat";
+}
+
+.science3 p {
+    position: absolute;
+    top: 39%;
+    left: 23%;
+    font-size: 24px;
+    letter-spacing: 2px;
+    line-height: 75px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Montserrat";
+}
+
+.science1 p::before {
+    content: '';
+    border: 2px solid white;
+    display: flex;
+    width: 40px;
+    position: absolute;
+    top: -7px;
+    left: 172px;
+}
+
+.science2 p::before {
+    content: '';
+    border: 2px solid white;
+    display: flex;
+    width: 40px;
+    position: absolute;
+    top: -9px;
+    left: 78px;
+}
+
+.science3 p::before {
+    content: '';
+    border: 2px solid white;
+    display: flex;
+    width: 40px;
+    position: absolute;
+    top: -2px;
+    left: 147px;
+}
+
+.doctor img {
+    width: 50%;
+}
+
+.start2 {
+    text-align: center;
+    width: 73%;
+    margin-left: 166px;
+}
+
+.doctor h2 span {
+    display: block;
+}
+
+.doctor h2 {
+    color: #3b4851;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 10px;
+    line-height: 1;
+}
+
+
+
+/* medicine */
+.g-5,
+.gy-5 {
+    --bs-gutter-y: 5rem;
+}
+
+.neuro1 img {
+    width: 100%;
+}
+
+.med1 {
+    padding-top: 80px;
+}
+
+.neuro2 h1 {
+    font-size: 30px;
+    line-height: 75px;
+    color: #3b4851;
+    font-weight: 700;
+}
+
+.neuro2 ul {
+    padding-top: 15px;
+    list-style: none;
+    display: flex;
+    gap: 5px;
+    color: #F3CC6C;
+    margin-left: -26px;
+}
+
+.neuro2 p {
+    font-size: 30px;
+    line-height: 75px;
+    color: #3b4851;
+    font-weight: 700;
+    gap: 62px;
+    display: flex;
+}
+
+
+.neuro21 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 35px;
+
+}
+.soldout {
+    margin-top: -12px;
+}
+.neuro21 a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    background: #62993A;
+    font-size: 13px;
+    padding: 5px 10px;
+   
+}
+
+.neuro21 img {
+    width: 100%;
+    max-width: 190px;
+    margin-left: 30px;
+}
+.neuro22 p {
+    color: #3b4851;
+    line-height: 28px;
+    max-width: 53ch;
+
+}
+
+.neuro22 p span {
+    color: #3b4851;
+    font-weight: 700;
+}
+
+.btn-check:focus+.btn,
+.btn:focus {
+
+    box-shadow: none;
+}
+
+.button1 button {
+    background: #3b4851;
+    color: white;
+    width: 100%;
+    padding: 11px;
+    max-width: 200px;
+}
+.neuro2 ul li i {
+    font-size: 12px;
+}
+.button1 button:hover {
+    background: #CCA654;
+    color: white;
+}
+
+.button2 button:hover {
+    background: #CCA654;
+    color: white;
+}
+
+.button1 {
+    display: flex;
+    gap: 18px;
+    padding-top: 8px;
+}
+
+.neuro22 {
+    padding-top: 28px;
+}
+
+/* .med1 .row {
+    display: flex;
+    gap: 0px;
+} */
+
+/* medicine2 */
+
+.g-5,
+.gy-5 {
+    --bs-gutter-y: 5rem;
+}
+
+.glia1 img {
+    width: 58%;
+}
+
+.med2 {
+    padding-top: 100px;
+}
+
+.glia2 h1 {
+    font-size: 30px;
+    line-height: 75px;
+    color: #3b4851;
+    font-weight: 700;
+}
+
+.glia2 ul {
+    padding-top: 15px;
+    list-style: none;
+    display: flex;
+    gap: 5px;
+    color: #F3CC6C;
+    margin-left: -26px;
+}
+
+.glia2 p {
+    font-size: 30px;
+    line-height: 75px;
+    color: #3b4851;
+    font-weight: 700;
+    gap: 62px;
+    display: flex;
+}
+
+
+.glia21 {
+    display: flex;
+
+}
+
+.glia21 a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    background: #62993A;
+    height: 25px;
+    width: 74px;
+    font-size: 13px;
+    padding-left: 8px;
+    padding-top: 3px;
+    left: 38px;
+    top: 26px;
+    position: relative;
+}
+
+.glia21 img {
+    height: 100%;
+    position: relative;
+    left: 96px;
+    top: 12px;
+}
+
+.glia22 p {
+    color: #3b4851;
+    line-height: 28px;
+    max-width: 53ch;
+
+}
+
+.glia22 p span {
+    color: #3b4851;
+    font-weight: 700;
+}
+
+.button2 button {
+    background: #3b4851;
+    color: white;
+    width: 28%;
+}
+
+.button2 {
+    display: flex;
+    gap: 18px;
+    padding-top: 8px;
+}
+
+.glia22 {
+    padding-top: 28px;
+}
+
+/* .med2 .row {
+    display: flex;
+    gap: 0px;
+} */
+
+.bg-glia {
+    padding-bottom: 50px;
+}
+
+
+
+/* measure */
+.measure h1 {
+    font-size: 34px;
+    letter-spacing: 4px;
+    line-height: 48px;
+    padding-top: 80px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+
+.bg-measure {
+    padding-bottom: 160px;
+    background-color: #3B4851;
+}
+
+.measure h1 span {
+    display: block;
+    font-style: italic;
+}
+
+.measure1 {
+    padding-top: 90px;
+}
+
+.milonemain {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.lorem2 ul,
+.lorem1 ul {
+    list-style: none;
+    color: #ffffff;
+    margin-top: -36px;
+    font-size: 16px;
+    margin-left: 52px;
+    font-weight: 400;
+    font-family: "Myriad Pro";
+}
+
+.lorem2 ul li,
+.lorem1 ul li {
+    padding: 15px 0;
+}
+
+.lorem2 ul {
+    color: #000;
+    margin-top: -26px;
+    
+}
+
+.lorem1 {
+    background-color: #BF9569;
+    border-radius: 15px;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.lorem2 img,
+.lorem1 img {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    max-width: 280px;
+    top: -76px;
+}
+
+.lorem2 img {
+    max-width: 150px;
+}
+.socialmediamain li {
+    border: 2px solid white;
+    border-radius: 24px;
+    height: 24px;
+    display: flex;
+    width: 24px;
+    justify-content: center;
+    align-items: center;
+}
+nav.navbar.navbar-expand-lg.navbar-light {
+    padding: 15px 0;
+}
+
+/* .socialmediamain li:nth-child(2) {
+    padding: 3px 8px;
+}
+
+.socialmediamain li:nth-child(3) {
+    padding: 3px 6px;
+}
+
+.socialmediamain li:nth-child(4) {
+    padding: 3px 8px;
+} */
+
+.lorem2 ul li:first-child,
+.lorem1 ul li:first-child {
+    padding-top: 10px;
+}
+
+.lorem2 {
+    background-color: white;
+    border-radius: 15px;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.lorem2 ul li::before,
+.lorem1 ul li::before {
+    content: "";
+    background-image: url(../images/right.png);
+    background-size: 30px 30px;
+    position: absolute;
+    left: 26px;
+    margin-top: -8px;
+    width: 30px;
+    height: 30px;
+}
+.navbar-light .navbar-nav .nav-link,
+.nevbarcustom li a {
+    transition: 0.5s;
+    font-size: 12px;
+    color: #000;
+}
+
+.nevbarcustom li a:hover {
+    color: #bf9669 !important;
+}
+.search-icon i {
+    font-size: 18px;
+}
+nav.navbar.navbar-expand-lg.navbar-light  .container-fluid {
+    padding: 0;
+}
+
+.lorem2 ul li::before {
+    background-image: url(../images/wrong.png);
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+
+}
+
+.health h1 {
+    font-size: 34px;
+    letter-spacing: 4px;
+    line-height: 48px;
+    color: #3b4851;
+    font-weight: 600;
+    font-family: "Montserrat";
+    text-align: center;
+    padding-top: 100px;
+}
+
+.health h1 span {
+    display: block;
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+}
+/* video */
+.video-container {
+    text-align: end;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.play-button-overlay {
+    position: absolute;
+    top: 44%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    cursor: pointer;
+}
+
+
+.iframe-thumbnail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.iframe-thumbnail img {
+   /* max-width: 800px; */
+   width: 100%;
+    height: 523px;
+    object-fit: cover;
+}
+
+.bg-health {
+    padding-bottom: 70px;
+}
+.bg-health .row {
+    padding-top: 70px;
+}
+
+.video-img {
+    display: flex;
+    flex-direction: column;
+}
+
+.video-img img {
+    /* width: 53%; */
+    padding-bottom: 10px;
+    max-width: 264px;
+    max-height: 178px;
+}
+
+.yourjorneymain {
+    max-width: 1070px;
+    margin: 0 auto;
+}
+/* brain */
+.brain1 h1 {
+    font-size: 32px;
+    letter-spacing: 4px;
+    line-height: 48px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Montserrat";
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+.bg-brain {
+    background-color: #BE9569;
+    padding-bottom: 160px;
+}
+
+/* accordian */
+
+.accordion-button::after {
+    background-image: url(../images/plus-solid.svg);
+    transition: transform .5s ease-in-out;
+    background-size: 14px;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url(../images/minus-solid.svg);
+}
+
+.accordion-flush {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.accordion button {
+    font-size: 16px;
+    line-height: 30px;
+    color: #3b4851;
+    font-weight: 600;
+    font-family: "Montserrat";
+}
+
+.accordion-button:not(.collapsed) {
+    color: #3b4851;
+    background-color: white;
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+
+    border-color: white;
+
+    box-shadow: none;
+}
+/* social */
+.social1 p {
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 1.7;
+    color: #ffffff;
+    /* font-weight: 400; */
+    font-family: "Montserrat";
+}
+.btn.social11 {
+    margin-top: 15px;
+}
+
+.social1 h1 {
+    font-size: 30px;
+    letter-spacing: 4px;
+    line-height: 1.5;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Montserrat";
+    padding-bottom: 30px;
+}
+.social1 {
+    max-width: 655px;
+}
+.bg-social {
+    background-image: url(../images/CTA\ 1.jpg);
+    background-repeat: no-repeat;
+    margin-top: 1px;
+    background-size: cover;
+}
+
+.joinoursocialp .row {
+    padding-top: 80px;
+}
+
+.social1 button {
+    background: #BE9569;
+    font-size: 20px;
+    line-height: 36px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Montserrat";
+    padding: 5px 50px;
+}
+
+.social1 button:hover {
+    color: white;
+}
+.social2 img {
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+}
+.joinoursocialp {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+/* footer */
+.bg-glob {
+    padding-bottom: 100px;
+    background: #F1F1F1;
+    padding-top: 100px;
+}
+
+.glob11 {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.glob11 h1 {
+    font-size: 22px;
+    letter-spacing: -1px;
+    line-height: 1.5;
+    color: #bf9669;
+    font-weight: 600;
+    font-family: "Montserrat";
+    text-align: center;
+    margin: 0;
+}
+.glob2 img {
+    max-width: 150px;
+}
+.glob11 p {
+    font-size: 13px;
+    /* letter-spacing: -1px; */
+    line-height: 36px;
+    color: #bf9669;
+    font-weight: 600;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+.glob2 p {
+    padding-top: 35px;
+    font-size: 14px;
+    letter-spacing: 0px;
+    margin-bottom: 10px;
+    color: #556069;
+    font-weight: 500;
+    font-family: "Montserrat";
+}
+
+.glob2 a {
+    font-size: 14px;
+    letter-spacing: 0px;
+    text-decoration: none;
+    color: #556069;
+    font-weight: 500;
+    font-family: "Montserrat";
+}
+
+.glob2 ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+
+    padding-top: 30px;
+    padding-left: 0;
+   
+
+}
+
+.glob2 ul li a i {
+    margin-top: 8px;
+    font-size: 16px;
+    color: #bf9669;
+}
+
+.glob2 h6 {
+
+    font-size: 12px;
+    letter-spacing: 0px;
+
+    color: #bf9669;
+    font-weight: 500;
+    font-family: "Montserrat";
+    padding-top: 40px;
+
+}
+
+.socialmediamain1 li {
+    border: 2px solid #bf9669;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    border-radius: 24px;
+}
+
+.ft1 ul {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+}
+
+.bg-health iframe{
+    max-width: 100%;
+    width: 100%;
+}
+.ft1 ul li a {
+    text-decoration: none;
+    color: #3b4851;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.ft1 ul li a.active {
+    color: #bf9669;
+}
+.imgglo {
+    position: relative;
+} 
+
+.ft1 ul li a:hover {
+    color: #bf9669;
+}
+.glob1 img {
+    width: 100%;
+}
+.footermenu {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+@media screen and (min-width:768px) and (max-width:1000px) {
+    .life {
+        width: 500px;
+        top: 42%;
+        right: 8%;
+        background: white;
+        height: 219px;
+        padding: 32px;
+    }
+
+    .life h1 {
+        font-size: 22px;
+        padding-bottom: 0px;
+    }
+
+    .life p {
+        font-size: 14px;
+        padding-bottom: 0px;
+    }
+
+    .life h2 {
+        font-size: 14px;
+        line-height: 0px;
+    }
+
+    .card img {
+        height: auto;
+    }
+    .navbar-nav { 
+        gap: 0px;
+        padding-left: 0px;
+    }
+    .navbar-toggler:focus { 
+        box-shadow: none;
+    }
+    .search-form.active {
+        /* display: flex; */
+        top: 233px;
+        right: 294px;
+    }
+    .science1 p {
+        font-size: 12px;
+        letter-spacing: 0px;
+        line-height: 0px;
+        top: 64%;
+        left: 14%;
+    }
+
+    .science1 p::before {
+        top: -25px;
+        left: 72px;
+    }
+
+    .science2 p {
+        top: 64%;
+        left: 29%;
+        font-size: 14px;
+        letter-spacing: 0px;
+        line-height: 0px;
+    }
+
+    .science2 p::before {
+
+        top: -24px;
+        left: 35px;
+    }
+
+    .science3 p {
+
+        top: 64%;
+        left: 12%;
+        font-size: 14px;
+        letter-spacing: 0px;
+        line-height: 0px;
+    }
+
+    .science3 p::before {
+        top: -24px;
+        left: 72px;
+    }
+
+    .start1 h2 {
+        padding-top: 25px;
+    }
+
+    .start2 {
+        width: auto;
+        margin-left: auto;
+    }
+
+    .start {
+        padding-bottom: 30px;
+    }
+
+    .neuro22 p {
+        max-width: max-content;
+    }
+
+    .glia22 p {
+        max-width: max-content;
+    }
+
+    .glia1 {
+        text-align: center;
+    }
+
+    .video-img img {
+        width: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .video {
+        padding-bottom: 10px;
+    }
+
+    .accordion-flush {
+        width: auto;
+    }
+
+    .brain1 h1 {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+    .bg-brain {
+        padding-bottom: 50px;
+    }
+
+    .bg-social {
+        background-size: cover;
+    }
+
+    .social1 {
+        padding-bottom: 20px;
+    }
+
+    .social2 {
+        text-align: center;
+    }
+
+    .social1 h1 {
+        letter-spacing: 0;
+        padding-top: 50px;
+    }
+
+    .bg-social .row {
+        padding-top: 35px;
+        flex-direction: column-reverse
+    }
+
+    .glob1 img {
+        max-width: 100%;
+    }
+
+    .glob2 {
+        text-align: center;
+    }
+
+    .socialmediamain1 {
+        justify-content: center;
+    }
+
+
+    .ft1 ul {
+        padding: 0;
+        gap: 25px;
+    }
+
+    .bg-glob {
+        padding-top: 35px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .head1 a {
+        font-size: 12px;
+    }
+.navbar-brand img{
+    width: 100%;
+    max-width: 100px;
+
+}
+    .life {
+        width: 212px;
+        top: 52%;
+        right: 14%;
+        height: 136px;
+    }
+
+    .life h1 {
+        font-size: 10px;
+        padding-bottom: 0px;
+        margin-top: -38px;
+    }
+
+    .life p {
+        line-height: 10px;
+        font-size: 7px;
+        padding-bottom: 0px;
+    }
+
+    .life h2 {
+        font-size: 10px;
+        line-height: 0px;
+    }
+
+    .card img {
+        height: auto;
+    }
+    .search-form.active {
+        /* display: flex; */
+        top: 232px;
+        width: 100%;
+        max-width: 228px;
+    }
+
+    .science1 p {
+        font-size: 12px;
+        letter-spacing: 0px;
+        line-height: 0px;
+        top: 57%;
+        left: 25%;
+    }
+
+    .science1 p::before {
+        top: -25px;
+        left: 72px;
+    }
+
+    .science2 p {
+        top: 57%;
+        left: 37%;
+        font-size: 14px;
+        letter-spacing: 0px;
+        line-height: 0px;
+    }
+
+    .science2 p::before {
+
+        top: -24px;
+        left: 35px;
+    }
+
+    .science3 p {
+
+        top: 55%;
+        left: 26%;
+        font-size: 14px;
+        letter-spacing: 0px;
+        line-height: 0px;
+    }
+
+    .science3 p::before {
+        top: -24px;
+        left: 72px;
+    }
+
+    .start1 h2 {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        font-size: 26px;
+        letter-spacing: 0px;
+        line-height: 47px;
+    }
+
+    .start2 {
+        width: auto;
+        margin-left: auto;
+    }
+    .start {
+       
+        padding-bottom: 30px;
+    }
+    .measure h1 {
+        font-size: 21px;
+        letter-spacing: 0px;
+        line-height: 1.5;
+        padding-top: 35px;
+
+    }
+    .bg-health .row {
+        padding-top: 25px;
+    }
+    .brain1 h1,
+    .health h1 {
+        font-size: 21px;
+        letter-spacing: 0px;
+        line-height: 1.5;
+        padding-top: 35px;
+    }
+  .brain1 h1{
+    padding-bottom: 35px;
+  }
+  .bg-brain {
+   
+    padding-bottom: 50px;
+}
+.social1 h1 {
+    font-size: 21px;
+    letter-spacing: 0px;
+    line-height: 1.5;
+}
+/* .glob11 p {
+    font-size: 16px;
+} */
+nav.navbar.navbar-expand-lg.navbar-light {
+    padding: 6px 0;
+}
+.bg-glob {
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.glob2 h6 {
+    padding-top: 20px;
+}
+    .neuro21 {
+        display: block;
+    }
+    .bg-measure {
+        padding-bottom: 50px;
+        
+    }
+    .neuro21 a {
+        left: 0;
+        top: 0;
+    }
+    .navbar-nav { 
+        gap: 0px;
+        padding-left: 0px;
+    }
+    .navbar-toggler:focus 
+    { 
+        box-shadow: none;
+    }
+    .neuro21 img {
+       margin-left: 0px;
+       padding-top: 15px;
+    }
+    .neuro2 h1{
+        line-height: 40px;
+    }
+    .button1 button {
+        width: auto;
+        font-size: 14px;
+    }
+    .glia1{
+        text-align: center;
+    }
+    .glia2 h1{
+        line-height: 40px;
+    }
+    
+    .glia21 {
+        display: block;
+    }
+    .glia21 a {
+        left: 0;
+        top: 0;
+    }
+    .glia21 img {
+        left: 55px;
+        top: 0px;
+    }
+    .button2 button {
+        width: auto;
+    }
+    .lorem2{
+        margin-top: 100px;
+    }
+    .lorem2 ul li::before,
+    .lorem1 ul li::before{
+        margin-top: 5px;
+    }
+    .video-img img,
+    .iframe-thumbnail img {
+        width: 100%;
+        height: auto;
+    }
+    .video-img img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .bg-health iframe{
+        height: 100%;
+    }
+    .video{
+        padding-bottom: 10px;
+    }
+    .accordion-flush {
+        width: 100%;
+      
+    }
+    .bg-social {
+        background-size: cover;
+    }
+    .bg-social .row{
+        padding-top: 50px;
+    }
+    .social2 {
+        text-align: center;
+    }
+    .social1 {
+        padding-bottom: 20px;
+    }
+    .bg-social .row {
+        padding-top: 35px;
+    }
+
+    .glob11 h1{
+        font-size: 19px;
+    }
+    .glob1 img {
+        max-width: 100%;
+    }
+
+    .glob2 {
+        text-align: center;
+    }
+
+    .socialmediamain1 {
+        justify-content: center;
+    }
+
+    /* .glob11 {
+        left: 4%;
+        margin-top: 37px;
+    } */
+
+    .ft1 ul{
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+}
+@media screen and (min-width:1440px) and (max-width:1600px) {
+    .science1 p {
+        left: 11%;
+        font-size: 22px;
+    }
+    .science2 p {
+        left: 33%;
+        font-size: 22px;
+    }
+    .science3 p {
+        left: 16%;
+        font-size: 22px;
+    }
+}

@@ -1,0 +1,235 @@
+
+.touch-ninja-heading h2,
+.touch-ninja-heading h3{
+    color: #FFF;
+    text-shadow: 11.808px 11.808px 0px rgba(255, 255, 255, 0.10);
+    font-family: 'Sora';
+    font-size: 300px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: -6px;
+}
+.touch-ninja-heading h3{
+    text-align: end;
+}
+.touch-form-heading h2{
+    color: #FFF;
+    font-family: 'Sora';
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -1.6px;
+    max-width: 492px;
+}
+
+
+.touch-form-fill input, .touch-form-fill select, .touch-form-fill textarea {
+    width: 100%;
+    padding: 19px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border-radius: 15px;
+background: #1E1E1E;
+outline: unset;
+color: white;
+border: none;
+}
+.touch-form-fill .services-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding-bottom: 70px;
+}
+
+.touch-form-fill button{
+    max-width: 220px;
+    float: right;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.touch-form-fill textarea {
+    height: 160px;
+}
+
+
+.touch-form-fill label{
+    color: #FFF;
+    /* font-family: 'Mona-Sans'; */
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+}
+
+.touch-form-fill .services-list li {
+    margin-bottom: 8px;
+    cursor: pointer;
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 160%;
+    border-radius: 100px;
+    border: 1px solid #4B4B4B;
+    /* padding: 15px; */
+    padding: 11px 20px;
+}
+
+.touch-form-fill .services-list li.selected {
+    border-color: #DFF36B; 
+    color: #DFF36B;
+    background-color: rgba(223, 243, 107, 0.05);
+}
+
+.touch-ninja-form{
+    display: flex;
+    gap: 51px;
+    /* padding-bottom: 200px; */
+}
+.touch-form-heading h2 span {
+    background: var(--gradient, linear-gradient(90deg, #8BD5FF 0%, #288BFF 100%));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.touch-form-fill{
+    border-radius: 20px;
+    border: 1px solid #444;
+    background: #111;
+    /* padding: 56px 47px; */
+    padding: 56px 38px;
+    flex: 1;
+    
+}
+.tff-padding{
+    margin-bottom: 200px;
+}
+.touch-form-fill-mail-phone{
+    display: flex;
+    justify-content: space-between;
+    gap: 34px;
+    padding-bottom: 70px;
+    padding-top: 50px;
+}
+.touch-form-rn{
+    width: 100%;
+}
+
+.touch-ninja-bg{
+    position: relative;
+}
+.touch-ninja-bg::after{
+    position: absolute;
+    content: url(./images/touch-1.png);
+    top: 40px;
+    z-index: -1;
+}
+.touch-ninja-form-bg{
+    position: relative;
+}
+.touch-ninja-form-bg::before{
+    position: absolute;
+    content: url(./images/about-gr-1.svg);
+    bottom: -32%;
+    z-index: -1;
+    right: 0;
+}
+
+
+
+
+
+
+
+
+
+@media (min-width:1650px){
+    .container{
+        max-width: 1600px;
+    }
+}
+
+
+
+
+
+@media (max-width:1200px){
+
+    .touch-ninja-heading h2, .touch-ninja-heading h3 {
+        font-size: 220px;
+    }
+
+}
+
+@media (max-width:991px){
+
+    .touch-ninja-heading h2, .touch-ninja-heading h3 {
+        font-size: 140px;
+    }
+    .touch-ninja-form {
+        flex-wrap: wrap;
+        padding-top: 50px;
+    }
+
+}
+
+@media (max-width:480px){
+    
+    .touch-ninja-heading h2, .touch-ninja-heading h3 {
+        font-size: 80px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .touch-form-heading h2 {
+        font-size: 32px;
+        max-width: 296px;
+    }
+    .touch-form-fill-mail-phone {
+        flex-wrap: wrap;
+        padding-bottom: 0;
+        padding-top: 0;
+        gap: 0;
+    }
+    .touch-form-fill {
+        padding: 0;
+        border: none;
+    }
+    .touch-form-fill label {
+        font-size: 18px; 
+    }
+    .touch-form-fill .services-list li {
+        font-size: 15px;
+    }
+    .touch-form-fill .services-list {
+        padding-bottom: 20px;
+    }
+    .touch-ninja-form-bg::before {
+        content: none;
+    }
+    .touch-ninja-bg::after {
+        content: none;
+    }
+    .touch-ninja-heading h3 svg{
+        /* max-width: 30%; */
+        display: none;
+    }
+    .touch-ninja-form {
+        padding-top: 0;
+        padding-bottom: 0px;
+    }
+    .touch-form-fill input, .touch-form-fill select, .touch-form-fill textarea {
+        padding: 12px;
+    }
+    .bg-1-quality{
+        padding-top: 30px;
+    }
+    .touch-form-fill button {
+        float: left;
+    }
+    .touch-ninja-heading{
+    padding-top: 40px;
+    padding-bottom: 50px;
+    }
+}

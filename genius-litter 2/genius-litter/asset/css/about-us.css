@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{ overflow-x: hidden;}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+}
+p{
+    font-family: 'Manrope', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+:root{
+    --brand1: #05264A;
+    --brand2: #B8F1F2;
+    --brand3: #40D0D2;
+    --netueral:#60666C;
+    --montserrat-font: 'Montserrat', sans-serif;
+    --manrope-font: 'Manrope', sans-serif;
+}
+
+/* =========about us========= */
+
+.about-us-text p{
+    color: var(--brand-03, #40D0D2);
+    text-align: center;
+    font-family: var(--manrope-font);
+    font-size: 20px;
+    padding-top: 80px;
+}
+.about-us-text h2{
+    color: var(--brand1);
+    text-align: center;
+    font-family: var(--montserrat-font);
+    font-size: 76px;
+    font-weight: 800;
+    line-height: 88px;
+    max-width: 750px;
+    margin: 0 auto;
+}
+.about-us-bg{
+    background: linear-gradient(180deg, #D8FDFD -5.78%, rgba(255, 255, 255, 0.00) 52.48%);
+}
+.about-us-content-text h4{
+    color: var(--brand1);
+    font-family: var(--montserrat-font);
+    font-size: 32px;
+    font-weight: 800;
+}
+.about-us-content-text p{
+    color: var(--netueral);
+    font-family: var(--manrope-font);
+}
+.about-us-content .row{
+    align-items: center;
+}
+.about-us-content-text{
+    max-width: 486px;
+}
+.about-us-content-text-img{
+    position: relative;
+}
+/* .about-us-content-text-img::after{
+    content: url(../images/cat-1.png);
+    position: absolute;
+    bottom: 0;
+    right: -55px;
+} */
+.about-us-content-text-img::after{
+    content: '';
+    position: absolute;
+    background-image: url(../images/cat-1.png);
+    bottom: 0;
+    right: 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 325px;
+    height: 152px;
+}
+.cooking-cat{
+    position: relative;
+}
+/* .cooking-cat::after{
+    content: url(../images/cat-2.png);
+    position: absolute;
+    bottom: -25px;
+    right: -20px;
+} */
+.cooking-cat::after{
+    content: '';
+    position: absolute;
+    background-image: url(../images/cat-2.png);
+    width: 224px;
+    height: 370px;
+}
+.cooking-cat-text{
+    margin: 0 auto;
+}
+.hide-cat{
+    position: relative;
+}
+/* .hide-cat::after{
+    content: url(../images/cat-3.png);
+    position: absolute;
+    bottom: -6px;
+    right: -35px;
+} */
+.hide-cat::after{
+    content: '';
+    position: absolute;
+    background-image: url(../images/cat-3.png);
+    width: 198px;
+    height: 226px;
+}
+/* .about-us-content{
+    padding: 0 120px;
+} */
+
+.about-testimonial{
+    background-color: var(--brand1);
+    background-image: url(/genius-litter/asset/images/contact-round.png) ;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.about-test-cont p{
+    color: #fff;
+}
+.about-tc-head h3{
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+.about-pet-veterinarians-bg{
+    background: unset;
+    padding-top: 0px;
+}
+.about-trusted-customers{
+    min-height: 0;
+}
+
+@media (max-width: 1279px){
+
+}
+
+@media (max-width: 1024px){
+    .about-us-text h2 {
+        font-size: 45px;
+        line-height: 1.3;
+    }
+    .about-us-content-text h4 {
+        font-size: 25px;
+    }
+    .about-us-content-text-img::after {
+        width: 247px;
+        height: 118px;
+    }
+    .cooking-cat::after {
+        width: 145px;
+        height: 215px;
+    }
+    .hide-cat::after {
+        width: 148px;
+        height: 165px;
+    }
+}
+@media (max-width: 768px){
+    .about-us-text h2 {
+        font-size: 45px;
+        line-height: 1.3;
+    }
+    .about-us-content-text h4 {
+        font-size: 25px;
+    }
+
+    .about-us-content-text-img::after {
+        width: 225px;
+        height: 102px;
+    }
+    .cooking-cat::after {
+        width: 125px;
+        height: 195px;
+    }
+    .hide-cat::after {
+        width: 128px;
+        height: 145px;
+    }
+}
+@media (max-width: 480px){
+   
+.about-us-content .row{
+    flex-direction: column-reverse;
+}
+.mobile-about-us-content .row{
+    flex-direction: column;
+}
+.about-us-text h2 {
+    font-size: 38px;
+}
+.about-us-text p {
+    font-size: 16px;
+}
+}

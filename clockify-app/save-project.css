@@ -1,0 +1,223 @@
+.cpd-project-save a {
+    color: #2F64C9;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 600;
+
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cpd-project-save {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid rgba(41, 109, 203, 0.08);
+    background: rgba(41, 109, 203, 0.06);
+}
+
+.cpd-project-save p {
+    margin-bottom: 0;
+    color: #2F64C9;
+}
+
+.clockify-project-add .touch-form-rn {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-bottom: 24px;
+}
+
+.clockify-project-add .touch-form-rn select {
+    border-radius: 6px;
+    border: 1px solid #E8E8E8;
+    background: #FFF;
+    padding: 12px;
+    outline: none;
+    background-image: url(./images/down.svg);
+    background-repeat: no-repeat;
+    background-position: 96% center;
+    appearance: none;
+}
+
+.clockify-project-add .touch-form-rn label {
+    color: #464F60;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+
+}
+
+.clockify-project-add .touch-form-rn .tfr-desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.clockify-project-add .touch-form-rn label span {
+    color: #D1293D;
+}
+
+.clockify-project-add {
+    max-width: 400px;
+    border-radius: 12px;
+    border: 1px solid rgba(41, 109, 203, 0.08);
+    background: #F2F6FC;
+    padding: 20px;
+}
+
+.clockify-project-add .touch-form-rn textarea {
+    border-radius: 6px;
+    border: 1px solid #E8E8E8;
+    background: #FFF;
+    height: 100px;
+    padding: 12px 15px;
+    outline: none;
+}
+
+.clockify-project-add .touch-form-rn textarea::placeholder {
+    color: #CECECE;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.28px;
+}
+
+.clockify-project-add .touch-form-rn .upload__inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.clockify-project-add .upload__btn p {
+    color: #2F64C9;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.clockify-save-project-bg {
+    padding-top: 24px;
+    display: flex;
+    gap: 40px;
+}
+
+.clockify-project-task-add .cpta-task-text {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-top: 16px;
+}
+
+.clockify-project-task-add .touch-form-rn {
+    flex: 0 0 calc(50% - 8px);
+    display: flex;
+    flex-direction: column;
+}
+
+.clockify-project-task-add {
+    min-width: calc(100% - 400px);
+    border-radius: 12px;
+    border: 1px solid #E7E7E7;
+    background: #FFF;
+    padding: 20px;
+}
+
+.cpta-task-text .touch-form-rn label {
+    color: #464F60;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+}
+
+.cpta-task-text .touch-form-rn label span {
+    color: #D1293D;
+}
+
+.cpta-task-text .touch-form-rn input,
+.cpta-task-text .touch-form-rn select {
+    padding: 8px 12px;
+    align-items: center;
+    gap: 12px;
+    border-radius: 6px;
+    border: 1px solid #E8E8E8;
+    background: #FFF;
+    outline: none;
+    margin-top: 8px;
+}
+
+.cpta-task-text .touch-form-rn select {
+    background-image: url(./images/down.svg);
+    background-repeat: no-repeat;
+    background-position: 96% center;
+    appearance: none;
+    color: #464F60;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.28px;
+}
+
+.cpta-task-text .touch-form-rn input::placeholder {
+    color: #CECECE;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.28px;
+}
+
+.clockify-project-task-add h4 {
+    border-bottom: 1px solid #E0E0E0;
+    color: #1A2240;
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 16px;
+    margin-bottom: 0;
+}
+
+.cpta-add-project-task button {
+    color: #2F64C9;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 6px;
+background: rgba(47, 100, 201, 0.05);
+border: none;
+padding: 13px 14px;
+margin-top: 16px;
+}
+.cpta-add-project-task{
+    border-bottom: 1px solid #E0E0E0;
+    padding-bottom: 16px;
+}
+.cpta-task-added h3{
+    color:  #1A2240;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+    padding: 20px 0;
+}
+.cpta-no-task-added{
+    border-radius: 12px;
+    background: #F5F5F5;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cpta-no-task-added p{
+    color: #464F60;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.28px;
+    margin-bottom: 0;
+}
+.clockify-project-add .touch-form-rn:last-child{
+    padding: 0;
+}

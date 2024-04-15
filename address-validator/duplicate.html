@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address Validator</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  
+
+</head>
+
+<style>
+
+.scroll-right-prompt{
+    border-radius: 20px;
+background: #FFF;
+text-align: center;
+max-width: 450px;
+    margin: 0 auto;
+}
+.scroll-right-prompt h5{
+    color: #3B4A60;
+    font-size: 20px;
+    font-weight: 600;
+}
+.scroll-rshiping-adrs-bg{
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.12);
+    padding: 32px;
+    margin-top: 32px;
+}
+.sadr-accurate h2{
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 0;
+    padding: 10px 0;
+}
+.sadr-accurate p{
+    color: #222;
+    font-size: 14px;
+    font-weight: 400;
+    max-width: 365px;
+    margin: 0 auto;
+}
+.scroll-tanya-adrs, .tanya-open-adrs{
+    border-radius: 8px;
+    background: #F5F5F5;
+    padding: 32px 0;
+    margin-top: 10px;
+    position: relative;
+}
+.scroll-tanya-adrs p, .tanya-open-adrs p{
+    color: #222;
+    font-size: 14px;
+    font-weight: 400;
+    max-width: 194px;
+    margin: 0 auto;
+}
+.scroll-tanya-adrs p span, .tanya-open-adrs p span{
+    color: #AAC22F;
+}
+.scroll-tanya-adrs .tanya-adr-btn{
+    border-radius: 8px;
+    background: #3168B9;
+    outline: none;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    padding: 15px 24px;
+    width: 206px;
+    margin-top: 24px;
+    position: relative;
+    padding-left: 44px;
+}
+.scroll-tanya-adrs .tanya-adr-btn::after{
+    position: absolute;
+    content: url(./images/tick.svg);
+    left: 18px;
+    top: 17px;
+
+}
+.scroll-tanya-adrs h4, .tanya-open-adrs h4{
+    color: #000;
+    font-size: 17px;
+    font-weight: 600;
+}
+.scroll-rshiping-adrs .sadr-accurate{
+    padding-bottom: 22px;
+}
+.scroll-rshiping-adrs-bg .tanya-close-btn{
+    border-radius: 8px;
+    border: 1px solid #97B1D7;
+    background: #FFF;
+    outline: none;
+    padding: 15px 32px;
+    color: #3168B9;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 32px;
+}
+
+
+.scroll-tanya-adrs .form-check,
+.tanya-open-adrs .form-check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+}
+.scroll-tanya-adrs .form-check input,
+.tanya-open-adrs .form-check input{
+  box-shadow: none;
+}
+
+
+</style>
+
+<body class="page_body">
+ 
+    
+    <section>
+
+<div class="scroll-right-prompt">
+    <h5>Suggested corrected prompts</h5>
+    
+    <div class="scroll-rshiping-adrs-bg">
+    <div class="scroll-rshiping-adrs">
+        <div class="sadr-accurate">
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <path d="M3.33325 8.33331L14.9999 3.33331L24.9999 8.33331L35.5049 3.83115C35.9281 3.64985 36.4179 3.8458 36.5993 4.26883C36.6436 4.37256 36.6666 4.48425 36.6666 4.5971V31.6666L24.9999 36.6666L14.9999 31.6666L4.49485 36.1688C4.07182 36.3501 3.58194 36.1541 3.40064 35.7311C3.35617 35.6275 3.33325 35.5156 3.33325 35.4028V8.33331ZM24.9999 32.9398V11.9599L24.8919 12.0061L14.9999 7.0601V28.0401L15.1079 27.9938L24.9999 32.9398Z" fill="#C0D749"/>
+                  </svg>
+            </div>
+            <h2>Please select accurate shipping address</h2>
+            <p>For swift and precise delivery, we recommend to select the suggested shipping address.</p>
+        </div>
+    </div>
+
+  
+
+    <div class="scroll-tanya-adrs-bg">
+        <div class="scroll-tanya-adrs">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck43">
+            <label class="form-check-label" for="defaultCheck43">
+                
+                    <h4>Suggested address</h4>
+                    <p>Suite 336 784 <span>Tanya Ports, Friesenbury</span>, NC 51587-5771</p>
+                    <!-- <button type="button" class="tanya-adr-btn">Selected address</button> -->
+                </div>
+            </label>
+          </div>
+
+          <div class="tanya-open-adrs">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck44">
+            <label class="form-check-label" for="defaultCheck44">
+               
+                    <h4>Your typed address</h4>
+                    <p>Suite 336 784 Tanya, Friesanbury, NC 51587-5771</p>
+                    <!-- <button type="button" class="tanya-adr-btn">Selected address</button> -->
+                </div>
+            </label>
+          </div>
+    </div>
+    
+    <div class="adrs-buttons">
+        <button type="button" class="tanya-close-btn " >Close</button>
+        <button type="button" class="tanya-close-btn ">save changes</button>
+    </div>
+    
+</div>
+</div>
+    </section>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+
+</html> 
+
+
